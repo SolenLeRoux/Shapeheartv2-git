@@ -298,7 +298,17 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 35px 0;
+    display: block;
+    width: 100%;
+    background-color: #657F95;
+}
+
+.footer-logo {
+    height: 30px;
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 #to-top {
