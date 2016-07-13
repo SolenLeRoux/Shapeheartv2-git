@@ -253,7 +253,9 @@ hr.small {
     margin-bottom: 20px;
 }
 
-/* About */
+/********************************************************
+   About : Page 2, trois photos avec texte en fond
+********************************************************/
 
 .about {
     display: table;
