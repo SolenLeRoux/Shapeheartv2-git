@@ -258,6 +258,8 @@ hr.small {
 ********************************************************/
 
 .about {
+    padding-top: 0px 0;
+    padding-bottom: 0px 0;
     display: table;
     position: relative;
     width: 100%;
@@ -269,14 +271,30 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* Services */
+/* Product */
 
-.services {
+.content-section-a {
     padding: 50px 0;
+    background-color: ##f8f8f8;
 }
 
-.service-item {
-    margin-bottom: 30px;
+.content-section-b {
+    padding: 50px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    /* Image de fond de la section */
+    background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.product-information {
+    float: right;
+    text-align: center;
 }
 
 /* Callout */
