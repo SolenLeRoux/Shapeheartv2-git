@@ -355,7 +355,24 @@ hr.small {
     pointer-events: none;
 }
 
-/* Footer */
+/****************************
+    Partenaires
+****************************/
+
+.partenaires {
+    padding: 35px 0;
+    display: block;
+    width: 100%;
+    background: url(../img/background-social-proof2.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;;
+}
+
+/************************
+       Footer
+ ************************/
 
 footer {
     padding: 35px 0;
