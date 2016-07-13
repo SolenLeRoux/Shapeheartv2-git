@@ -374,12 +374,14 @@ hr.small {
     top: 12px;
     width: 110px;
     height: auto;
-    margin: 30px;
+    margin: 22px;
 }
 
 .text-partenaire {
     position: absolute;
     margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
     font-size: 18px;
     color: #fff;
     font-family: nexa_lightregular;
