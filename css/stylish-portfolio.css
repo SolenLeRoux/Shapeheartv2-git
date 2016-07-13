@@ -69,6 +69,29 @@ body {
     background-color: #FC0F26;
 }
 
+.btn-transparent {
+    /*left: 780px;
+    top: 280px;*/
+    height: 55px;
+    position: absolute;
+    line-height: 55px;
+    width: 130px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    outline: 0;
+    white-space: nowrap;
+}
+
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent:focus {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
 .btn-footer {
     font-size: 14px;
     line-height: 35px;
