@@ -336,8 +336,7 @@ footer {
 .footer-logo {
     height: 30px;
     display: inline-block;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 12px;
 }
 
 .footer-text {
@@ -360,3 +359,9 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+
+/*****************************************
+  MEDIA QUERIES
+******************************************/
+
+/* Liste de règle régissant le comportement du site suivant la taille de l'écran */
