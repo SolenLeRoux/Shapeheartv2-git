@@ -256,21 +256,11 @@ hr.small {
 /* About */
 
 .about {
-<<<<<<< HEAD
-    padding-top: 0px 0;
-    padding-bottom: 0px 0;
-=======
->>>>>>> refs/remotes/origin/master
     display: table;
     position: relative;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-    /* Image de fond du header */
-    background: url(../img/background-section2-2.jpg) no-repeat center center scroll;
-=======
     background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
->>>>>>> refs/remotes/origin/master
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
