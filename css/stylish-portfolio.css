@@ -82,7 +82,7 @@ body {
 }
 
 .btn-suscribe {
-    top: 500px;
+    /*top: 500px;*/
     width: 226px;
     /*height: 57px;
     line-height: 57px;*/
@@ -224,12 +224,17 @@ hr.small {
 
 /* Classes pour le SHAPE HEART */
 
-.text-shapeheart {
+.intro-message{
     position: relative;
     display: block;
     margin-bottom: 10px;
     height: 60px;
     line-height: 60px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.text-shapeheart {
     /*font-size: 70px;*/
     color: white;
     font-family: aqua_grotesqueregular;
@@ -237,6 +242,15 @@ hr.small {
 
 .text-shapeheart-a {
     color: #FC0F26;
+}
+
+.intro-divider {
+    height: 3px;
+    width: 130px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* About */
@@ -372,3 +386,4 @@ footer {
 ******************************************/
 
 /* Liste de règle régissant le comportement du site suivant la taille de l'écran */
+
