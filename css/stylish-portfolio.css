@@ -369,6 +369,13 @@ hr.small {
     -o-background-size: cover;;
 }
 
+.logo-partenaire {
+    left: 0;
+    top: 12px;
+    width: 110px;
+    height: auto;
+}
+
 /************************
        Footer
  ************************/
