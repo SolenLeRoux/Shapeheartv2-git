@@ -30,6 +30,10 @@ html,
 body {
     width: 100%;
     height: 100%;
+    /* Pour fixer le problème de la barre blanche à droite*/
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 body {
@@ -67,6 +71,12 @@ body {
     border-radius : 0;
     color: #fff;
     background-color: #FC0F26;
+}
+
+.btn-red:hover {
+    text-decoration: none;
+    background-color: #EC5D57;
+    color: #fff;
 }
 
 .btn-transparent {
@@ -457,7 +467,7 @@ hr.small {
 ***************************/
 
 .presse {
-    height: 190px;
+    height: 200px;
     paddin: 50px 0;
     background-color: white;
     display: block;
@@ -465,7 +475,7 @@ hr.small {
 }
 
 .presse-logo {
-    margin-top: 10%;
+    margin-top: 12%;
     position: absolute;
     width: 300px;
     height: auto;
@@ -500,7 +510,7 @@ footer {
 .footer-logo {
     height: 30px;
     display: inline-block;
-    margin: 12px;
+    margin-left: 20px;
 }
 
 .footer-text {
