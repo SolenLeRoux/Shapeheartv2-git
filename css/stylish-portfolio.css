@@ -69,6 +69,29 @@ body {
     background-color: #FC0F26;
 }
 
+.btn-transparent {
+    /*left: 780px;
+    top: 280px;*/
+    height: 55px;
+    position: absolute;
+    line-height: 55px;
+    width: 130px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    outline: 0;
+    white-space: nowrap;
+}
+
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent:focus {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
 .btn-footer {
     font-size: 14px;
     line-height: 35px;
@@ -82,7 +105,7 @@ body {
 }
 
 .btn-suscribe {
-    top: 500px;
+    /*top: 500px;*/
     width: 226px;
     /*height: 57px;
     line-height: 57px;*/
@@ -224,12 +247,17 @@ hr.small {
 
 /* Classes pour le SHAPE HEART */
 
-.text-shapeheart {
+.intro-message{
     position: relative;
     display: block;
     margin-bottom: 10px;
     height: 60px;
     line-height: 60px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.text-shapeheart {
     /*font-size: 70px;*/
     color: white;
     font-family: aqua_grotesqueregular;
@@ -239,7 +267,17 @@ hr.small {
     color: #FC0F26;
 }
 
-/* About */
+.intro-divider {
+    height: 3px;
+    width: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/********************************************************
+   About : Page 2, trois photos avec texte en fond
+********************************************************/
 
 .about {
     padding-top: 0px 0;
@@ -248,22 +286,78 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    /* Image de fond du header */
-    background: url(../img/background-section2-2.jpg) no-repeat center center scroll;
+    background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-/* Services */
+/* Product */
 
-.services {
+.content-section-a {
     padding: 50px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    /* Image de fond de la section */
+    background: url(../img/article_image.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.service-item {
-    margin-bottom: 30px;
+.texte-section-a {
+    padding-top: 100px;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    /* Image de fond de la section */
+    background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.texte-section-b {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.section-heading {
+    text-align: center;
+    color: #ff1010;
+    font-size: 40px;
+    font-family: 'nexa_lightregular';
+    font-weight: bold;
+}
+
+.lead-b {
+    color: #fff;
+    font-family: 'nexa_lightregular';
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
+}
+
+.product-information {
+    float: right;
+    text-align: center;
 }
 
 /* Callout */
@@ -324,7 +418,75 @@ hr.small {
     pointer-events: none;
 }
 
-/* Footer */
+/****************************
+    Partenaires
+****************************/
+
+.partenaires {
+    padding: 35px 0;
+    display: block;
+    width: 100%;
+    background: url(../img/background-social-proof2.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;;
+}
+
+.logo-partenaire {
+    left: 0;
+    top: 12px;
+    width: 110px;
+    height: auto;
+    margin: 22px;
+}
+
+.text-partenaire {
+    position: absolute;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #fff;
+    font-family: nexa_lightregular;
+}
+
+/**************************
+  Presse
+***************************/
+
+.presse {
+    height: 190px;
+    paddin: 50px 0;
+    background-color: white;
+    display: block;
+    width: 100%;
+}
+
+.presse-logo {
+    margin-top: 10%;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.presse-logo:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition-property: -webkit-filter;
+    transition-property: filter;
+    transition-property: filter,-webkit-filter;
+    transition-duration: 1s;
+}
+
+/************************
+       Footer
+ ************************/
 
 footer {
     padding: 35px 0;
@@ -365,3 +527,4 @@ footer {
 ******************************************/
 
 /* Liste de règle régissant le comportement du site suivant la taille de l'écran */
+
