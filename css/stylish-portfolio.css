@@ -510,7 +510,7 @@ footer {
 .footer-logo {
     height: 30px;
     display: inline-block;
-    margin: 12px;
+    margin-left: 20px;
 }
 
 .footer-text {
