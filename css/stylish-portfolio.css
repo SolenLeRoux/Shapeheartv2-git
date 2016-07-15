@@ -456,19 +456,32 @@ hr.small {
 ***************************/
 
 .presse {
-    margin: 100px 0;
+    height: 190px;
+    paddin: 50px 0;
     background-color: white;
     display: block;
     width: 100%;
 }
 
 .presse-logo {
+    margin-top: 10%;
     position: absolute;
     width: 300px;
     height: auto;
     background-size: cover;
     display: inline-block;
     vertical-align: middle;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.presse-logo:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition-property: -webkit-filter;
+    transition-property: filter;
+    transition-property: filter,-webkit-filter;
+    transition-duration: 1s;
 }
 
 /************************
