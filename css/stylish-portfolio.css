@@ -73,6 +73,12 @@ body {
     background-color: #FC0F26;
 }
 
+.btn-red:hover {
+    text-decoration: none;
+    background-color: #EC5D57;
+    color: #fff;
+}
+
 .btn-transparent {
     /*left: 780px;
     top: 280px;*/
