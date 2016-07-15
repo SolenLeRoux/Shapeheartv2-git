@@ -451,6 +451,26 @@ hr.small {
     font-family: nexa_lightregular;
 }
 
+/**************************
+  Presse
+***************************/
+
+.presse {
+    margin: 100px 0;
+    background-color: white;
+    display: block;
+    width: 100%;
+}
+
+.presse-logo {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /************************
        Footer
  ************************/
