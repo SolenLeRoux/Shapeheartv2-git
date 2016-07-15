@@ -30,10 +30,10 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".nav-container">
 
     <!-- Navigation -->
-    <!-- C'est ce qui correspond à l'icone menu hamburger en haut à droite -->
+    <!-- C'est ce qui correspond à l'icone menu hamburger en haut à droite -
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -58,6 +58,24 @@
             </li>
         </ul>
     </nav>
+    -->
+
+    <!-- Navbar que j'essaye de pomper sur un autre site -->
+    <!-- Elle est censée être transparente sur le Header puis blanche ailleurs -->
+
+    <div class="nav-container">
+        <nav class="navbar overlay-nav sticky-nav">
+            <div id="main-nav-row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="nav-logo" src="img/logo-white.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <!-- Header -->
     <!-- Le texte devant la grande image d'accueil -->

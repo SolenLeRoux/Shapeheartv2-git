@@ -2360,4 +2360,18 @@ if (typeof jQuery === 'undefined') {
     })
   })
 
+
+  /*** Ajouté à la main, pompé d'une solution sur internet : */
+  /**
+   * Listen to scroll to change header opacity class
+   */
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/
+    {
+      $('.sticky-nav').addClass('scrolled');
+    } else {
+      $('.sticky-nav').removeClass('scrolled');
+    }
+  });
+
 }(jQuery);

@@ -239,6 +239,43 @@ hr.small {
 }
 
 /***********************************************
+  Navbar
+************************************************/
+
+.nav-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay-nav {
+    position: fixed;
+    top: 0px;
+    z-index: 6;
+    width: 100%;
+    padding-top: 24px;
+    line-height: 1;
+    background: none;
+}
+
+.sticky-nav {
+    background: none;
+}
+
+.sticky-nav.scrolled {
+    background: white;
+}
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+}
+
+
+/***********************************************
  Header : Page 1 - vidéo avec texte ShapeHeart
  ***********************************************/
 
