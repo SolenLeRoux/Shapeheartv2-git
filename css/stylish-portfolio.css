@@ -256,8 +256,6 @@ hr.small {
     background-color: rgba(69,89,106,.5);
 }
 
-/* Classes pour le SHAPE HEART */
-
 .intro-message{
     position: relative;
     display: block;
@@ -287,7 +285,7 @@ hr.small {
 }
 
 #background_video {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
