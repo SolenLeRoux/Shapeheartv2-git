@@ -494,6 +494,7 @@ footer {
     display: block;
     width: 100%;
     background-color: #657F95;
+    height: 100px;
 }
 
 .footer-logo {
