@@ -2359,24 +2359,3 @@ if (typeof jQuery === 'undefined') {
       Plugin.call($spy, data)
     })
   })
-
-
-  /*** Ajouté à la main, pompé d'une solution sur internet : */
-  /**
-   * Listen to scroll to change header opacity class
-
-  $(window).scroll(function() {
-    if($(this).scrollTop() > 50)
-    {
-      $('.sticky-nav').addClass('scrolled');
-    } else {
-      $('.sticky-nav').removeClass('scrolled');
-    }
-  });
-   */
-
-  $(document).on('scroll', function (e) {
-    $('.sticky-nav').css('opacity', ($(document).scrollTop() / 500));
-  });
-
-}(jQuery);

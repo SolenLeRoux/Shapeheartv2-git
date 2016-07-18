@@ -63,7 +63,7 @@
     <!-- Navbar que j'essaye de pomper sur un autre site -->
     <!-- Elle est censée être transparente sur le Header puis blanche ailleurs -->
 
-    <div class="nav-container">
+    <div class="nav-container" id="navbar">
         <nav class="navbar overlay-nav sticky-nav">
             <div id="main-nav-row">
                 <div class="container-fluid">
@@ -357,6 +357,30 @@
             }
         });
     });
+
+    //#navbar appears after scrolling
+
+    var isnavbarcolored = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            if (!isnavbarcolored) {
+                isnavbarcolored = true;
+                $('.sticky-nav').css({
+                    position: 'fixed',
+                    display: 'block',
+                    background: '#FC0F26'
+                });
+            }
+        } else {
+            if (isnavbarcolored) {
+                isnavbarcolored = false;
+                $('.sticky-nav').css({
+                    background: 'none'
+                });
+            }
+        }
+    });
+
     //#to-top button appears after scrolling
     var fixed = false;
     $(document).scroll(function() {
@@ -366,7 +390,6 @@
                 // $('#to-top').css({position:'fixed', display:'block'});
                 $('#to-top').show("slow", function() {
                     $('#to-top').css({
-                        position: 'fixed',
                         display: 'block'
                     });
                 });
