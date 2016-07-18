@@ -474,6 +474,11 @@ hr.small {
     font-size: 18px;
     color: #fff;
     font-family: nexa_lightregular;
+    padding-right: 10%;
+}
+
+.partenaire-tableau {
+    padding-left: 10%;
 }
 
 /**************************
