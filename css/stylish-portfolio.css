@@ -545,3 +545,43 @@ footer {
 
 /* Liste de règle régissant le comportement du site suivant la taille de l'écran */
 
+/* Petits écrans : téléphones mobiles */
+@media all and (max-width: 640px) {
+    td {
+        padding: 0;
+        margin: 0;
+        width: 33%;
+    }
+    .partenaire-colonne-1 {
+        width: 33%;
+        margin: 22px 1.5%;
+    }
+
+    .partenaire-colonne-2 {
+        width: 50%;
+        margin: 22px 2.5%;
+    }
+
+    .partenaire-colonne-3{
+        width: 100%;
+        margin: 22px 5%;
+    }
+    .partenaire-tableau{
+        padding: 3%;
+    }
+    .partenaires {
+        padding: 5% 0;
+    }
+    .logo-partenaire-c1 {
+        width: 80%;
+        margin: 22px 5%;
+    }
+    .logo-partenaire-c2 {
+        width: 80%;
+        margin: 22px 5%;
+    }
+    .logo-partenaire-c3 {
+        width: 80%;
+        margin: 22px 5%;
+    }
+}
