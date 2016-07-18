@@ -559,3 +559,28 @@ footer {
 
 /* Liste de règle régissant le comportement du site suivant la taille de l'écran */
 
+/* Petits écrans : téléphones mobiles */
+@media all and (max-width: 640px) {
+
+    .partenaire-colonne {
+        width: 33%;
+        margin: 22px 1.5%;
+    }
+
+    .partenaire-tableau{
+        padding: 3%;
+    }
+
+    .partenaires {
+        padding: 5% 0;
+    }
+
+    .logo-partenaire {
+        width: 80%;
+        margin: 22px 5%;
+    }
+
+    .text-partenaire {
+        margin: 0;
+    }
+}
