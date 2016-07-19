@@ -613,6 +613,27 @@ footer {
         right: 0;
         padding-top: 10px;
     }
+
+    /* Footer */
+
+    footer {
+        height: 180px;
+        padding: 10px 0;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        margin-left: 5px;
+    }
+
+    .col-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 /* Petits écrans : smartphones et tablettes */
