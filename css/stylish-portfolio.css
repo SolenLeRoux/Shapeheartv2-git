@@ -617,4 +617,11 @@ footer {
         text-align: center;
         font-size: 16px;
     }
+
+    /* Section Presse */
+
+    .presse-logo {
+        width: 80%;
+    }
+
 }
