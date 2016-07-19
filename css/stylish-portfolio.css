@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -559,7 +559,7 @@ footer {
 
 /* Liste de règle régissant le comportement du site suivant la taille de l'écran */
 
-/* Petits écrans : téléphones mobiles */
+/* Très petits écrans : téléphones mobiles */
 @media all and (max-width: 480px) {
 
     /* Section partenaires */
@@ -585,17 +585,22 @@ footer {
     .text-partenaire {
         margin: 0;
         font-size: 15px;
+        text-align: center;
     }
 
     .btn-transparent {
         width: 80%;
         margin-top: 0;
         margin-bottom: 5%;
-        margin-right: 12%;
-        margin-left: 8%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
     }
 }
 
+/* Petits écrans : smartphones et tablettes, voire écrans
+ avec une mauvaise résolution */
 @media screen and (max-width: 1199px) and (min-width: 481px) {
 
     /* Section partenaires */
@@ -624,4 +629,10 @@ footer {
         width: 80%;
     }
 
+    .btn-transparent {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
 }
