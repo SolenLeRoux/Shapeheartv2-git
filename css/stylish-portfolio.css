@@ -503,6 +503,7 @@ hr.small {
     vertical-align: middle;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+    margin-left: 8%
 }
 
 .presse-logo:hover {
@@ -597,11 +598,71 @@ footer {
         left: 0;
         right: 0;
     }
+
+    /* Section Presse */
+
+    .presse {
+        height: 95px;
+    }
+
+    .presse-logo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        padding-top: 10px;
+    }
 }
 
-/* Petits écrans : smartphones et tablettes, voire écrans
- avec une mauvaise résolution */
-@media screen and (max-width: 1199px) and (min-width: 481px) {
+/* Petits écrans : smartphones et tablettes */
+@media screen and (max-width: 799px) and (min-width: 481px) {
+
+    /* Section partenaires */
+
+    .partenaire-tableau{
+        padding: 3%;
+        width: 462px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .partenaires {
+        padding: 0;
+    }
+
+    .text-partenaire {
+        margin: 0 5%;
+        padding-right: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .btn-transparent {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    /* Section Presse */
+
+    .presse-logo {
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 0;
+        padding-right: 45px;
+    }
+
+    .presse {
+        height: 130px;
+    }
+}
+
+/* Grandes tablettes et petits ordinateurs */
+@media screen and (max-width: 1199px) and (min-width: 800px) {
 
     /* Section partenaires */
 
@@ -623,16 +684,22 @@ footer {
         font-size: 16px;
     }
 
-    /* Section Presse */
-
-    .presse-logo {
-        width: 80%;
-    }
-
     .btn-transparent {
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
+    }
+
+    /* Section Presse */
+
+    .presse-logo {
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 12%
+    }
+
+    .presse {
+        height: 130px;
     }
 }
