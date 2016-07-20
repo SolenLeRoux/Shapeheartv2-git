@@ -276,13 +276,11 @@ hr.small {
     width: auto;
 }
 
-.language {
-    margin-top: 12px;
-}
-
 .menu-language {
     position: absolute;
     display: inline-block;
+    white-space: nowrap;
+    padding-left: 20px;
 }
 
 .nav-text {
@@ -293,10 +291,10 @@ hr.small {
     display: inline-block;
     position: static;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     -webkit-appearance: none;
     margin-top: 10px;
-    margin-right: 10%;
+    margin-right: 7%;
 }
 
 .language-text {
