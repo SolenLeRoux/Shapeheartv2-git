@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -147,6 +147,17 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
+.btn-langue {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: nexa_lightregular;
+    display: inline-block;
+    position: static;
+    color: white;
+    font-size: 22px;
+}
+
 /* Custom Horizontal Rule */
 
 hr.small {
@@ -274,6 +285,9 @@ hr.small {
     width: auto;
 }
 
+.language {
+    position: absolute;
+}
 
 /***********************************************
  Header : Page 1 - vidéo avec texte ShapeHeart
@@ -511,6 +525,11 @@ hr.small {
     font-size: 18px;
     color: #fff;
     font-family: nexa_lightregular;
+    padding-right: 10%;
+}
+
+.partenaire-tableau {
+    padding-left: 10%;
 }
 
 /**************************
@@ -535,6 +554,7 @@ hr.small {
     vertical-align: middle;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+    margin-left: 8%
 }
 
 .presse-logo:hover {
@@ -591,3 +611,188 @@ footer {
 
 /* Liste de règle régissant le comportement du site suivant la taille de l'écran */
 
+/* Très petits écrans : téléphones mobiles */
+@media all and (max-width: 480px) {
+
+    /* Section partenaires */
+
+    .partenaire-colonne {
+        width: 33%;
+        margin: 22px 1.5%;
+    }
+
+    .partenaire-tableau{
+        padding: 3%;
+    }
+
+    .partenaires {
+        padding: 0;
+    }
+
+    .logo-partenaire {
+        width: 80%;
+        margin: 22px 5%;
+    }
+
+    .text-partenaire {
+        margin: 0;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .btn-transparent {
+        width: 80%;
+        margin-top: 0;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    /* Section Presse */
+
+    .presse {
+        height: 95px;
+    }
+
+    .presse-logo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        padding-top: 10px;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 180px;
+        padding: 10px 0;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        margin-left: 5px;
+    }
+
+    .col-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Petits écrans : smartphones et tablettes */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+
+    /* Section partenaires */
+
+    .partenaire-tableau{
+        padding: 3%;
+        width: 462px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .partenaires {
+        padding: 0;
+    }
+
+    .text-partenaire {
+        margin: 0 5%;
+        padding-right: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .btn-transparent {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    /* Section Presse */
+
+    .presse-logo {
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 0;
+        padding-right: 45px;
+    }
+
+    .presse {
+        height: 130px;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 180px;
+        padding: 10px 0;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        margin-left: 5px;
+    }
+
+    .col-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Grandes tablettes et petits ordinateurs */
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+
+    /* Section partenaires */
+
+    .partenaire-tableau{
+        padding: 3%;
+        width: 462px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .partenaires {
+        padding: 0;
+    }
+
+    .text-partenaire {
+        margin: 0 5%;
+        padding-right: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .btn-transparent {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    /* Section Presse */
+
+    .presse-logo {
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 12%
+    }
+
+    .presse {
+        height: 130px;
+    }
+}
