@@ -21,6 +21,10 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Pour un site bilingue -->
+    <link href="css/english.css" rel="stylesheet" title="english">
+    <link href="css/francais.css" rel="alternate stylesheet" title="francais">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,6 +35,13 @@
 </head>
 
 <body>
+
+
+    <!-- Boutons pour changer de langue -->
+    <form>
+        <input class="btn-langue" type="submit" onclick="switch_style('francais');return false;" name="language" value="Fr" id="francais">
+        <input class="btn-langue" type="submit" onclick="switch_style('english');return false;" name="language" value="En" id="english">
+    </form>
 
     <!-- Navigation -->
     <!-- C'est ce qui correspond à l'icone menu hamburger en haut à droite -->
@@ -63,7 +74,9 @@
     <!-- Le texte devant la grande image d'accueil -->
     <header id="top" class="header">
         <video autoplay="true" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="img/background_video.png" id="background_video">
-            <source src="video/video.mov" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="video/video.mov" type="video/mp4">
+            <span class="english">Your browser does not support the video tag. I suggest you upgrade your browser.</span>
+            <span class="francais">Votre navigateur ne supporte pas la lecture de cette video.</span>
         </video>
         <div class="container">
             <div class="row">
@@ -74,7 +87,10 @@
                             <h1>HE<span class="text-shapeheart-a">A</span>RT</h1>
                         </div>
                     <hr class="intro-divider">
-                    <a href="#about" class="btn btn-white btn-lg btn-suscribe">Get yours</a>
+                    <a href="#about" class="btn btn-white btn-lg btn-suscribe">
+                        <span class="english">Get yours</span>
+                        <span class="francais">Demandez le vôtre</span>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -87,8 +103,14 @@
                 <div class="texte-section-b">
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">ICI ON VOIT UNE PHOTO<br>D'UNE JOLIE FILLE</h2>
-                        <p class="lead-b">la j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial ! </p>
+                        <h2 class="section-heading">
+                            <span class="english">HERE YOU CAN SEE A PICTURE OF A BEAUTIFUL GIRL</span>
+                            <span class="francais">ICI ON VOIT UNE PHOTO D'UNE JOLIE FILLE</span>
+                        </h2>
+                        <p class="lead-b">
+                            <span class="english">I write a text which is not very interesting because I'm not really inspired. Come on our website ! Cardiac frequency is awesome !</span>
+                            <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial !</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -100,8 +122,14 @@
                 <div class="texte-section-a">
                     <div class="col-lg-5 col-sm-6">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">ET LÀ ON MET UN MEC<br>AVEC UN SMARTPHONE</h2>
-                        <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                        <h2 class="section-heading">
+                            <span class="english">AND HERE A GUY WITH A SMARTPHONE</span>
+                            <span class="francais">ET LÀ ON MET UN MEC AVEC UN SMARTPHONE</span>
+                        </h2>
+                        <p class="lead">
+                            <span class="english">A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. Visit their website to become a member.</span>
+                            <span class="francais">Je n'ai pas d'intérêt à traduire ce texte en français.</span>
+                        </p>
                     </div>
                 </div>    
             </div>
@@ -116,8 +144,14 @@
                 <div class="texte-section-b">
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">ICI ON VOIT UNE PHOTO<br>D'UNE JOLIE FILLE</h2>
-                        <p class="lead-b">la j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial ! </p>
+                        <h2 class="section-heading">
+                            <span class="english">HERE YOU CAN SEE A PICTURE OF A BEAUTIFUL GIRL</span>
+                            <span class="francais">ICI ON VOIT UNE PHOTO D'UNE JOLIE FILLE</span>
+                        </h2>
+                        <p class="lead-b">
+                            <span class="english">I write a text which is not very interesting because I'm not really inspired. Come on our website ! Cardiac frequency is awesome !</span>
+                            <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial !</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -238,9 +272,15 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="text-partenaire">
-                        <p>Shapeheart is the winner of FNAC-Intel challenge 2016, our armband will be available by spring 2017. We’ve partnered with the best to give you the most performant technology for heart rate monitoring in an armband well designed for runners. Don’t forget to like our facebook page !</p>
+                        <p>
+                            <span class="english">Shapeheart is the winner of FNAC-Intel challenge 2016, our armband will be available by spring 2017. We’ve partnered with the best to give you the most performant technology for heart rate monitoring in an armband well designed for runners. Don’t forget to like our facebook page !</span>
+                            <span class="francais">Que ça soit au niveau du prototypage, de l’électronique ou de l’industrialisation, concevoir un tel brassard de running a demandé beaucoup de travail et d’itérations avec vous, les coureurs. Nous avons noué beaucoup de partenariats pour vous proposer un outil de monitoring simple, bien pensé et à prix raisonnable. Pour restez en contact, vous pouvez liker notre page facebook ci dessous !</span>
+                        </p>
                     </br>
-                    <a href="#/blog/page/0" class="btn-transparent">Read more</a>
+                    <a href="#/blog/page/0" class="btn-transparent">
+                        <span class="english">Read more</span>
+                        <span class="francais">En savoir plus</span>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -284,11 +324,17 @@
                         <p class="footer-text">FAQ</p>
                     </a>
                     <a href="#about">
-                        <p class="footer-text">Contact us</p>
+                        <p class="footer-text">
+                            <span class="english">Contact us</span>
+                            <span class="francais">Nous contacter</span>
+                        </p>
                     </a>
                 </div>
                 <div class="col-sm-4 text-center col-footer">
-                    <a href="#about" class="btn btn-red btn-md btn-footer">Run with Shapeheart</a>
+                    <a href="#about" class="btn btn-red btn-md btn-footer">
+                        <span class="english">Run with Shapeheart</span>
+                        <span class="francais">Courez avec Shapeheart</span>
+                    </a>
                 </div>
                 <div class="col-sm-4 text-center col-footer">
                     <a href="https://www.facebook.com/Shapeheart-915761331864592/" target="_blank">
@@ -364,26 +410,73 @@
             }
         }
     });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
+
+    // JS pour faire un site bilingue
+    // pompé sur thesitewizard.com
+
+    // *** TO BE CUSTOMISED ***
+
+    var style_cookie_name = "language" ;
+    var style_cookie_duration = 30 ;
+    var style_domain = "www.shapeheart.com" ;
+
+    // *** END OF CUSTOMISABLE SECTION ***
+    // You do not need to customise anything below this line
+
+    function switch_style ( css_title )
+    {
+    // You may use this script on your site free of charge provided
+    // you do not remove this notice or the URL below. Script from
+    // http://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+        var i, link_tag ;
+        for (i = 0, link_tag = document.getElementsByTagName("link") ;
+             i < link_tag.length ; i++ ) {
+            if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+                    link_tag[i].title) {
+                link_tag[i].disabled = true ;
+                if (link_tag[i].title == css_title) {
+                    link_tag[i].disabled = false ;
+                }
+            }
+            set_cookie( style_cookie_name, css_title,
+                    style_cookie_duration, style_domain );
         }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
+    }
+    function set_style_from_cookie()
+    {
+        var css_title = get_cookie( style_cookie_name );
+        if (css_title.length) {
+            switch_style( css_title );
+        }
+    }
+    function set_cookie ( cookie_name, cookie_value,
+                          lifespan_in_days, valid_domain )
+    {
+        // http://www.thesitewizard.com/javascripts/cookies.shtml
+        var domain_string = valid_domain ?
+                ("; domain=" + valid_domain) : '' ;
+        document.cookie = cookie_name +
+                "=" + encodeURIComponent( cookie_value ) +
+                "; max-age=" + 60 * 60 *
+                24 * lifespan_in_days +
+                "; path=/" + domain_string ;
+    }
+    function get_cookie ( cookie_name )
+    {
+        // http://www.thesitewizard.com/javascripts/cookies.shtml
+        var cookie_string = document.cookie ;
+        if (cookie_string.length != 0) {
+            var cookie_value = cookie_string.match (
+                    '(^|;)[\s]*' +
+                    cookie_name +
+                    '=([^;]*)' );
+            return decodeURIComponent ( cookie_value[2] ) ;
+        }
+        return '' ;
+    }
+
+        // Fin du script pour le site bilingue
+
     </script>
 
 </body>
