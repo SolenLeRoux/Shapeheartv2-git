@@ -725,6 +725,12 @@ footer {
 /* Petits écrans : smartphones et tablettes */
 @media screen and (max-width: 767px) and (min-width: 481px) {
 
+    /* Navbar */
+
+    .text-menu {
+        display: block;
+    }
+
     /* Section partenaires */
 
     .partenaire-tableau{
