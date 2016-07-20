@@ -613,10 +613,31 @@ footer {
         right: 0;
         padding-top: 10px;
     }
+
+    /* Footer */
+
+    footer {
+        height: 180px;
+        padding: 10px 0;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        margin-left: 5px;
+    }
+
+    .col-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 /* Petits écrans : smartphones et tablettes */
-@media screen and (max-width: 799px) and (min-width: 481px) {
+@media screen and (max-width: 767px) and (min-width: 481px) {
 
     /* Section partenaires */
 
@@ -659,10 +680,31 @@ footer {
     .presse {
         height: 130px;
     }
+
+    /* Footer */
+
+    footer {
+        height: 180px;
+        padding: 10px 0;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        margin-left: 5px;
+    }
+
+    .col-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 /* Grandes tablettes et petits ordinateurs */
-@media screen and (max-width: 1199px) and (min-width: 800px) {
+@media screen and (max-width: 1199px) and (min-width: 767px) {
 
     /* Section partenaires */
 
