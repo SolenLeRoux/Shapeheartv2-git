@@ -52,6 +52,11 @@ body {
     font-weight: 700;
 }
 
+.align-right {
+    position: absolute;
+    right: 20px;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -276,13 +281,11 @@ hr.small {
     width: auto;
 }
 
-.language {
-    margin-top: 12px;
-}
-
 .menu-language {
     position: absolute;
     display: inline-block;
+    white-space: nowrap;
+    padding-left: 20px;
 }
 
 .nav-text {
@@ -293,14 +296,22 @@ hr.small {
     display: inline-block;
     position: static;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     -webkit-appearance: none;
     margin-top: 10px;
-    margin-right: 10%;
+    margin-right: 7%;
 }
 
 .language-text {
     margin-right: 5px;
+}
+
+.btn-hamburger {
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    font-size: 22px;
 }
 
 /***********************************************
@@ -771,6 +782,12 @@ footer {
 /* Grandes tablettes et petits ordinateurs */
 @media screen and (max-width: 1199px) and (min-width: 767px) {
 
+    /* Navbar */
+
+    .btn-hamburger {
+        display: none;
+    }
+
     /* Section partenaires */
 
     .partenaire-tableau{
@@ -809,4 +826,14 @@ footer {
     .presse {
         height: 130px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Navbar */
+
+    .btn-hamburger {
+        display: none;
+    }
+
 }
