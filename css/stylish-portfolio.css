@@ -265,6 +265,9 @@ hr.small {
     padding-bottom: 10px;
     line-height: 1;
     background: none;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
 }
 
 .sticky-nav {
@@ -640,6 +643,16 @@ footer {
 /* Très petits écrans : téléphones mobiles */
 @media all and (max-width: 480px) {
 
+    /* Navbar */
+
+    .text-menu {
+        display: block;
+    }
+
+    .align-right {
+        right: 2px;
+    }
+
     /* Section partenaires */
 
     .partenaire-colonne {
@@ -715,6 +728,12 @@ footer {
 
 /* Petits écrans : smartphones et tablettes */
 @media screen and (max-width: 767px) and (min-width: 481px) {
+
+    /* Navbar */
+
+    .text-menu {
+        display: block;
+    }
 
     /* Section partenaires */
 
