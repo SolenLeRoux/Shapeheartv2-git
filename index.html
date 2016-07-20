@@ -36,13 +36,6 @@
 
 <body data-spy="scroll" data-target=".nav-container">
 
-
-    <!-- Boutons pour changer de langue -->
-    <form>
-        <input class="btn-langue" type="submit" onclick="switch_style('francais');return false;" name="language" value="Fr" id="francais">
-        <input class="btn-langue" type="submit" onclick="switch_style('english');return false;" name="language" value="En" id="english">
-    </form>
-
     <!-- Navigation -->
     <!-- C'est ce qui correspond à l'icone menu hamburger en haut à droite -
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -79,8 +72,14 @@
             <div id="main-nav-row">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-xs-1">
                             <img class="nav-logo" src="img/logo-white.png">
+                        </div>
+                        <div class="col-xs-1">
+                            <form class="language">
+                                <input class="btn-langue" type="submit" onclick="switch_style('francais');return false;" name="language" value="Fr" id="francais">
+                                <input class="btn-langue" type="submit" onclick="switch_style('english');return false;" name="language" value="En" id="english">
+                            </form>
                         </div>
                     </div>
                 </div>
