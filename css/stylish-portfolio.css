@@ -639,6 +639,25 @@ footer {
 /* Très petits écrans : téléphones mobiles */
 @media all and (max-width: 480px) {
 
+    /* Navbar */
+
+    .text-menu {
+        display: block;
+    }
+
+    .container-menu {
+        background-color: #1b6d85;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 100px;
+
+    }
+
+    .align-right {
+        right: 2px;
+    }
+
     /* Section partenaires */
 
     .partenaire-colonne {
