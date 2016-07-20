@@ -265,6 +265,9 @@ hr.small {
     padding-bottom: 10px;
     line-height: 1;
     background: none;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
 }
 
 .sticky-nav {
