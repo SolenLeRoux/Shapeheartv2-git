@@ -645,15 +645,6 @@ footer {
         display: block;
     }
 
-    .container-menu {
-        background-color: #1b6d85;
-        padding-top: 30px;
-        padding-left: 10px;
-        padding-bottom: 10px;
-        padding-right: 100px;
-
-    }
-
     .align-right {
         right: 2px;
     }
