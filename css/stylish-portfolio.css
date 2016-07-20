@@ -268,7 +268,8 @@ hr.small {
 }
 
 .sticky-nav {
-    background: #FC0F26;
+    position: 'fixed';
+    display: 'block';
 }
 
 .sticky-nav.scrolled {
