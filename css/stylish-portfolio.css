@@ -147,17 +147,6 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-.btn-langue {
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    font-family: nexa_lightregular;
-    display: inline-block;
-    position: static;
-    color: white;
-    font-size: 22px;
-    -webkit-appearance: none;
-}
 
 /* Custom Horizontal Rule */
 
@@ -268,13 +257,14 @@ hr.small {
     top: 0px;
     z-index: 6;
     width: 100%;
-    padding-top: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     line-height: 1;
     background: none;
 }
 
 .sticky-nav {
-    background: none;
+    background: #FC0F26;
 }
 
 .sticky-nav.scrolled {
@@ -282,12 +272,36 @@ hr.small {
 }
 
 .nav-logo {
-    height: 50px;
+
+    height: 40px;
     width: auto;
 }
 
 .language {
+    margin-top: 12px;
+}
+
+.menu-language {
+    position: absolute;
+    display: inline-block;
+}
+
+.nav-text {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: nexa_lightregular;
+    display: inline-block;
+    position: static;
+    color: white;
+    font-size: 18px;
+    -webkit-appearance: none;
     margin-top: 10px;
+    margin-right: 10%;
+}
+
+.language-text {
+    margin-right: 5px;
 }
 
 /***********************************************
