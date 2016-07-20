@@ -431,14 +431,12 @@
 
     //#navbar appears after scrolling
 
-    var isnavbarcolored = false;
+    var isnavbarcolored = true;
     $(document).scroll(function() {
         if ($(this).scrollTop() > 50) {
             if (!isnavbarcolored) {
                 isnavbarcolored = true;
                 $('.sticky-nav').css({
-                    position: 'fixed',
-                    display: 'block',
                     background: '#FC0F26'
                 });
             }
