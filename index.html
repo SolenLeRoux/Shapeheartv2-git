@@ -153,13 +153,13 @@
             <div id="mybox_conteneur">
                 <div id="mybox_relative">
                     <div id="mybox_close">
-                        <a id="close"><img src="img/icon-back.png" alt="" width="45px"></a>
+                        <a class="close" > <p><img src="img/icon-back.png" alt="" width="45px"></p> </a>
                     </div>
 
                     <img id="logo" src="img/logo.png" alt="">
                     <p class="texte">EM<span class="texte-a">A</span>IL</p>
                     <h2 class="texte-promo">
-                        Get 20% off your first order with the code #ALBANBEAUGOSSE
+                        Get 20% off your first order <br />no spam we promiss ;-)
                     </h2>
 
                     <div id="form">
@@ -524,7 +524,7 @@
    
        setTimeout(loadPopupBox, 3000);
     
-        $('#close').click( function() {            
+        $('.close').click( function() {            
             unloadPopupBox();
         });
 
