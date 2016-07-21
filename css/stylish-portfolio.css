@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -30,6 +30,9 @@ html,
 body {
     width: 100%;
     height: 100%;
+    /* Pour fixer le problème de la barre blanche à droite*/
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -47,6 +50,11 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+}
+
+.align-right {
+    position: absolute;
+    right: 20px;
 }
 
 /* Custom Button Styles */
@@ -69,6 +77,35 @@ body {
     background-color: #FC0F26;
 }
 
+.btn-red:hover {
+    text-decoration: none;
+    background-color: #EC5D57;
+    color: #fff;
+}
+
+.btn-transparent {
+    /*left: 780px;
+    top: 280px;*/
+    height: 55px;
+    position: absolute;
+    line-height: 55px;
+    width: 130px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    outline: 0;
+    white-space: nowrap;
+}
+
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent:focus {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
 .btn-footer {
     font-size: 14px;
     line-height: 35px;
@@ -82,7 +119,7 @@ body {
 }
 
 .btn-suscribe {
-    top: 500px;
+    /*top: 500px;*/
     width: 226px;
     /*height: 57px;
     line-height: 57px;*/
@@ -113,6 +150,7 @@ body {
     color: #333;
     background-color: rgba(255,255,255,0.8);
 }
+
 
 /* Custom Horizontal Rule */
 
@@ -206,6 +244,74 @@ hr.small {
 }
 
 /***********************************************
+  Navbar
+************************************************/
+
+.nav-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay-nav {
+    position: fixed;
+    top: 0px;
+    z-index: 6;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1;
+    background: none;
+    transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+}
+
+.nav-logo {
+
+    height: 40px;
+    width: auto;
+}
+
+.menu-language {
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.nav-text {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: nexa_lightregular;
+    display: inline-block;
+    position: static;
+    color: white;
+    font-size: 16px;
+    -webkit-appearance: none;
+    margin-top: 10px;
+    margin-right: 7%;
+    outline: none;
+}
+
+.language-text {
+    margin-right: 5px;
+}
+
+.btn-hamburger {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    font-size: 22px;
+}
+
+/***********************************************
  Header : Page 1 - vidéo avec texte ShapeHeart
  ***********************************************/
 
@@ -215,21 +321,30 @@ hr.small {
     width: 100%;
     height: 100%;
     /* Image de fond du header */
-    background: url(../img/background_video.png) no-repeat center center scroll;
+    /*background: url(../img/background_video.png) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-color: rgba(69,89,106,.5);
+    overflow: hidden;
 }
 
-/* Classes pour le SHAPE HEART */
+#background_video {
+    width: 100%;
+}
 
-.text-shapeheart {
+.intro-message{
     position: relative;
     display: block;
     margin-bottom: 10px;
     height: 60px;
     line-height: 60px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.text-shapeheart {
     /*font-size: 70px;*/
     color: white;
     font-family: aqua_grotesqueregular;
@@ -239,9 +354,145 @@ hr.small {
     color: #FC0F26;
 }
 
-/* About */
+.intro-divider {
+    height: 3px;
+    width: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#background_video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/background_video.png) no-repeat center center scroll;
+    background-size: cover;
+}
+
+/**********************************************************************
+    La fenêtre pop-in qui apparaît quand on clique sur "get yours"
+***********************************************************************/
+
+#pop-in {
+    margin-bottom: 0;
+}
+
+#mybox{
+    display: none;
+}
+
+
+#mybox #mybox_aplat {
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    padding: 150px;
+}
+
+
+#mybox_conteneur {
+    margin: 0 auto;
+    width: 500px;
+    background: #364757;
+    z-index: 9999;
+}
+
+#mybox_relative {
+    padding: 0px;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+
+#mybox_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+#logo{
+    display:block;
+    width: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 50px;
+}
+
+
+#form {
+    margin-left: 80px;
+}
+
+
+#votre_email input[type=email]{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    float: left;
+}
+
+
+
+
+
+#bouton_envoyer input[type=submit]{
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #F8001E;
+    border:none;
+    float: left;
+}
+
+
+.texte{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #FFF;
+    font-family: 'aqua_grotesqueregular';
+}
+
+.texte-a {
+    color: #F8001E;
+}
+
+
+.texte-promo{
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px
+}
+
+
+
+/********************************************************
+   About : Page 2, trois photos avec texte en fond
+********************************************************/
 
 .about {
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: table;
     position: relative;
     width: 100%;
@@ -253,14 +504,71 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* Services */
+/* Product */
 
-.services {
+.content-section-a {
     padding: 50px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    /* Image de fond de la section */
+    background: url(../img/article_image.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.service-item {
-    margin-bottom: 30px;
+.texte-section-a {
+    padding-top: 100px;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    /* Image de fond de la section */
+    background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.texte-section-b {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.section-heading {
+    text-align: center;
+    color: #ff1010;
+    font-size: 40px;
+    font-family: 'nexa_lightregular';
+    font-weight: bold;
+}
+
+.lead-b {
+    color: #fff;
+    font-family: 'nexa_lightregular';
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
+}
+
+.product-information {
+    float: right;
+    text-align: center;
 }
 
 /* Callout */
@@ -321,20 +629,95 @@ hr.small {
     pointer-events: none;
 }
 
-/* Footer */
+/****************************
+    Partenaires
+****************************/
+
+.partenaires {
+    padding: 150px 0;
+    display: block;
+    height: 649px;
+    width: 100%;
+    background: url(../img/background-social-proof2.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;;
+}
+
+.logo-partenaire {
+    left: 0;
+    top: 12px;
+    width: 110px;
+    height: auto;
+    margin: 22px;
+}
+
+.text-partenaire {
+    position: absolute;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #fff;
+    font-family: nexa_lightregular;
+    padding-right: 10%;
+}
+
+.partenaire-tableau {
+    padding-left: 10%;
+}
+
+/**************************
+  Presse
+***************************/
+
+.presse {
+    height: 200px;
+    paddin: 50px 0;
+    background-color: white;
+    display: block;
+    width: 100%;
+}
+
+.presse-logo {
+    margin-top: 12%;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    margin-left: 8%
+}
+
+.presse-logo:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition-property: -webkit-filter;
+    transition-property: filter;
+    transition-property: filter,-webkit-filter;
+    transition-duration: 1s;
+}
+
+/************************
+       Footer
+ ************************/
 
 footer {
     padding: 35px 0;
     display: block;
     width: 100%;
     background-color: #657F95;
+    height: 100px;
 }
 
 .footer-logo {
     height: 30px;
     display: inline-block;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 20px;
 }
 
 .footer-text {
@@ -343,7 +726,8 @@ footer {
     margin-top: 0;
     display: inline-block;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: nexa_lightregular;
 }
 
 .shapeheart-font {
@@ -355,4 +739,228 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+/*****************************************
+  MEDIA QUERIES
+******************************************/
+
+/* Liste de règle régissant le comportement du site suivant la taille de l'écran */
+
+/* Très petits écrans : téléphones mobiles */
+@media all and (max-width: 480px) {
+
+    /* Navbar */
+
+    .text-menu {
+        display: block;
+    }
+
+    .align-right {
+        right: 2px;
+    }
+
+    /* Section partenaires */
+
+    .partenaire-colonne {
+        width: 33%;
+        margin: 22px 1.5%;
+    }
+
+    .partenaire-tableau{
+        padding: 3%;
+    }
+
+    .partenaires {
+        padding: 0;
+    }
+
+    .logo-partenaire {
+        width: 80%;
+        margin: 22px 5%;
+    }
+
+    .text-partenaire {
+        margin: 0;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .btn-transparent {
+        width: 80%;
+        margin-top: 0;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    /* Section Presse */
+
+    .presse {
+        height: 95px;
+    }
+
+    .presse-logo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        padding-top: 10px;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 180px;
+        padding: 10px 0;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        margin-left: 5px;
+    }
+
+    .col-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Petits écrans : smartphones et tablettes */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+
+    /* Navbar */
+
+    .text-menu {
+        display: block;
+    }
+
+    /* Section partenaires */
+
+    .partenaire-tableau{
+        padding: 3%;
+        width: 462px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .partenaires {
+        padding: 0;
+    }
+
+    .text-partenaire {
+        margin: 0 5%;
+        padding-right: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .btn-transparent {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    /* Section Presse */
+
+    .presse-logo {
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 0;
+        padding-right: 45px;
+    }
+
+    .presse {
+        height: 130px;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 180px;
+        padding: 10px 0;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        margin-left: 5px;
+    }
+
+    .col-footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Grandes tablettes et petits ordinateurs */
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+
+    /* Navbar */
+
+    .btn-hamburger {
+        display: none;
+    }
+
+    /* Section partenaires */
+
+    .partenaire-tableau{
+        padding: 3%;
+        width: 462px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .partenaires {
+        padding: 0;
+    }
+
+    .text-partenaire {
+        margin: 0 5%;
+        padding-right: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .btn-transparent {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    /* Section Presse */
+
+    .presse-logo {
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 12%
+    }
+
+    .presse {
+        height: 130px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Navbar */
+
+    .btn-hamburger {
+        display: none;
+    }
+
 }
