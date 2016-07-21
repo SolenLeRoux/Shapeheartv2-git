@@ -265,22 +265,18 @@ hr.small {
     padding-bottom: 10px;
     line-height: 1;
     background: none;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
+    transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
 }
 
 .sticky-nav {
     position: 'fixed';
     display: 'block';
-}
-
-.sticky-nav.scrolled {
-    background: #FC0F26;
+    background: rgba(252,15,38,0);
 }
 
 .nav-logo {
-
     height: 40px;
     width: auto;
 }
