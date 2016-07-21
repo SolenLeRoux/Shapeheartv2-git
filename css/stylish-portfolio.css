@@ -33,7 +33,6 @@ body {
     /* Pour fixer le problème de la barre blanche à droite*/
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 body {
@@ -51,6 +50,11 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+}
+
+.align-right {
+    position: absolute;
+    right: 20px;
 }
 
 /* Custom Button Styles */
@@ -147,17 +151,6 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-.btn-langue {
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    font-family: nexa_lightregular;
-    display: inline-block;
-    position: static;
-    color: white;
-    font-size: 22px;
-    -webkit-appearance: none;
-}
 
 /* Custom Horizontal Rule */
 
@@ -268,13 +261,18 @@ hr.small {
     top: 0px;
     z-index: 6;
     width: 100%;
-    padding-top: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     line-height: 1;
     background: none;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
 }
 
 .sticky-nav {
-    background: none;
+    position: 'fixed';
+    display: 'block';
 }
 
 .sticky-nav.scrolled {
@@ -282,12 +280,42 @@ hr.small {
 }
 
 .nav-logo {
-    height: 50px;
+
+    height: 40px;
     width: auto;
 }
 
-.language {
+.menu-language {
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.nav-text {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: nexa_lightregular;
+    display: inline-block;
+    position: static;
+    color: white;
+    font-size: 16px;
+    -webkit-appearance: none;
     margin-top: 10px;
+    margin-right: 7%;
+}
+
+.language-text {
+    margin-right: 5px;
+}
+
+.btn-hamburger {
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    font-size: 22px;
 }
 
 /***********************************************
@@ -350,6 +378,121 @@ hr.small {
     background: url(../img/background_video.png) no-repeat center center scroll;
     background-size: cover;
 }
+
+/**********************************************************************
+    La fenêtre pop-in qui apparaît quand on clique sur "get yours"
+***********************************************************************/
+
+#mybox{
+    display: none;
+}
+
+
+#mybox #mybox_aplat {
+    position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    opacity: 1;
+
+}
+
+
+#mybox_loader {
+    padding: 50px 0;
+    display: table;
+    width: 50%;
+    height: 70%;
+}
+
+#mybox_conteneur {
+    display: block;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 305px;
+    background: #364757;
+    z-index: 9999;
+}
+
+#mybox_relative {
+    padding: 5px;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+
+#mybox_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+#logo{
+    display:block;
+    width: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 50px;
+}
+
+
+#form {
+    margin-left: 80px;
+}
+
+
+#votre_email input[type=email]{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    float: left;
+}
+
+
+
+
+
+#bouton_envoyer input[type=submit]{
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #F8001E;
+    border:none;
+    float: left;
+}
+
+
+.texte{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #FFF;
+    font-family: 'aqua_grotesqueregular';
+}
+
+.texte-a {
+    color: #F8001E;
+}
+
+
+.texte-promo{
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px
+}
+
+
 
 /********************************************************
    About : Page 2, trois photos avec texte en fond
@@ -615,6 +758,16 @@ footer {
 /* Très petits écrans : téléphones mobiles */
 @media all and (max-width: 480px) {
 
+    /* Navbar */
+
+    .text-menu {
+        display: block;
+    }
+
+    .align-right {
+        right: 2px;
+    }
+
     /* Section partenaires */
 
     .partenaire-colonne {
@@ -691,6 +844,12 @@ footer {
 /* Petits écrans : smartphones et tablettes */
 @media screen and (max-width: 767px) and (min-width: 481px) {
 
+    /* Navbar */
+
+    .text-menu {
+        display: block;
+    }
+
     /* Section partenaires */
 
     .partenaire-tableau{
@@ -758,6 +917,12 @@ footer {
 /* Grandes tablettes et petits ordinateurs */
 @media screen and (max-width: 1199px) and (min-width: 767px) {
 
+    /* Navbar */
+
+    .btn-hamburger {
+        display: none;
+    }
+
     /* Section partenaires */
 
     .partenaire-tableau{
@@ -796,4 +961,14 @@ footer {
     .presse {
         height: 130px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Navbar */
+
+    .btn-hamburger {
+        display: none;
+    }
+
 }
