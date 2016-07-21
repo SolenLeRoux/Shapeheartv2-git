@@ -490,13 +490,19 @@ hr.small {
    About : Page 2, trois photos avec texte en fond
 ********************************************************/
 
-.about {
-    padding-top: 0px;
-    padding-bottom: 0px;
+.content-section-2 {
+    padding: 50px 0;
     display: table;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 70%;
+}
+
+.texte-section-a {
+    padding-top: 100px;
+}
+
+#image-A {
     background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -504,15 +510,7 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* Product */
-
-.content-section-a {
-    padding: 50px 0;
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 70%;
-    /* Image de fond de la section */
+#image-B {
     background: url(../img/article_image.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -520,17 +518,7 @@ hr.small {
     -o-background-size: cover;
 }
 
-.texte-section-a {
-    padding-top: 100px;
-}
-
-.content-section-b {
-    padding: 50px 0;
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 70%;
-    /* Image de fond de la section */
+#image-C {
     background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
