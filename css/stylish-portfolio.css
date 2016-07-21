@@ -268,16 +268,6 @@ hr.small {
     transition: all 0.1s ease-out;
     -webkit-transition: all 0.1s ease-out;
     -moz-transition: all 0.1s ease-out;
-    overflow: hidden;
-}
-
-.sticky-nav {
-    position: 'fixed';
-    display: 'block';
-}
-
-.sticky-nav.scrolled {
-    background: #FC0F26;
 }
 
 .nav-logo {
@@ -501,8 +491,8 @@ hr.small {
 ********************************************************/
 
 .about {
-    padding-top: 0px 0;
-    padding-bottom: 0px 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: table;
     position: relative;
     width: 100%;
