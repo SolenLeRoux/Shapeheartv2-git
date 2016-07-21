@@ -76,13 +76,13 @@
                             <img class="nav-logo" src="img/logo-white.png">
                         </div>
                         <div class="col-xs-3">
-                            <form class="menu-language">
+                            <form>
                                 <input class="nav-text language-text" type="submit" onclick="switch_style('francais');return false;" name="language" value="Fr" id="francais">
                                 <span class="nav-text language-text"> | </span>
                                 <input class="nav-text language-text" type="submit" onclick="switch_style('english');return false;" name="language" value="En" id="english">
                             </form>
                         </div>
-                        <div class="col-lg-4 col-md-2 col-xs-1">
+                        <div class="col-xs-4">
                         </div>
                         <div class="col-lg-4 col-md-6 col-xs-7 align-right">
                             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
@@ -132,15 +132,55 @@
                             <h1>HE<span class="text-shapeheart-a">A</span>RT</h1>
                         </div>
                     <hr class="intro-divider">
-                    <a href="#about" class="btn btn-white btn-lg btn-suscribe">
+                    <a class="btn btn-white btn-lg btn-suscribe">
+                    <p id="pop-in">
                         <span class="english">Get yours</span>
                         <span class="francais">Demandez le vôtre</span>
+                    </p>
                     </a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+<!-- La fenêtre pop-in qui apparait quand on clique sur get yours-->
+
+<div id="mybox">
+
+    <div id="mybox_aplat">
+        <div id="mybox_loader">
+            <div id="mybox_conteneur">
+                <div id="mybox_relative">
+                    <div id="mybox_close">
+                        <a id="close"><img src="img/icon-back.png" alt="" width="45px"></a>
+                    </div>
+
+                    <img id="logo" src="img/logo.png" alt="">
+                    <p class="texte">EM<span class="texte-a">A</span>IL</p>
+                    <h2 class="texte-promo">
+                        Get 20% off your first order with the code #ALBANBEAUGOSSE
+                    </h2>
+
+                    <div id="form">
+                    <form method="post" action="traitement.php">
+                    <p id="votre_email">
+                        <input type="email" name="email" id="email" placeholder="Your email" />
+                    </p>
+                    <p id="bouton_envoyer">
+                        <input type="submit" name="envoyer" value="SUBSCRIBE" />
+                    </p>
+                    </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
 
     <!-- Product -->
     <section id="content-section-b" class="content-section-b">
@@ -154,7 +194,7 @@
                         </h2>
                         <p class="lead-b">
                             <span class="english">I write a text which is not very interesting because I'm not really inspired. Come on our website ! Cardiac frequency is awesome !</span>
-                            <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial !</span>
+                            <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardiaque c'est génial !</span>
                         </p>
                     </div>
                 </div>
@@ -476,6 +516,37 @@
             }
         }
     });
+
+
+    // la fenêtre pop-in apparaît quand on scroll ou qu'on appuie sur "get yours" et disparaît quand on la ferme
+
+    $(document).ready( function() {
+   
+       setTimeout(loadPopupBox, 3000);
+    
+        $('#close').click( function() {            
+            unloadPopupBox();
+        });
+
+        $('#pop-in').click(function() {
+            loadPopupBox();
+        });
+
+        function unloadPopupBox() {    // TO Unload the Popupbox
+            $('#mybox').fadeOut("slow");
+            $("#pop-in").css({ // this is just for style        
+                "opacity": "1"  
+            }); 
+        }    
+        
+        function loadPopupBox() {    // To Load the Popupbox
+            $('#mybox').fadeIn("slow");
+            $("#pop-in").css({ // this is just for style
+                "opacity": "0.3"  
+            });         
+        }        
+    });
+
 
     // JS pour faire un site bilingue
     // pompé sur thesitewizard.com
