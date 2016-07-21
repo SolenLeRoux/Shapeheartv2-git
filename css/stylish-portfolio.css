@@ -268,6 +268,7 @@ hr.small {
     transition: all 0.1s ease-out;
     -webkit-transition: all 0.1s ease-out;
     -moz-transition: all 0.1s ease-out;
+    overflow: hidden;
 }
 
 .sticky-nav {
@@ -332,6 +333,11 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
     background-color: rgba(69,89,106,.5);
+    overflow: hidden;
+}
+
+#background_video {
+    width: 100%;
 }
 
 .intro-message{
