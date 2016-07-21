@@ -473,10 +473,12 @@
 
     //#navbar appears slowly after scrolling
 
+    var header = $('.header'),
+            headerHeight = header.height();
+
     var fadeStart=10 // 10px scroll or less will equiv to 0 opacity
-            ,fadeUntil=200 // 200px scroll or more will equiv to 1 opacity
-            ,fading = $('#fading')
-            ;
+            ,fadeUntil=headerHeight // 200px scroll or more will equiv to 1 opacity
+            ,fading = $('#fading');
 
     $(window).bind('scroll', function(){
         var offset = $(document).scrollTop()
