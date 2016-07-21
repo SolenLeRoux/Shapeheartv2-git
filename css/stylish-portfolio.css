@@ -383,6 +383,10 @@ hr.small {
     La fenêtre pop-in qui apparaît quand on clique sur "get yours"
 ***********************************************************************/
 
+#pop-in {
+    margin-bottom: 0;
+}
+
 #mybox{
     display: none;
 }
