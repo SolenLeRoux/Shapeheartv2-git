@@ -4,6 +4,14 @@
     display: none;
 }
 
+#btn-en {
+    text-decoration: none;
+}
+
 .francais {
 
+}
+
+#btn-fr {
+    text-decoration: underline;
 }

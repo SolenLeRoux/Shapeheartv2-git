@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -14,6 +14,14 @@
     font-family: 'aqua_grotesqueregular';
     src: url('../fonts/aqua-webfont.eot');
     src: url('../fonts/aqua-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/aqua-webfont.woff2') format('woff2'), url('../fonts/aqua-webfont.woff') format('woff'), url('../fonts/aqua-webfont.ttf') format('truetype'), url('../fonts/aqua-webfont.svg#aqua_grotesqueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_free_bold-webfont.eot');
+    src: url('../fonts/nexa_free_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexa_free_bold-webfont.woff2') format('woff2'), url('../fonts/nexa_free_bold-webfont.woff') format('woff'), url('../fonts/nexa_free_bold-webfont.ttf') format('truetype'), url('../fonts/nexa_free_bold-webfont.svg#nexa_boldregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -59,6 +67,17 @@ body {
 .align-right {
     position: absolute;
     right: 20px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
 }
 
 /****************************
@@ -257,7 +276,7 @@ body {
 
 .overlay-nav {
     position: fixed;
-    top: 0px;
+    top: -60px;
     z-index: 6;
     width: 100%;
     padding-top: 10px;
@@ -270,7 +289,6 @@ body {
 }
 
 .nav-logo {
-
     height: 40px;
     width: auto;
 }
@@ -280,13 +298,16 @@ body {
     display: inline-block;
     white-space: nowrap;
     padding-left: 20px;
+    line-height: 50px;
+    top: -5px;
 }
 
 .nav-text {
     text-decoration: none;
     background-color: transparent;
     border: none;
-    font-family: nexa_lightregular;
+    text-transform: uppercase;
+    font-family: nexa_boldregular;
     display: inline-block;
     position: static;
     color: white;
@@ -295,10 +316,12 @@ body {
     margin-top: 10px;
     margin-left: 7%;
     outline: none;
+    text-align: center;
 }
 
 .language-text {
     margin-right: 5px;
+    margin-top: -15px;
 }
 
 .btn-hamburger {
@@ -308,6 +331,18 @@ body {
     color: white;
     height: 40px;
     font-size: 22px;
+}
+
+.slide-underline {
+    border-bottom: 3px solid transparent;
+    width: 0;
+    transition: .5s ease;
+    height: 30px;
+}
+
+.slide-underline:hover {
+    border-bottom: 3px solid #fff;
+    width: 45px;
 }
 
 /***********************************************
@@ -425,6 +460,11 @@ body {
     top: 10px;
 }
 
+
+#icon-back{
+    width: 45px;
+}
+
 #logo{
     display:block;
     width: 100px;
@@ -434,26 +474,34 @@ body {
 }
 
 #form {
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 #votre_email input[type=email]{
     height: 50px;
-    width: 200px;
+    width: 300px;
     font-size: 20px;
     float: left;
+    font-family: 'nexa_lightregular';
+    padding-left: 10px;
 }
 
-#bouton_envoyer input[type=submit]{
+#bouton_envoyer{
     text-align: center;
     font-size: 20px;
     display: block;
-    width: 120px;
+    width: 50px;
     height: 50px;
-    background: #F8001E;
+    background-color: #F8001E;
     border:none;
     float: left;
 }
+
+#fleche-submit{
+    width: 40px;
+    margin-top: 5px;
+}
+
 
 .texte{
     font-size: 50px;
@@ -475,7 +523,155 @@ body {
     color: #FFF;
     text-align: center;
     font-size: 20px;
+    font-family: 'nexa_lightregular';
+
 }
+/* écrans un peu plus petits */
+
+@media(max-width:768px) and (min-width: 480px){
+    #mybox_conteneur{
+        width: 375px;
+        height: 375px;
+        margin: auto;
+    }
+
+    #mybox #mybox_aplat {
+        padding: 113px;
+    }
+
+    #mybox_relative {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+
+    #mybox_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    }
+
+
+    #icon-back{
+        width: 41px;
+    }
+
+    .texte{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 75px;
+        padding-top: 25px;
+    }
+
+
+    #form {
+        margin-left: 60px;
+    }
+
+    #votre_email input[type=email]{
+        height: 38px;
+        width: 200px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+
+    #bouton_envoyer{
+        text-align: center;
+        font-size: 15px;
+        width: 38px;
+        height: 38px;
+    }
+
+    #fleche-submit{
+        width: 30px;
+        margin-top: 3px;
+    }
+}
+
+/* Smartphones */
+
+@media(max-width:479px){
+    #mybox_conteneur{
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    #mybox #mybox_aplat {
+        padding-top: 75px;
+        padding-left: 60px;
+        padding-right: auto;
+    }
+
+    #mybox_relative {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+
+    #mybox_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    }
+
+
+    .texte{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 50px;
+        padding-top: 25px;
+    }
+
+
+    #form {
+        margin-left: 45px;
+    }
+
+    #votre_email input[type=email]{
+        height: 25px;
+        width: 150px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+
+    #bouton_envoyer {
+        text-align: center;
+        font-size: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    #fleche-submit{
+        width: 20px;
+        margin-top: 2px;
+    }
+}
+
+
+
 
 
 /********************************************************
@@ -684,6 +880,41 @@ footer {
   right: 5px;
 }
 
+#votre_email_footer input[type=email]{
+    height: 30px;
+    width: 180px;
+    font-size: 14px;
+    float: left;
+    font-family: 'nexa_lightregular';
+    padding-left: 10px;
+    padding-top: 0px;
+}
+
+#bouton_envoyer_footer{
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #F8001E;
+    border:none;
+    float: right;
+}
+
+#fleche-submit_footer{
+    width: 25px;
+    padding: 0px;
+    margin-bottom: 2px;
+
+}
+
+.form-footer{
+    display: inline-block;
+    width: 210px;
+    height: 30px;
+}
+
+
 /*****************************************
   MEDIA QUERIES
 ******************************************/
@@ -700,7 +931,7 @@ footer {
     }
 
     .align-right {
-        right: 2px;
+        right: 10px;
     }
 
     /* Section Product */
