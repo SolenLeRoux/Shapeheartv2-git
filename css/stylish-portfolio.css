@@ -19,6 +19,14 @@
 }
 
 @font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_free_bold-webfont.eot');
+    src: url('../fonts/nexa_free_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexa_free_bold-webfont.woff2') format('woff2'), url('../fonts/nexa_free_bold-webfont.woff') format('woff'), url('../fonts/nexa_free_bold-webfont.ttf') format('truetype'), url('../fonts/nexa_free_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'nexa_lightregular';
     src: url('../fonts/nexalight-webfont.eot');
     src: url('../fonts/nexalight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexalight-webfont.woff2') format('woff2'), url('../fonts/nexalight-webfont.woff') format('woff'), url('../fonts/nexalight-webfont.ttf') format('truetype'), url('../fonts/nexalight-webfont.svg#nexa_lightregular') format('svg');
@@ -59,6 +67,13 @@ body {
 .align-right {
     position: absolute;
     right: 20px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #fff;
+    text-decoration: none;
 }
 
 /****************************
@@ -280,13 +295,16 @@ body {
     display: inline-block;
     white-space: nowrap;
     padding-left: 20px;
+    line-height: 50px;
+    top: -5px;
 }
 
 .nav-text {
     text-decoration: none;
     background-color: transparent;
     border: none;
-    font-family: nexa_lightregular;
+    text-transform: uppercase;
+    font-family: nexa_boldregular;
     display: inline-block;
     position: static;
     color: white;
@@ -295,10 +313,12 @@ body {
     margin-top: 10px;
     margin-left: 7%;
     outline: none;
+    text-align: center;
 }
 
 .language-text {
     margin-right: 5px;
+    margin-top: -15px;
 }
 
 .btn-hamburger {
@@ -308,6 +328,18 @@ body {
     color: white;
     height: 40px;
     font-size: 22px;
+}
+
+.slide-underline {
+    border-bottom: 3px solid transparent;
+    width: 0;
+    transition: .5s ease;
+    height: 30px;
+}
+
+.slide-underline:hover {
+    border-bottom: 3px solid #fff;
+    width: 45px;
 }
 
 /***********************************************
