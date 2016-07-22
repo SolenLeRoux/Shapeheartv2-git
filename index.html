@@ -113,7 +113,7 @@
             <div id="mybox_conteneur">
                 <div id="mybox_relative">
                     <div id="mybox_close">
-                        <a class="close" > <p><img src="img/icon-back.png" alt="" width="45px"></p> </a>
+                        <a class="close" > <p><img src="img/icon-back.png" alt="" width="25px"></p> </a>
                     </div>
                     <img id="logo" src="img/logo.png" alt="">
                     <p class="texte">EM<span class="texte-a">A</span>IL</p>
@@ -127,11 +127,12 @@
                                 <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
                                 <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
                             </p>
-                            <p id="bouton_envoyer">
-                                <span class="english"><input type="submit" name="envoyer" value="SUBSCRIBE" /></span>
-                                <span class="francais"><input type="submit" name="envoyer" value="ENVOYER" /></span>
-                            </p>
                         </form>
+                        <div id="bouton_envoyer">
+                            <a href="#">
+                                <img id="fleche-submit" src="img/submit-btn.png">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -289,12 +290,17 @@
                     </a>
                 </div>
                 <div class="col-sm-4 text-center col-footer">
-                    <a href="#about" class="btn btn-red btn-md btn-footer">
-                        <p id="runwith-btn">
-                        <span class="english">Run with Shapeheart</span>
-                        <span class="francais">Courez avec Shapeheart</span>
-                        </p>
-                    </a>
+                    <form method="post" action="traitement.php">
+                            <p id="votre_email_footer">
+                                <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
+                                <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
+                            </p>
+                    </form>
+                        <div id="bouton_envoyer_footer">
+                            <a href="#">
+                                <img id="fleche-submit_footer" src="img/submit-btn.png">
+                            </a>
+                        </div>
                 </div>
                 <div class="col-sm-4 text-center col-footer">
                     <a href="https://www.facebook.com/Shapeheart-915761331864592/" target="_blank">
