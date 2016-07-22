@@ -6,7 +6,9 @@
 
 /* Fichier modifiable pour personnaliser le CSS */
 
-/* Importation des polices d'écriture */
+/***************************************
+   Importation des polices d'écriture
+***************************************/
 
 @font-face {
     font-family: 'aqua_grotesqueregular';
@@ -24,7 +26,9 @@
     font-style: normal;
 }
 
-/* Global Styles */
+/*********************
+ Global Style
+*********************/
 
 html,
 body {
@@ -57,12 +61,21 @@ body {
     right: 20px;
 }
 
-/* Custom Button Styles */
+/****************************
+     Custom Button Styles
+****************************/
 
 .btn-dark {
     border-radius: 0;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .btn-white {
@@ -83,13 +96,26 @@ body {
     color: #fff;
 }
 
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
 .btn-transparent {
     /*left: 780px;
     top: 280px;*/
     height: 55px;
     position: absolute;
     line-height: 55px;
-    width: 130px;
+    padding: 0 15px;
     border: 2px solid #fff;
     color: #fff;
     font-size: 20px;
@@ -129,33 +155,6 @@ body {
     font-family: nexa_lightregular;
     outline: 0;
     cursor: pointer;
-}
-
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
-}
-
-
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
 }
 
 /* Side Menu */
@@ -294,7 +293,7 @@ hr.small {
     font-size: 16px;
     -webkit-appearance: none;
     margin-top: 10px;
-    margin-right: 7%;
+    margin-left: 7%;
     outline: none;
 }
 
@@ -320,8 +319,6 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    /* Image de fond du header */
-    /*background: url(../img/background_video.png) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -340,18 +337,26 @@ hr.small {
     margin-bottom: 10px;
     height: 60px;
     line-height: 60px;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 13%;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .text-shapeheart {
-    /*font-size: 70px;*/
     color: white;
     font-family: aqua_grotesqueregular;
 }
 
 .text-shapeheart-a {
     color: #FC0F26;
+}
+
+.text-value-proposition {
+    color: white;
+    font-family: nexa_lightregular;
+    font-size: 45px;
+    margin-bottom: 80px;
 }
 
 .intro-divider {
@@ -389,7 +394,6 @@ hr.small {
     display: none;
 }
 
-
 #mybox #mybox_aplat {
     position: fixed;
     background: rgba(0,0,0,0.7);
@@ -400,7 +404,6 @@ hr.small {
     z-index: 9998;
     padding: 150px;
 }
-
 
 #mybox_conteneur {
     margin: 0 auto;
@@ -416,13 +419,11 @@ hr.small {
     position: relative;
 }
 
-
 #mybox_close {
     position: absolute;
     right: 10px;
     top: 10px;
 }
-
 
 #logo{
     display:block;
@@ -432,11 +433,9 @@ hr.small {
     padding-top: 50px;
 }
 
-
 #form {
     margin-left: 80px;
 }
-
 
 #votre_email input[type=email]{
     height: 50px;
@@ -444,10 +443,6 @@ hr.small {
     font-size: 20px;
     float: left;
 }
-
-
-
-
 
 #bouton_envoyer input[type=submit]{
     text-align: center;
@@ -459,7 +454,6 @@ hr.small {
     border:none;
     float: left;
 }
-
 
 .texte{
     font-size: 50px;
@@ -474,45 +468,47 @@ hr.small {
     color: #F8001E;
 }
 
-
 .texte-promo{
     padding: 0;
     margin-top: 0px;
     margin-bottom: 40px;
     color: #FFF;
     text-align: center;
-    font-size: 20px
+    font-size: 20px;
 }
-
 
 
 /********************************************************
    About : Page 2, trois photos avec texte en fond
 ********************************************************/
 
-.about {
-    padding-top: 0px;
-    padding-bottom: 0px;
+.content-section-2 {
+    padding: 50px 0;
     display: table;
     position: relative;
     width: 100%;
-    height: 100%;
-    background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
+    height: 70%;
+}
+
+.text-section-2 {
+    padding-top: 100px;
+    overflow: hidden;
+    font-family: 'aqua_grotesqueregular';
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    max-width: 90%;
+}
+
+#image-A {
+    background: url(../img/marin-coureuse.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-/* Product */
-
-.content-section-a {
-    padding: 50px 0;
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 70%;
-    /* Image de fond de la section */
+#image-B {
     background: url(../img/article_image.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -520,17 +516,7 @@ hr.small {
     -o-background-size: cover;
 }
 
-.texte-section-a {
-    padding-top: 100px;
-}
-
-.content-section-b {
-    padding: 50px 0;
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 70%;
-    /* Image de fond de la section */
+#image-C {
     background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -538,9 +524,18 @@ hr.small {
     -o-background-size: cover;
 }
 
-.texte-section-b {
+#text-image-A {
+    padding-top: 100px;
+}
+
+#text-image-B {
     padding-top: 50px;
-    padding-left: 100px;
+    padding-left: 50px;
+}
+
+#text-image-C {
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .section-heading {
@@ -549,6 +544,7 @@ hr.small {
     font-size: 40px;
     font-family: 'nexa_lightregular';
     font-weight: bold;
+    overflow: hidden;
 }
 
 .lead-b {
@@ -571,63 +567,6 @@ hr.small {
     text-align: center;
 }
 
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
-.map iframe {
-    pointer-events: none;
-}
 
 /****************************
     Partenaires
@@ -734,6 +673,10 @@ footer {
     font-family: aqua_grotesqueregular;
 }
 
+#runwith-btn {
+    margin: 0;
+}
+
 #to-top {
   display: none;
   position: fixed;
@@ -758,6 +701,29 @@ footer {
 
     .align-right {
         right: 2px;
+    }
+
+    /* Section Product */
+
+    #text-image-A,
+    #text-image-B,
+    #text-image-C {
+        padding-left: 0;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+
+    /* Header */
+
+    .intro-message {
+        padding-top: 100px;
+    }
+
+    .text-value-proposition {
+        margin-bottom: 30px;
+        font-size: 30px;
     }
 
     /* Section partenaires */
@@ -842,12 +808,23 @@ footer {
         display: block;
     }
 
+    /* Header */
+
+    .intro-message {
+        padding-top: 100px;
+    }
+
+    .text-value-proposition {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+
     /* Section partenaires */
 
     .partenaire-tableau{
         padding: 3%;
         width: 462px;
-        margin-left: auto;
+        margin-left: -10px;
         margin-right: auto;
         margin-top: auto;
         margin-bottom: auto;
@@ -876,8 +853,8 @@ footer {
     .presse-logo {
         width: 200px;
         margin-top: 30px;
-        margin-left: 0;
-        padding-right: 45px;
+        margin-left: -15px;
+        max-width: 95%;
     }
 
     .presse {
