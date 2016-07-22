@@ -354,20 +354,23 @@
 
     // #navbar appears with an animation
     // Pour modifier la vitesse :
-    // jouer avec la valeur du setInterval et celle du pos = pos+x
+    // jouer avec la valeur du setInterval et celle du Npos = Npos+x
     // Pour modifier la hauteur de laquelle ça bouge :
-    // jouer avec le if (pos== x) et le navbar.css
+    // jouer avec le if (Npos== x) et le navbar.css
 
     var navbar = $('.overlay-nav');
-    var pos = 0;
-    var run = setInterval(animation, 50);
+    var Npos = 0;
+    var Nopacity = 0;
+    var Nrun = setInterval(animation, 80);
     function animation() {
-        if (pos == 60) {
-            clearInterval(run);
+        if (Npos == 60) {
+            clearInterval(Nrun);
         }
         else {
-            pos = pos+6;
-            navbar.css('top',-60+pos+'px');
+            Npos = Npos+6;
+            Nopacity = Nopacity + 0.1;
+            navbar.css('top',-60+Npos+'px');
+            navbar.css('opacity',Nopacity);
         }
     }
 
