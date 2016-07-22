@@ -38,8 +38,8 @@
 
     <!-- Navbar transparente sur le Header puis rouge ailleurs -->
 
-    <div class="nav-container" id="navbar">
-        <nav id="fading" class="overlay-nav">
+    <div class="nav-container">
+        <nav id="navbar" class="overlay-nav">
             <div id="main-nav-row">
                 <div class="container-fluid">
                     <div class="row">
@@ -346,7 +346,22 @@
         });
     });
 
-    //#navbar appears slowly after scrolling
+    // #navbar appears with an animation
+
+    var navbar = $('.overlay-nav');
+    var pos = 0;
+    var run = setInterval(animation, 50);
+    function animation() {
+        if (pos == 60) {
+            clearInterval(id);
+        }
+        else {
+            pos = pos+6;
+            navbar.css('top',-60+pos+'px');
+        }
+    }
+
+    // #navbar appears slowly after scrolling
 
     var header = $('.header'),
             headerHeight = header.height();
