@@ -76,6 +76,10 @@ a:focus {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 /****************************
      Custom Button Styles
 ****************************/
@@ -285,7 +289,6 @@ a:focus {
 }
 
 .nav-logo {
-
     height: 40px;
     width: auto;
 }
@@ -885,9 +888,6 @@ footer {
     font-family: 'nexa_lightregular';
     padding-left: 10px;
     padding-top: 0px;
-    position: absolute;
-    top: 0px;
-    left: 40px;
 }
 
 #bouton_envoyer_footer{
@@ -898,10 +898,7 @@ footer {
     height: 30px;
     background-color: #F8001E;
     border:none;
-    float: left;
-    position: absolute;
-    top: 0px;
-    left:220px;
+    float: right;
 }
 
 #fleche-submit_footer{
@@ -912,9 +909,9 @@ footer {
 }
 
 .form-footer{
-    margin:0 auto;
-    width: 250px;
-    height: 40px;
+    display: inline-block;
+    width: 210px;
+    height: 30px;
 }
 
 
