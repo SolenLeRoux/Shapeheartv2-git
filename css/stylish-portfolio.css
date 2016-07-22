@@ -337,8 +337,10 @@ body {
     margin-bottom: 10px;
     height: 60px;
     line-height: 60px;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 13%;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .text-shapeheart {
@@ -348,6 +350,13 @@ body {
 
 .text-shapeheart-a {
     color: #FC0F26;
+}
+
+.text-value-proposition {
+    color: white;
+    font-family: nexa_lightregular;
+    font-size: 45px;
+    margin-bottom: 80px;
 }
 
 .intro-divider {
@@ -706,6 +715,17 @@ footer {
         font-size: 30px;
     }
 
+    /* Header */
+
+    .intro-message {
+        padding-top: 100px;
+    }
+
+    .text-value-proposition {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
     /* Section partenaires */
 
     .partenaire-colonne {
@@ -786,6 +806,17 @@ footer {
 
     .text-menu {
         display: block;
+    }
+
+    /* Header */
+
+    .intro-message {
+        padding-top: 100px;
+    }
+
+    .text-value-proposition {
+        font-size: 35px;
+        margin-bottom: 35px;
     }
 
     /* Section partenaires */
