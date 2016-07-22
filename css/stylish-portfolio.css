@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -257,7 +257,7 @@ body {
 
 .overlay-nav {
     position: fixed;
-    top: 0px;
+    top: -60px;
     z-index: 6;
     width: 100%;
     padding-top: 10px;
@@ -337,8 +337,10 @@ body {
     margin-bottom: 10px;
     height: 60px;
     line-height: 60px;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 13%;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .text-shapeheart {
@@ -348,6 +350,13 @@ body {
 
 .text-shapeheart-a {
     color: #FC0F26;
+}
+
+.text-value-proposition {
+    color: white;
+    font-family: nexa_lightregular;
+    font-size: 45px;
+    margin-bottom: 80px;
 }
 
 .intro-divider {
@@ -416,6 +425,11 @@ body {
     top: 10px;
 }
 
+
+#icon-back{
+    width: 45px;
+}
+
 #logo{
     display:block;
     width: 100px;
@@ -425,26 +439,34 @@ body {
 }
 
 #form {
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 #votre_email input[type=email]{
     height: 50px;
-    width: 200px;
+    width: 300px;
     font-size: 20px;
     float: left;
+    font-family: 'nexa_lightregular';
+    padding-left: 10px;
 }
 
-#bouton_envoyer input[type=submit]{
+#bouton_envoyer{
     text-align: center;
     font-size: 20px;
     display: block;
-    width: 120px;
+    width: 50px;
     height: 50px;
-    background: #F8001E;
+    background-color: #F8001E;
     border:none;
     float: left;
 }
+
+#fleche-submit{
+    width: 40px;
+    margin-top: 5px;
+}
+
 
 .texte{
     font-size: 50px;
@@ -466,7 +488,155 @@ body {
     color: #FFF;
     text-align: center;
     font-size: 20px;
+    font-family: 'nexa_lightregular';
+
 }
+/* écrans un peu plus petits */
+
+@media(max-width:768px) and (min-width: 480px){
+    #mybox_conteneur{
+        width: 375px;
+        height: 375px;
+        margin: auto;
+    }
+
+    #mybox #mybox_aplat {
+        padding: 113px;
+    }
+
+    #mybox_relative {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+
+    #mybox_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    }
+
+
+    #icon-back{
+        width: 41px;
+    }
+
+    .texte{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 75px;
+        padding-top: 25px;
+    }
+
+
+    #form {
+        margin-left: 60px;
+    }
+
+    #votre_email input[type=email]{
+        height: 38px;
+        width: 200px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+
+    #bouton_envoyer{
+        text-align: center;
+        font-size: 15px;
+        width: 38px;
+        height: 38px;
+    }
+
+    #fleche-submit{
+        width: 30px;
+        margin-top: 3px;
+    }
+}
+
+/* Smartphones */
+
+@media(max-width:479px){
+    #mybox_conteneur{
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    #mybox #mybox_aplat {
+        padding-top: 75px;
+        padding-left: 60px;
+        padding-right: auto;
+    }
+
+    #mybox_relative {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+
+    #mybox_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    }
+
+
+    .texte{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 50px;
+        padding-top: 25px;
+    }
+
+
+    #form {
+        margin-left: 45px;
+    }
+
+    #votre_email input[type=email]{
+        height: 25px;
+        width: 150px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+
+    #bouton_envoyer {
+        text-align: center;
+        font-size: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    #fleche-submit{
+        width: 20px;
+        margin-top: 2px;
+    }
+}
+
+
+
 
 
 /********************************************************
@@ -492,7 +662,7 @@ body {
 }
 
 #image-A {
-    background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
+    background: url(../img/marin-coureuse.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -675,6 +845,47 @@ footer {
   right: 5px;
 }
 
+#votre_email_footer input[type=email]{
+    height: 30px;
+    width: 180px;
+    font-size: 14px;
+    float: left;
+    font-family: 'nexa_lightregular';
+    padding-left: 10px;
+    padding-top: 0px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
+
+#bouton_envoyer_footer{
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #F8001E;
+    border:none;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left:220px;
+}
+
+#fleche-submit_footer{
+    width: 25px;
+    padding: 0px;
+    margin-bottom: 2px;
+
+}
+
+.form-footer{
+    margin:0 auto;
+    width: 250px;
+    height: 40px;
+}
+
+
 /*****************************************
   MEDIA QUERIES
 ******************************************/
@@ -691,7 +902,7 @@ footer {
     }
 
     .align-right {
-        right: 2px;
+        right: 10px;
     }
 
     /* Section Product */
@@ -703,6 +914,17 @@ footer {
     }
 
     .section-heading {
+        font-size: 30px;
+    }
+
+    /* Header */
+
+    .intro-message {
+        padding-top: 100px;
+    }
+
+    .text-value-proposition {
+        margin-bottom: 30px;
         font-size: 30px;
     }
 
@@ -786,6 +1008,17 @@ footer {
 
     .text-menu {
         display: block;
+    }
+
+    /* Header */
+
+    .intro-message {
+        padding-top: 100px;
+    }
+
+    .text-value-proposition {
+        font-size: 35px;
+        margin-bottom: 35px;
     }
 
     /* Section partenaires */
