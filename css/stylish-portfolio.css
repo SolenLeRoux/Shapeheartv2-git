@@ -42,7 +42,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-    /* Pour fixer le problème de la barre blanche à droite*/
     margin: 0px;
     padding: 0px;
 }
@@ -324,15 +323,6 @@ p {
     margin-top: -15px;
 }
 
-.btn-hamburger {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    height: 40px;
-    font-size: 22px;
-}
-
 .slide-underline {
     border-bottom: 3px solid transparent;
     width: 0;
@@ -391,6 +381,7 @@ p {
     color: white;
     font-family: nexa_lightregular;
     font-size: 45px;
+    margin-top: 60px;
     margin-bottom: 80px;
 }
 
@@ -1046,7 +1037,7 @@ footer {
     }
 
     .text-value-proposition {
-        font-size: 35px;
+        font-size: 28px;
         margin-bottom: 35px;
     }
 
@@ -1117,10 +1108,12 @@ footer {
 /* Grandes tablettes et petits ordinateurs */
 @media screen and (max-width: 1199px) and (min-width: 767px) {
 
-    /* Navbar */
+    /* Header */
 
-    .btn-hamburger {
-        display: none;
+    .text-value-proposition {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
 
     /* Section partenaires */
@@ -1163,12 +1156,15 @@ footer {
     }
 }
 
-@media screen and (min-width: 1200px) {
+/* Ordinateurs écran moyen */
+@media screen and (min-width: 1200px) and (max-width: 1679px) {
 
-    /* Navbar */
-
-    .btn-hamburger {
-        display: none;
+    /* Header */
+    .text-value-proposition {
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 60px;
     }
 
 }
+
