@@ -335,6 +335,11 @@ p {
     width: 45px;
 }
 
+.text-menu {
+    margin-top: 12px;
+    margin-left: -10px;
+}
+
 /***********************************************
  Header : Page 1 - vidéo avec texte ShapeHeart
  ***********************************************/
