@@ -923,6 +923,10 @@ footer {
         right: 10px;
     }
 
+    #heart {
+        height: 40px;
+    }
+
     /* Section Product */
 
     #text-image-A,
@@ -1028,6 +1032,10 @@ footer {
         display: block;
     }
 
+    #heart {
+        height: 40px;
+    }
+
     /* Header */
 
     .intro-message {
@@ -1112,6 +1120,10 @@ footer {
         font-size: 28px;
         margin-top: 30px;
         margin-bottom: 50px;
+    }
+
+    #heart {
+        height: 40px;
     }
 
     /* Section partenaires */
