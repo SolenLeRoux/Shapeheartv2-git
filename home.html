@@ -42,7 +42,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-1">
-                            <img class="nav-logo" src="img/logo-white.png">
+                            <img class="nav-logo" src="img/logo-white.png" id="heart">
                         </div>
                         <div class="col-xs-3">
                             <form class="menu-language">
@@ -378,13 +378,32 @@
                     ;
             if( offset<=fadeStart ){
                 opacity=0;
-            }else if( offset<=fadeUntil ){
+            }
+            else if( offset<=fadeUntil ){
                 opacity=offset/fadeUntil;
             }
             fading.css('background','rgba(252,15,38,'+opacity+')');
         });
 
-        //#to-top button appears after scrolling
+        // Coeur change de taille quand on scroll
+
+        var fadeStartHeart=headerHeight/3, // 10px scroll or less will equiv to 100 height
+                fadeUntilHeart=headerHeight, // 200px scroll or more will equiv to 1 opacity
+                Heart = $('#heart');
+
+        $(window).bind('scroll', function(){
+            var offset = $(document).scrollTop(),
+                    taille=40;
+            if(offset <= fadeStartHeart){
+                taille=100;
+            }
+            else if( offset<=fadeUntilHeart ){
+                taille = 40 + (offset/fadeUntil);
+            }
+            Heart.css('height', taille + 'px');
+        });
+
+        // #to-top button appears after scrolling
         var fixed = false;
         $(document).scroll(function() {
             if ($(this).scrollTop() > 250) {
