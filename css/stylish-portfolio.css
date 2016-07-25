@@ -942,6 +942,16 @@ footer {
         margin-left: 10px;
     }
 
+    #main-nav-row {
+        margin-top: 0;
+    }
+
+    .rond-language {
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
     /* Section Product */
 
     #text-image-A,
@@ -962,6 +972,7 @@ footer {
 
     .text-value-proposition {
         margin-bottom: 30px;
+        margin-top: 30px;
         font-size: 30px;
     }
 
@@ -1050,6 +1061,15 @@ footer {
     #heart {
         height: 40px;
         margin-left: 20px;
+    }
+
+    #main-nav-row {
+        margin-top: 0;
+    }
+
+    .rond-language {
+        width: 40px;
+        height: 40px;
     }
 
     /* Header */
@@ -1141,6 +1161,15 @@ footer {
     #heart {
         height: 40px;
         margin-left: 30px;
+    }
+
+    #main-nav-row {
+        margin-top: 0;
+    }
+
+    .rond-language {
+        width: 40px;
+        height: 40px;
     }
 
     /* Section partenaires */
