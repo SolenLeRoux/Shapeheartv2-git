@@ -389,13 +389,14 @@
 
         var fadeStartHeart=headerHeight/3, // 10px scroll or less will equiv to 100 height
                 fadeUntilHeart=headerHeight/3, // 200px scroll or more will equiv to 1 opacity
-                Heart = $('#heart');
+                Heart = $('#heart'),
+                HeartHeight = Heart.height();
 
         $(window).bind('scroll', function(){
             var offset = $(document).scrollTop(),
-                    taille = 100;
+                    taille = HeartHeight;
             if(offset <= fadeStartHeart){
-                taille = 100;
+                taille = HeartHeight;
             }
             else if( offset>=fadeUntilHeart ){
                 taille = 40;
