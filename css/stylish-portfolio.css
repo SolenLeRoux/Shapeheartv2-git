@@ -952,10 +952,43 @@ footer {
     margin-right: auto;
 }
 
-#titre-article-1{
+p[id^="debut-article-1"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+p[id^="titre-article-1"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+
+p[id^="debut-article-2"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+#titre-article-1 , #titre-article-2{
     font-size: 30px;
     font-family: 'nexa_lightregular';
 }
+
+.titre-article{
+    color: rgb(243,1,24);
+}
+
+
+#titre-article-2{
+    padding-top: 140px;
+}
+
+
 
 .article{
     margin-right:auto;
@@ -967,6 +1000,7 @@ footer {
 
 .article_picture{
     width: 100%;
+    padding-top: 12px;
     padding-bottom: 17px;
 }
 
