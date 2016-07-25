@@ -388,17 +388,17 @@
         // Coeur change de taille quand on scroll
 
         var fadeStartHeart=headerHeight/3, // 10px scroll or less will equiv to 100 height
-                fadeUntilHeart=headerHeight, // 200px scroll or more will equiv to 1 opacity
+                fadeUntilHeart=headerHeight/3, // 200px scroll or more will equiv to 1 opacity
                 Heart = $('#heart');
 
         $(window).bind('scroll', function(){
             var offset = $(document).scrollTop(),
-                    taille=40;
+                    taille = 100;
             if(offset <= fadeStartHeart){
-                taille=100;
+                taille = 100;
             }
-            else if( offset<=fadeUntilHeart ){
-                taille = 40 + (offset/fadeUntil);
+            else if( offset>=fadeUntilHeart ){
+                taille = 40;
             }
             Heart.css('height', taille + 'px');
         });
