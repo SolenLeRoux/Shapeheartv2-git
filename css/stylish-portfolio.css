@@ -1055,12 +1055,12 @@ margin-bottom: -100px;
     margin-left: 20px;
 }
 
-.share_logo_block{
+.share_logo_block {
     height: 50px;
     margin-left: calc(50% - 150px);
     margin-right: calc(50% - 150px);
     width: 300px;
-
+}
 
 /**********************************************************************************************************************
   FAQ
