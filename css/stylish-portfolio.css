@@ -1200,6 +1200,28 @@ margin-bottom: -100px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 180px;
+    }
+
+    #header-FAQ {
+        height: 180px;
+        background-position: 0;
+    }
+
+    .container-FAQ {
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reponse-FAQ {
+        text-align: left;
+    }
 }
 
 /* Petits écrans : smartphones et tablettes */
@@ -1298,6 +1320,28 @@ margin-bottom: -100px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 180px;
+    }
+
+    #header-FAQ {
+        height: 180px;
+        background-position: 0;
+    }
+
+    .container-FAQ {
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reponse-FAQ {
+        text-align: left;
+    }
 }
 
 /* Grandes tablettes et petits ordinateurs */
@@ -1362,6 +1406,17 @@ margin-bottom: -100px;
 
     .presse {
         height: 130px;
+    }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 250px;
+    }
+
+    #header-FAQ {
+        height: 250px;
+        background-position: 0;
     }
 }
 
