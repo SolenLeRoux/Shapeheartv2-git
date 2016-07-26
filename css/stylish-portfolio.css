@@ -373,8 +373,8 @@ p {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-color: rgba(69,89,106,.5);
     overflow: hidden;
+    background-color: rgba(69,89,106,.5);
 }
 
 #background_video {
@@ -936,6 +936,13 @@ footer {
     background-size: cover;
 }
 
+#background-header-blog {
+    background-color: rgba(69,89,106,.2);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
 /* Articles */
 
 #articles {
@@ -1054,8 +1061,6 @@ margin-bottom: -100px;
     background: #808080;
 }
 
-
-
 .share_logos{
     width: calc(60% - 1px);
     height: 100%;
@@ -1063,20 +1068,76 @@ margin-bottom: -100px;
     float: left;
 }
 
-
 .share_logo{
     height: 100%;
     margin-right: 20px;
     margin-left: 20px;
 }
 
-
-
-.share_logo_block{
+.share_logo_block {
     height: 50px;
     margin-left: calc(50% - 150px);
     margin-right: calc(50% - 150px);
     width: 300px;
+}
+
+/**********************************************************************************************************************
+  FAQ
+**********************************************************************************************************************/
+
+#background-header-FAQ {
+    background-color: rgba(69,89,106,.2);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+#header-FAQ {
+    height: 350px;
+    width: 100%;
+    background-color: #A2A9AE;
+    top: 0;
+    background-image: url(../img/marin-coureuse.jpg);
+    background-position: 0 -300px;
+    background-size: cover;
+}
+
+#section-FAQ {
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
+.container-FAQ {
+    width: 668px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FAQ-block {
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
+}
+
+.question-FAQ {
+    padding-bottom: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: #FC0F26;
+    font-family: nexa_lightregular;
+}
+
+.reponse-FAQ {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #2E3942;
+    font-size: 20px;
+    font-family: nexa_lightregular;
+    text-align: justify;
 }
 
 /**********************************************************************************************************************
@@ -1208,6 +1269,28 @@ margin-bottom: -100px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 180px;
+    }
+
+    #header-FAQ {
+        height: 180px;
+        background-position: 0;
+    }
+
+    .container-FAQ {
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reponse-FAQ {
+        text-align: left;
+    }
 }
 
 /* Petits écrans : smartphones et tablettes */
@@ -1306,6 +1389,28 @@ margin-bottom: -100px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 180px;
+    }
+
+    #header-FAQ {
+        height: 180px;
+        background-position: 0;
+    }
+
+    .container-FAQ {
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reponse-FAQ {
+        text-align: left;
+    }
 }
 
 /* Grandes tablettes et petits ordinateurs */
@@ -1370,6 +1475,17 @@ margin-bottom: -100px;
 
     .presse {
         height: 130px;
+    }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 250px;
+    }
+
+    #header-FAQ {
+        height: 250px;
+        background-position: 0;
     }
 }
 
