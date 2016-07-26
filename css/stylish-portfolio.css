@@ -374,6 +374,7 @@ p {
     background-size: cover;
     -o-background-size: cover;
     overflow: hidden;
+    background-color: rgba(69,89,106,.5);
 }
 
 #background_video {
@@ -814,7 +815,7 @@ p {
 
 .presse {
     height: 200px;
-    paddin: 50px 0;
+    padding: 50px 0;
     background-color: white;
     display: block;
     width: 100%;
@@ -937,12 +938,92 @@ footer {
 
 /* Articles */
 
-.articles {
+#articles {
     display: block;
     margin-top: 75px;
+    margin-bottom: 75px;
     background-color: #fff;
     margin-right: auto;
     margin-left: auto;
+}
+
+.article_container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p[id^="debut-article-1"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+p[id^="titre-article-1"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+
+p[id^="debut-article-2"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+#titre-article-1 , #titre-article-2{
+    font-size: 30px;
+    font-family: 'nexa_lightregular';
+}
+
+.titre-article{
+    color: rgb(243,1,24);
+}
+
+
+#titre-article-2{
+    padding-top: 140px;
+}
+
+
+
+.article{
+    margin-right:auto;
+    margin-left: auto;
+    font-size: 23px;
+    font-family: 'nexa_lightregular';
+    text-align: justify;
+}
+
+.article_picture{
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 17px;
+}
+
+/**********************************************************************************************************************
+  FAQ
+**********************************************************************************************************************/
+
+#background-header-FAQ {
+    background-color: rgba(69,89,106,.4);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+#header-FAQ {
+    height: 350px;
+    width: 100%;
+    background-color: #A2A9AE;
+    top: 0;
+    background-image: url(../img/marin-coureuse.jpg);
+    background-position: 0 -300px;
+    background-size: cover;
 }
 
 /**********************************************************************************************************************
