@@ -1005,6 +1005,26 @@ margin-bottom: -100px;
     padding-bottom: 17px;
 }
 
+/**********************************************************************************************************************
+  FAQ
+**********************************************************************************************************************/
+
+#background-header-FAQ {
+    background-color: rgba(69,89,106,.4);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+#header-FAQ {
+    height: 350px;
+    width: 100%;
+    background-color: #A2A9AE;
+    top: 0;
+    background-image: url(../img/marin-coureuse.jpg);
+    background-position: 0 -300px;
+    background-size: cover;
+}
 
 /**********************************************************************************************************************
   MEDIA QUERIES
