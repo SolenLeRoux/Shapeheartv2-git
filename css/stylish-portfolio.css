@@ -936,6 +936,13 @@ footer {
     background-size: cover;
 }
 
+#background-header-blog {
+    background-color: rgba(69,89,106,.4);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
 /* Articles */
 
 #articles {
