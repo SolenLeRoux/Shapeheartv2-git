@@ -996,7 +996,13 @@ margin-bottom: -100px;
     padding-top: 140px;
 }
 
+#lien-pdf{
+    color: black;
+}
 
+#lien-pdf:hover {
+    text-shadow: 1px 1px 2px grey;
+}
 
 .article{
     margin-right:auto;
@@ -1011,6 +1017,50 @@ margin-bottom: -100px;
     padding-top: 12px;
     padding-bottom: 17px;
 }
+
+#share-container{
+    margin-top: 30px;
+    height:57px;
+    width: 100%;
+}
+
+#share{
+    float: left;
+    width: calc(40% - 1px);
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    font-size: 23px;
+    font-family: 'nexa_lightregular';
+}
+
+#share_separator{
+    width: 2px;
+    height: 90%;
+    float: left;
+    background: #808080;
+}
+
+#share_logos{
+    width: calc(60% - 1px);
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.share_logo{
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.share_logo_block{
+    height: 50px;
+    margin-left: calc(50% - 150px);
+    margin-right: calc(50% - 150px);
+    width: 300px;
+
 
 /**********************************************************************************************************************
   FAQ
