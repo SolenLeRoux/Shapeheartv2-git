@@ -374,6 +374,7 @@ p {
     background-size: cover;
     -o-background-size: cover;
     overflow: hidden;
+    background-color: rgba(69,89,106,.5);
 }
 
 #background_video {
