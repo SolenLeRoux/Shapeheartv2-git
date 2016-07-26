@@ -946,7 +946,7 @@ footer {
 /* Articles */
 
 #articles {
-    display: block;
+    display: inline-block;
     margin-top: 75px;
     margin-bottom: 75px;
     background-color: #fff;
@@ -956,8 +956,8 @@ footer {
 
 .article_container{
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30%;
+    margin-right: 10%;
 }
 
 p[id^="debut-article-1"] {
@@ -1079,6 +1079,12 @@ margin-bottom: -100px;
     margin-left: calc(50% - 150px);
     margin-right: calc(50% - 150px);
     width: 300px;
+}
+
+#menu-social-media {
+    background-color: green;
+    width:70%;
+    margin-right: 30%;
 }
 
 /**********************************************************************************************************************
