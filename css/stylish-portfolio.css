@@ -587,10 +587,7 @@ p {
         height: 38px;
         width: 200px;
         font-size: 15px;
-        text-align: center;
     }
-
-
 
     #bouton_envoyer{
         text-align: center;
@@ -658,7 +655,6 @@ p {
         height: 25px;
         width: 150px;
         font-size: 10px;
-        text-align: center;
     }
 
 
@@ -1022,7 +1018,6 @@ margin-bottom: -100px;
 
 #bouton-suite , #bouton-suite-2{
     color: rgb(243,1,24);
-    padding-left: 10px;
 }
 
 
@@ -1079,6 +1074,37 @@ margin-bottom: -100px;
     margin-left: calc(50% - 150px);
     margin-right: calc(50% - 150px);
     width: 300px;
+}
+
+@media (max-width: 860px) {
+
+    .article {
+        font-size: 17px;
+    }
+
+    .share {
+        display: block;
+        width: 100px;
+        margin-right: calc(50% - 50px);
+        margin-left: calc(50% - 50px);
+        margin-bottom: 50px;
+    }
+
+    .share_separator {
+        display: block;
+        height: 1px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: calc(100% - 200px);
+    }
+
+    .share_logos {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 100%;
+    }
 }
 
 .widget {
@@ -1362,10 +1388,27 @@ margin-bottom: -100px;
 
     /* Blog */
 
+    #header-blog {
+        height: 180px;
+        background-position: 0;
+    }
+
+    #background-header-blog {
+        height: 180px;
+    }
+
     .article_container {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 60%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #menu-social-media {
+        margin-top: 70px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Petits écrans : smartphones et tablettes */
@@ -1493,6 +1536,7 @@ margin-bottom: -100px;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
+        background-color: rosybrown;
     }
 }
 
@@ -1577,6 +1621,20 @@ margin-bottom: -100px;
         width: 90%;
         margin-right: 10%;
     }
+
+    /* Blog */
+
+    #menu-social-media {
+        width: 90%;
+        margin-right: 10%;
+    }
+
+    .article_container {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: yellow;
+    }
 }
 
 /* Ordinateurs écran moyen */
@@ -1588,13 +1646,5 @@ margin-bottom: -100px;
         margin-top: 40px;
         margin-bottom: 60px;
     }
-
-    /* Blog */
-
-    #menu-social-media {
-        width: 90%;
-        margin-right: 10%;
-    }
-
 }
 
