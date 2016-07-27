@@ -1180,6 +1180,24 @@ margin-bottom: -100px;
     height: 620px;
 }
 
+#votre_email-socialmedia input[type=email]{
+    height: 35px;
+    width: 210px;
+    font-size: 18px;
+    float: left;
+    font-family: 'nexa_lightregular';
+    padding-left: 10px;
+}
+
+#bouton_envoyer-socialmedia {
+    text-align: center;
+    display: block;
+    border:none;
+    float: left;
+    height: 35px;
+    width: 35px;
+}
+
 #back-to-blog{
     color:grey;
     font-family: 'nexa_lightregular';
@@ -1454,10 +1472,6 @@ margin-bottom: -100px;
         margin-left: 2%;
         margin-right: 2%;
     }
-
-    #menu-social-media {
-        display: none;
-    }
 }
 
 /* Petits écrans : smartphones et tablettes */
@@ -1595,6 +1609,11 @@ margin-bottom: -100px;
         margin-left: 10%;
         margin-right: 10%;
     }
+}
+
+/* Juste spécifiquement pour l'apparation du menu social media */
+
+@media screen and (max-width: 991px) {
 
     #menu-social-media {
         display: none;
@@ -1694,7 +1713,17 @@ margin-bottom: -100px;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-        background-color: yellow;
+    }
+
+    #votre_email-socialmedia input[type=email]  {
+        width: 170px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    #bouton_envoyer-socialmedia {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -1706,6 +1735,16 @@ margin-bottom: -100px;
         font-size: 30px;
         margin-top: 40px;
         margin-bottom: 60px;
+    }
+
+    #votre_email-socialmedia input[type=email]  {
+        width: 190px;
+        font-size: 16px;
+    }
+
+    #menu-social-media {
+        width: 80%;
+        margin-right: 40%;
     }
 }
 
