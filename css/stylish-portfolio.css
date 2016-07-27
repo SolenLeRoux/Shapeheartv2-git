@@ -1031,6 +1031,7 @@ margin-bottom: -100px;
 .article{
     margin-right:auto;
     margin-left: auto;
+    margin-bottom: 75px;
     font-size: 23px;
     font-family: 'nexa_lightregular';
     text-align: justify;
@@ -1045,7 +1046,6 @@ margin-bottom: -100px;
 
 #bouton-suite , #bouton-suite-2{
     color: rgb(243,1,24);
-    padding-left: 10px;
 }
 
 
@@ -1103,6 +1103,40 @@ margin-bottom: -100px;
     margin-right: calc(50% - 150px);
     width: 300px;
 }
+
+@media (max-width: 860px){
+
+
+    .share_separator {
+        display: block;
+        height: 1px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: calc(100% - 200px);
+    }
+
+    .share_logos {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+        float: none;
+    }
+
+    .share{
+        display: block;
+        width: 100px;
+        margin-right: calc(50% - 50px);
+        margin-left: calc(50% - 50px);
+        margin-bottom: 40px;
+    }
+
+    .article{
+        font-size: 17px;
+    }
+}
+
+
 
 /**********************************************************************************************************************
   FAQ
