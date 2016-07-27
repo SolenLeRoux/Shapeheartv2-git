@@ -683,7 +683,6 @@ p {
 ********************************************************/
 
 .content-section-2 {
-    padding: 50px 0;
     display: table;
     position: relative;
     width: 100%;
@@ -698,6 +697,13 @@ p {
     font-size: 20px;
     text-align: center;
     max-width: 90%;
+}
+
+#background-image-A {
+    background-color: rgba(84, 82, 106, 0.3);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #image-A {
@@ -956,6 +962,7 @@ footer {
     width: 60%;
     margin-left: 30%;
     margin-right: 10%;
+    font-family: 'nexa_lightregular';
 }
 
 p[id^="debut-article-1"] {
@@ -980,21 +987,16 @@ top: -100px;
 margin-bottom: -100px;
 }
 
-#titre-article-1 , #titre-article-2{
-    font-size: 30px;
-    font-family: 'nexa_lightregular';
-}
-
-#titre-article-2{
-    padding-top: 70px;
-}
-
-
-
 .titre-article{
     color: rgb(243,1,24);
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
+.date-article {
+    font-size: 26px;
+}
 
 #lien-pdf{
     color: black;
