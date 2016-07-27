@@ -1014,6 +1014,11 @@ margin-bottom: -100px;
     text-align: justify;
 }
 
+#article-header{
+    color: white;
+    font-family: 'aqua_grotesqueregular';
+}
+
 .article_picture{
     width: 100%;
     padding-top: 12px;
@@ -1022,7 +1027,6 @@ margin-bottom: -100px;
 
 #bouton-suite , #bouton-suite-2{
     color: rgb(243,1,24);
-    padding-left: 10px;
 }
 
 
@@ -1087,6 +1091,53 @@ margin-bottom: -100px;
     margin-right: 30%;
 }
 
+#back-to-blog{
+    color:grey;
+    font-family: 'nexa_lightregular';
+    font-size: 20px;
+}
+
+.back-blog{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#back-to-blog:hover {
+    color: black;
+}
+
+@media (max-width: 860px){
+
+    .article{
+        font-size: 17px;
+    }
+
+    .share{
+        display: block;
+        width: 100px;
+        margin-right: calc(50% - 50px);
+        margin-left: calc(50% - 50px);
+        margin-bottom: 50px;
+    }
+
+
+    .share_separator{
+        display: block;
+        height: 1px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: calc(100% - 200px);
+    }
+
+    .share_logos{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
 /**********************************************************************************************************************
   FAQ
 **********************************************************************************************************************/
@@ -1144,7 +1195,7 @@ margin-bottom: -100px;
     font-size: 20px;
     font-family: nexa_lightregular;
     text-align: justify;
-}
+
 
 /**********************************************************************************************************************
   MEDIA QUERIES
