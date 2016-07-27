@@ -1007,6 +1007,11 @@ margin-bottom: -100px;
     text-align: justify;
 }
 
+#article-header{
+    color: white;
+    font-family: 'aqua_grotesqueregular';
+}
+
 .article_picture{
     width: 100%;
     padding-top: 12px;
@@ -1076,6 +1081,21 @@ margin-bottom: -100px;
     margin-left: calc(50% - 150px);
     margin-right: calc(50% - 150px);
     width: 300px;
+}
+
+#back-to-blog{
+    color:grey;
+    font-family: 'nexa_lightregular';
+    font-size: 20px;
+}
+
+.back-blog{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#back-to-blog:hover {
+    color: black;
 }
 
 @media (max-width: 860px){
