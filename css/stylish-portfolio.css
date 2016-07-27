@@ -1117,11 +1117,16 @@ margin-bottom: -100px;
 .widget {
     padding: 21px 30px;
     margin-bottom: 35px;
-    background-color: blue;
+    border: 1px solid #dedfe1;
+}
+
+.widget-title {
+    font-family: 'nexa_lightregular';
+    color: #222425;
+    border-bottom: 1px solid #dedfe1;
 }
 
 #menu-social-media {
-    background-color: green;
     width:90%;
     margin-right: 10%;
     max-width: 400px;
@@ -1146,7 +1151,7 @@ margin-bottom: -100px;
     width: 50px;
     height: 50px;
     line-height: 50px;
-    border: 1px solid #eff0f2;
+    border: 1px solid #dedfe1;
     color: #54585a;
     background-color: white;
     text-align: center;
@@ -1156,6 +1161,12 @@ margin-bottom: -100px;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
+}
+
+.btn-follow:hover {
+    border: none;
+    color: white;
+    background-color: #54585a;
 }
 
 .iframe-facebook-container {
