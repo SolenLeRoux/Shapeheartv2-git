@@ -767,6 +767,39 @@ p {
     text-align: center;
 }
 
+/****************************************
+   Présentation du produit
+*****************************************/
+
+.content-produit {
+    padding:0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ebebeb;
+}
+
+.pres-container {
+    width: 70%;
+    height: 95%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.texte-produit{
+    font-family: 'nexa_lightregular';
+    font-size:20px;
+    text-align: center;
+}
+
+.content-texte-produit{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
 
 /****************************
     Partenaires
@@ -820,7 +853,6 @@ p {
 }
 
 .presse-logo {
-    margin-top: 12%;
     position: absolute;
     width: 300px;
     height: auto;
@@ -1390,6 +1422,7 @@ margin-bottom: -100px;
 
     .presse-logo {
         width: 100%;
+        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -1532,7 +1565,7 @@ margin-bottom: -100px;
 
     .presse-logo {
         width: 200px;
-        margin-top: 30px;
+        margin-bottom: 30px;
         margin-left: -15px;
         max-width: 95%;
     }
@@ -1650,7 +1683,7 @@ margin-bottom: -100px;
 
     .presse-logo {
         width: 200px;
-        margin-top: 30px;
+        padding-bottom: 30px;
         margin-left: 12%
     }
 
