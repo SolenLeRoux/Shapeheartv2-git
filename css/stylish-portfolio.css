@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -19,6 +19,14 @@
 }
 
 @font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_free_bold-webfont.eot');
+    src: url('../fonts/nexa_free_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexa_free_bold-webfont.woff2') format('woff2'), url('../fonts/nexa_free_bold-webfont.woff') format('woff'), url('../fonts/nexa_free_bold-webfont.ttf') format('truetype'), url('../fonts/nexa_free_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'nexa_lightregular';
     src: url('../fonts/nexalight-webfont.eot');
     src: url('../fonts/nexalight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexalight-webfont.woff2') format('woff2'), url('../fonts/nexalight-webfont.woff') format('woff'), url('../fonts/nexalight-webfont.ttf') format('truetype'), url('../fonts/nexalight-webfont.svg#nexa_lightregular') format('svg');
@@ -34,7 +42,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-    /* Pour fixer le problème de la barre blanche à droite*/
     margin: 0px;
     padding: 0px;
 }
@@ -59,6 +66,17 @@ body {
 .align-right {
     position: absolute;
     right: 20px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
 }
 
 /****************************
@@ -257,7 +275,7 @@ body {
 
 .overlay-nav {
     position: fixed;
-    top: 0px;
+    top: -60px;
     z-index: 6;
     width: 100%;
     padding-top: 10px;
@@ -269,10 +287,20 @@ body {
     -moz-transition: all 0.1s ease-out;
 }
 
-.nav-logo {
+#main-nav-row {
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    margin-top: 60px;
+}
 
-    height: 40px;
+#heart {
+    height: 100px;
     width: auto;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    margin-left: 60px;
 }
 
 .menu-language {
@@ -280,34 +308,56 @@ body {
     display: inline-block;
     white-space: nowrap;
     padding-left: 20px;
+    line-height: 50px;
+    top: -5px;
 }
 
 .nav-text {
     text-decoration: none;
     background-color: transparent;
     border: none;
-    font-family: nexa_lightregular;
+    text-transform: uppercase;
+    font-family: nexa_boldregular;
     display: inline-block;
     position: static;
     color: white;
     font-size: 16px;
     -webkit-appearance: none;
     margin-top: 10px;
-    margin-left: 7%;
     outline: none;
+    text-align: center;
+}
+
+.rond-language {
+    background-color: #FC0F26;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
 }
 
 .language-text {
     margin-right: 5px;
+    margin-top: -15px;
 }
 
-.btn-hamburger {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    height: 40px;
-    font-size: 22px;
+.slide-underline {
+    border-bottom: 3px solid transparent;
+    width: 0;
+    transition: .5s ease;
+    height: 30px;
+}
+
+.slide-underline:hover {
+    border-bottom: 3px solid #fff;
+    width: 45px;
+}
+
+.text-menu {
+    margin-top: 12px;
+    margin-left: -20px;
 }
 
 /***********************************************
@@ -323,8 +373,8 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-color: rgba(69,89,106,.5);
     overflow: hidden;
+    background-color: rgba(69,89,106,.5);
 }
 
 #background_video {
@@ -337,8 +387,10 @@ body {
     margin-bottom: 10px;
     height: 60px;
     line-height: 60px;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 13%;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .text-shapeheart {
@@ -348,6 +400,14 @@ body {
 
 .text-shapeheart-a {
     color: #FC0F26;
+}
+
+.text-value-proposition {
+    color: white;
+    font-family: nexa_lightregular;
+    font-size: 45px;
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 .intro-divider {
@@ -416,6 +476,11 @@ body {
     top: 10px;
 }
 
+
+#icon-back{
+    width: 45px;
+}
+
 #logo{
     display:block;
     width: 100px;
@@ -425,25 +490,25 @@ body {
 }
 
 #form {
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 #votre_email input[type=email]{
     height: 50px;
-    width: 200px;
+    width: 300px;
     font-size: 20px;
     float: left;
+    font-family: 'nexa_lightregular';
+    padding-left: 10px;
 }
 
-#bouton_envoyer input[type=submit]{
+#bouton_envoyer{
     text-align: center;
-    font-size: 20px;
     display: block;
-    width: 120px;
-    height: 50px;
-    background: #F8001E;
     border:none;
     float: left;
+    height: 50px;
+    width: 50px;
 }
 
 .texte{
@@ -466,7 +531,151 @@ body {
     color: #FFF;
     text-align: center;
     font-size: 20px;
+    font-family: 'nexa_lightregular';
+
 }
+/* écrans un peu plus petits */
+
+@media(max-width:768px) and (min-width: 480px){
+    #mybox_conteneur{
+        width: 375px;
+        height: 375px;
+        margin: auto;
+    }
+
+    #mybox #mybox_aplat {
+        padding: 113px;
+    }
+
+    #mybox_relative {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+
+    #mybox_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    }
+
+
+    #icon-back{
+        width: 41px;
+    }
+
+    .texte{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 75px;
+        padding-top: 25px;
+    }
+
+
+    #form {
+        margin-left: 60px;
+    }
+
+    #votre_email input[type=email]{
+        height: 38px;
+        width: 200px;
+        font-size: 15px;
+    }
+
+    #bouton_envoyer{
+        text-align: center;
+        font-size: 15px;
+        width: 38px;
+        height: 38px;
+    }
+
+    #btn-submit{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Smartphones */
+
+@media(max-width:479px){
+    #mybox_conteneur{
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    #mybox #mybox_aplat {
+        padding-top: 75px;
+        padding-left: 60px;
+        padding-right: auto;
+    }
+
+    #mybox_relative {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+
+    #mybox_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    }
+
+
+    .texte{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 50px;
+        padding-top: 25px;
+    }
+
+
+    #form {
+        margin-left: 45px;
+    }
+
+    #votre_email input[type=email]{
+        height: 25px;
+        width: 150px;
+        font-size: 10px;
+    }
+
+
+
+    #bouton_envoyer {
+        text-align: center;
+        font-size: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    #fleche-submit{
+        width: 20px;
+        margin-top: 2px;
+    }
+}
+
+
+
 
 
 /********************************************************
@@ -474,7 +683,6 @@ body {
 ********************************************************/
 
 .content-section-2 {
-    padding: 50px 0;
     display: table;
     position: relative;
     width: 100%;
@@ -491,8 +699,15 @@ body {
     max-width: 90%;
 }
 
+#background-image-A {
+    background-color: rgba(84, 82, 106, 0.3);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
 #image-A {
-    background: url(../img/background-section2-copie.jpg) no-repeat center center scroll;
+    background: url(../img/marin-coureuse.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -558,6 +773,39 @@ body {
     text-align: center;
 }
 
+/****************************************
+   Présentation du produit
+*****************************************/
+
+.content-produit {
+    padding:0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ebebeb;
+}
+
+.pres-container {
+    width: 70%;
+    height: 95%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.texte-produit{
+    font-family: 'nexa_lightregular';
+    font-size:20px;
+    text-align: center;
+}
+
+.content-texte-produit{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
 
 /****************************
     Partenaires
@@ -604,14 +852,13 @@ body {
 
 .presse {
     height: 200px;
-    paddin: 50px 0;
+    padding: 50px 0;
     background-color: white;
     display: block;
     width: 100%;
 }
 
 .presse-logo {
-    margin-top: 12%;
     position: absolute;
     width: 300px;
     height: auto;
@@ -675,9 +922,437 @@ footer {
   right: 5px;
 }
 
-/*****************************************
+#votre_email_footer input[type=email]{
+    height: 30px;
+    width: 180px;
+    font-size: 14px;
+    float: left;
+    font-family: 'nexa_lightregular';
+    padding-left: 10px;
+    padding-top: 0px;
+}
+
+#bouton_envoyer_footer{
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #F8001E;
+    border:none;
+    float: right;
+}
+
+#fleche-submit_footer{
+    width: 25px;
+    padding: 0px;
+    margin-bottom: 2px;
+
+}
+
+.form-footer{
+    display: inline-block;
+    width: 210px;
+    height: 30px;
+}
+
+/**********************************************************************************************************************
+  BLOG
+**********************************************************************************************************************/
+
+/* Header blog */
+
+#header-blog {
+    height: 350px;
+    width: 100%;
+    background-color: #A2A9AE;
+    top: 0;
+    background-image: url(../img/bras_am.jpg);
+    background-position: 0 -150px;
+    background-size: cover;
+}
+
+#background-header-blog {
+    background-color: rgba(69,89,106,.2);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+/* Articles */
+
+#articles {
+    display: inline-block;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article_container{
+    width: 60%;
+    margin-left: 30%;
+    margin-right: 10%;
+    font-family: 'nexa_lightregular';
+}
+
+p[id^="debut-article-1"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+p[id^="titre-article-1"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+
+p[id^="debut-article-2"] {
+padding-top: 100px;
+position: relative;
+top: -100px;
+margin-bottom: -100px;
+}
+
+.titre-article{
+    color: rgb(243,1,24);
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.date-article {
+    font-size: 26px;
+}
+
+#lien-pdf{
+    color: black;
+}
+
+#lien-pdf:hover {
+    text-shadow: 1px 1px 2px grey;
+}
+
+.article{
+    margin-right:auto;
+    margin-left: auto;
+    font-size: 23px;
+    font-family: 'nexa_lightregular';
+    text-align: justify;
+}
+
+#article-header{
+    color: white;
+    font-family: 'aqua_grotesqueregular';
+}
+
+.article_picture{
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 17px;
+}
+
+#bouton-suite , #bouton-suite-2{
+    color: rgb(243,1,24);
+}
+
+
+ .back-article{
+    color: rgb(243,1,24);
+ }
+
+
+#bouton-suite:hover , #bouton-suite-2:hover , .back-article:hover {
+    text-shadow: 1px 1px 2px grey;
+}
+
+.share-container{
+    margin-top: 30px;
+    height:57px;
+    width: 100%;
+    padding-bottom: 120px;
+    padding-top: 20px;
+}
+
+.share{
+    float: left;
+    width: calc(40% - 1px);
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    font-size: 23px;
+    font-family: 'nexa_lightregular';
+}
+
+.share_separator{
+    width: 2px;
+    height: 50px;
+    float: left;
+    background: #808080;
+}
+
+.share_logos{
+    width: calc(60% - 1px);
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.share_logo{
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.share_logo_block {
+    height: 50px;
+    margin-left: calc(50% - 150px);
+    margin-right: calc(50% - 150px);
+    width: 300px;
+}
+
+@media (max-width: 860px) {
+
+    .article {
+        font-size: 17px;
+    }
+
+    .share {
+        display: block;
+        width: 100px;
+        margin-right: calc(50% - 50px);
+        margin-left: calc(50% - 50px);
+        margin-bottom: 50px;
+    }
+
+    .share_separator {
+        display: block;
+        height: 1px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: calc(100% - 200px);
+    }
+
+    .share_logos {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+.widget {
+    padding: 21px 30px;
+    margin-bottom: 35px;
+    border: 1px solid #dedfe1;
+}
+
+.widget-title {
+    font-family: 'nexa_lightregular';
+    color: #222425;
+    border-bottom: 1px solid #dedfe1;
+}
+
+#menu-social-media {
+    width:90%;
+    margin-right: 10%;
+    max-width: 400px;
+}
+
+#menu-suscribe {
+    display: block;
+}
+
+#menu-follow {
+    font-size: 20px;
+}
+
+#enter-email {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.btn-follow {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #dedfe1;
+    color: #54585a;
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.btn-follow:hover {
+    border: none;
+    color: white;
+    background-color: #54585a;
+}
+
+.iframe-facebook-container {
+    position: relative;
+}
+
+.iframe-facebook-container,
+.iframe-facebook-ratio {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-facebook-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#menu-facebook {
+    height: 620px;
+}
+
+#votre_email-socialmedia input[type=email]{
+    height: 35px;
+    width: 210px;
+    font-size: 18px;
+    float: left;
+    font-family: 'nexa_lightregular';
+    padding-left: 10px;
+}
+
+#bouton_envoyer-socialmedia {
+    text-align: center;
+    display: block;
+    border:none;
+    float: left;
+    height: 35px;
+    width: 35px;
+}
+
+#back-to-blog{
+    color:grey;
+    font-family: 'nexa_lightregular';
+    font-size: 20px;
+}
+
+.back-blog{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#back-to-blog:hover {
+    color: black;
+}
+
+@media (max-width: 860px){
+
+    .article{
+        font-size: 17px;
+    }
+
+    .share{
+        display: block;
+        width: 100px;
+        margin-right: calc(50% - 50px);
+        margin-left: calc(50% - 50px);
+        margin-bottom: 50px;
+    }
+
+
+    .share_separator{
+        display: block;
+        height: 1px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: calc(100% - 200px);
+    }
+
+    .share_logos{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+/**********************************************************************************************************************
+  FAQ
+**********************************************************************************************************************/
+
+#background-header-FAQ {
+    background-color: rgba(69,89,106,.2);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+#header-FAQ {
+    height: 350px;
+    width: 100%;
+    background-color: #A2A9AE;
+    top: 0;
+    background-image: url(../img/marin-coureuse.jpg);
+    background-position: 0 -300px;
+    background-size: cover;
+}
+
+#section-FAQ {
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
+.container-FAQ {
+    width: 668px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FAQ-block {
+    margin-top: 50px!important;
+    margin-bottom: 50px!important;
+}
+
+.question-FAQ {
+    padding-bottom: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: #FC0F26;
+    font-family: nexa_lightregular;
+}
+
+.reponse-FAQ {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #2E3942;
+    font-size: 20px;
+    font-family: nexa_lightregular;
+    text-align: justify;
+}
+
+/**********************************************************************************************************************
   MEDIA QUERIES
-******************************************/
+**********************************************************************************************************************/
 
 /* Liste de règle régissant le comportement du site suivant la taille de l'écran */
 
@@ -691,7 +1366,22 @@ footer {
     }
 
     .align-right {
-        right: 2px;
+        right: 10px;
+    }
+
+    #heart {
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    #main-nav-row {
+        margin-top: 0;
+    }
+
+    .rond-language {
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
     }
 
     /* Section Product */
@@ -703,6 +1393,18 @@ footer {
     }
 
     .section-heading {
+        font-size: 30px;
+    }
+
+    /* Header */
+
+    .intro-message {
+        padding-top: 100px;
+    }
+
+    .text-value-proposition {
+        margin-bottom: 30px;
+        margin-top: 30px;
         font-size: 30px;
     }
 
@@ -746,10 +1448,12 @@ footer {
 
     .presse {
         height: 95px;
+        padding: 10px 0;
     }
 
     .presse-logo {
         width: 100%;
+        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -777,6 +1481,45 @@ footer {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 180px;
+    }
+
+    #header-FAQ {
+        height: 180px;
+        background-position: 0;
+    }
+
+    .container-FAQ {
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reponse-FAQ {
+        text-align: left;
+    }
+
+    /* Blog */
+
+    #header-blog {
+        height: 180px;
+        background-position: 0;
+    }
+
+    #background-header-blog {
+        height: 180px;
+    }
+
+    .article_container {
+        width: 60%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 
 /* Petits écrans : smartphones et tablettes */
@@ -786,6 +1529,31 @@ footer {
 
     .text-menu {
         display: block;
+    }
+
+    #heart {
+        height: 40px;
+        margin-left: 20px;
+    }
+
+    #main-nav-row {
+        margin-top: 0;
+    }
+
+    .rond-language {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Header */
+
+    .intro-message {
+        padding-top: 100px;
+    }
+
+    .text-value-proposition {
+        font-size: 28px;
+        margin-bottom: 35px;
     }
 
     /* Section partenaires */
@@ -821,13 +1589,14 @@ footer {
 
     .presse-logo {
         width: 200px;
-        margin-top: 30px;
+        margin-bottom: 30px;
         margin-left: -15px;
         max-width: 95%;
     }
 
     .presse {
         height: 130px;
+        padding: 30px 0;
     }
 
     /* Footer */
@@ -850,15 +1619,79 @@ footer {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 180px;
+    }
+
+    #header-FAQ {
+        height: 180px;
+        background-position: 0;
+    }
+
+    .container-FAQ {
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reponse-FAQ {
+        text-align: left;
+    }
+
+    /* Blog */
+
+    #background-header-blog {
+        height: 180px;
+    }
+
+    #header-blog {
+        height: 180px;
+        background-position: 0;
+    }
+
+    .article_container {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* Juste spécifiquement pour l'apparation du menu social media */
+
+@media screen and (max-width: 991px) {
+
+    #menu-social-media {
+        display: none;
+    }
 }
 
 /* Grandes tablettes et petits ordinateurs */
 @media screen and (max-width: 1199px) and (min-width: 767px) {
 
-    /* Navbar */
+    /* Header */
 
-    .btn-hamburger {
-        display: none;
+    .text-value-proposition {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #heart {
+        height: 40px;
+        margin-left: 30px;
+    }
+
+    #main-nav-row {
+        margin-top: 0;
+    }
+
+    .rond-language {
+        width: 40px;
+        height: 40px;
     }
 
     /* Section partenaires */
@@ -892,21 +1725,86 @@ footer {
 
     .presse-logo {
         width: 200px;
-        margin-top: 30px;
+        padding-bottom: 30px;
         margin-left: 12%
     }
 
     .presse {
         height: 130px;
+        padding: 30px 0;
+    }
+
+    /* FAQ */
+
+    #background-header-FAQ {
+        height: 250px;
+    }
+
+    #header-FAQ {
+        height: 250px;
+        background-position: 0;
+    }
+
+    /* Blog */
+
+    #background-header-blog {
+        height: 250px;
+    }
+
+    #header-blog{
+        height: 250px;
+        background-position: 0;
+    }
+
+    #menu-social-media {
+        width: 90%;
+        margin-right: 10%;
+    }
+
+    .article_container {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #votre_email-socialmedia input[type=email]  {
+        width: 170px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    #bouton_envoyer-socialmedia {
+        width: 30px;
+        height: 30px;
     }
 }
 
-@media screen and (min-width: 1200px) {
+/* Ordinateurs écran moyen */
+@media screen and (min-width: 1200px) and (max-width: 1679px) {
 
-    /* Navbar */
-
-    .btn-hamburger {
-        display: none;
+    /* Header */
+    .text-value-proposition {
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 60px;
     }
 
+    #votre_email-socialmedia input[type=email]  {
+        width: 190px;
+        font-size: 16px;
+    }
+
+    /* Blog */
+    #header-blog {
+        background-position: 0 -300px;
+    }
+}
+
+/* Très grands écrans */
+@media screen and (min-width: 1680px) {
+
+    /* Blog */
+    #header-blog {
+        background-position: 0 -450px;
+    }
 }
