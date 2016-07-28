@@ -412,10 +412,13 @@ p {
 
 .intro-divider {
     height: 3px;
-    width: 130px;
+    width: 0px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #fff;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
 }
 
 #background_video {
@@ -453,7 +456,7 @@ p {
     width: 100%;
     height: 100%;
     z-index: 9998;
-    padding: 150px;
+    padding-top: 150px;
 }
 
 #mybox_conteneur {
@@ -537,71 +540,7 @@ p {
 /* écrans un peu plus petits */
 
 @media(max-width:768px) and (min-width: 480px){
-    #mybox_conteneur{
-        width: 375px;
-        height: 375px;
-        margin: auto;
-    }
 
-    #mybox #mybox_aplat {
-        padding: 113px;
-    }
-
-    #mybox_relative {
-    padding: 0px;
-    width: 100%;
-    height: auto;
-    position: relative;
-    }
-
-    #mybox_close {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    }
-
-
-    #icon-back{
-        width: 41px;
-    }
-
-    .texte{
-        font-size: 38px;
-        margin-bottom: 20px;
-    }
-
-    .texte-promo{
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
-
-    #logo{
-        width: 75px;
-        padding-top: 25px;
-    }
-
-
-    #form {
-        margin-left: 60px;
-    }
-
-    #votre_email input[type=email]{
-        height: 38px;
-        width: 200px;
-        font-size: 15px;
-    }
-
-    #bouton_envoyer{
-        text-align: center;
-        font-size: 15px;
-        width: 38px;
-        height: 38px;
-    }
-
-    #btn-submit{
-        width: 30px;
-        height: 30px;
-    }
 }
 
 /* Smartphones */
@@ -610,13 +549,6 @@ p {
     #mybox_conteneur{
         width: 250px;
         height: 250px;
-        margin-left: 10px;
-    }
-
-    #mybox #mybox_aplat {
-        padding-top: 75px;
-        padding-left: 60px;
-        padding-right: auto;
     }
 
     #mybox_relative {
@@ -1543,6 +1475,69 @@ margin-bottom: -100px;
     .rond-language {
         width: 40px;
         height: 40px;
+    }
+
+    /* Pop-up */
+
+    #mybox_conteneur{
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+
+    #mybox_relative {
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #mybox_close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    #icon-back{
+        width: 41px;
+    }
+
+    .texte{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 75px;
+        padding-top: 25px;
+    }
+
+
+    #form {
+        margin-left: 60px;
+    }
+
+    #votre_email input[type=email]{
+        height: 38px;
+        width: 200px;
+        font-size: 15px;
+    }
+
+    #bouton_envoyer{
+        text-align: center;
+        font-size: 15px;
+        width: 38px;
+        height: 38px;
+    }
+
+    #btn-submit{
+        width: 30px;
+        height: 30px;
     }
 
     /* Header */
