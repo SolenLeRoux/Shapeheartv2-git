@@ -203,7 +203,15 @@
     <section id="presentation" class="content-produit">
         <div class="pres-container">
             <div class="photo-produit">
-                <img src="img/product-red.png" width="100%">
+                <img src="img/product-black.png" id="black" width="100%">
+                <img src="img/product-red.png" id="red" width="100%">
+                <img src="img/product-green.png" id="green" width="100%">
+
+            </div>
+            <div class="color-select">
+                <div class="select-black"><a id="chose-black" href="#" onclick="document.getElementById('black').style.display= 'block'; document.getElementById('red').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-noir.png" class="point"></a></div>
+                <div class="select-red"><a id="chose-red" href="#" onclick="document.getElementById('red').style.display= 'block'; document.getElementById('black').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-rouge.png" class="point"></a></div>
+                <div class="select-green"><a id="chose-green" href="#" onclick="document.getElementById('green').style.display= 'block'; document.getElementById('black').style.display= 'none'; document.getElementById('red').style.display= 'none'; return false;"><img src="img/point-vert.png" class="point"></a></div>
             </div>
             <div class="texte-produit-container">
                 <h2 class="section-heading">

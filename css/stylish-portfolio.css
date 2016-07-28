@@ -739,6 +739,39 @@ p {
     margin-left: 20%;
 }
 
+.color-select{
+    height: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.select-black , .select-green , .select-red{
+    width: 10%;
+    height: 10px;
+    float: left;
+}
+
+.select-black{
+    margin-left: 35%;
+}
+
+
+.select-green{
+    margin-right: 35%;
+}
+
+#green , #black{
+    display: none;
+}
+
+.point{
+    width: 15px;
+}
+
+.point:hover{
+    width: 20px;
+}
+
 /****************************
     Partenaires
 ****************************/
