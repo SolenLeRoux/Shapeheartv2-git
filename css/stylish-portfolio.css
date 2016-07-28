@@ -1793,5 +1793,18 @@ margin-bottom: -100px;
         width: 190px;
         font-size: 16px;
     }
+
+    /* Blog */
+    #header-blog {
+        background-position: 0 -300px;
+    }
 }
 
+/* Très grands écrans */
+@media screen and (min-width: 1680px) {
+
+    /* Blog */
+    #header-blog {
+        background-position: 0 -450px;
+    }
+}
