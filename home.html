@@ -375,7 +375,7 @@
         var barreIntro = $('.intro-divider');
         var Npos = 0;
         var Nopacity = 0;
-        var Nwidth = 10;
+        var Nwidth = 0;
         var Nrun = setInterval(animation, 80);
         function animation() {
             if (Npos == 60) {
@@ -384,7 +384,7 @@
             else {
                 Npos = Npos+6;
                 Nopacity = Nopacity + 0.1;
-                Nwidth = Nwidth + 12;
+                Nwidth = Nwidth + 13;
                 navbar.css('top',-60+Npos+'px');
                 navbar.css('opacity',Nopacity);
                 barreIntro.css('width', Nwidth + 'px');
