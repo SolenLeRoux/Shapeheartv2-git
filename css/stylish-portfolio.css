@@ -683,7 +683,6 @@ p {
 ********************************************************/
 
 .content-section-2 {
-    padding: 50px 0;
     display: table;
     position: relative;
     width: 100%;
@@ -698,6 +697,13 @@ p {
     font-size: 20px;
     text-align: center;
     max-width: 90%;
+}
+
+#background-image-A {
+    background-color: rgba(84, 82, 106, 0.3);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #image-A {
@@ -767,6 +773,39 @@ p {
     text-align: center;
 }
 
+/****************************************
+   Présentation du produit
+*****************************************/
+
+.content-produit {
+    padding:0;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ebebeb;
+}
+
+.pres-container {
+    width: 70%;
+    height: 95%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.texte-produit{
+    font-family: 'nexa_lightregular';
+    font-size:20px;
+    text-align: center;
+}
+
+.content-texte-produit{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
 
 /****************************
     Partenaires
@@ -820,7 +859,6 @@ p {
 }
 
 .presse-logo {
-    margin-top: 12%;
     position: absolute;
     width: 300px;
     height: auto;
@@ -956,6 +994,7 @@ footer {
     width: 60%;
     margin-left: 30%;
     margin-right: 10%;
+    font-family: 'nexa_lightregular';
 }
 
 p[id^="debut-article-1"] {
@@ -980,21 +1019,16 @@ top: -100px;
 margin-bottom: -100px;
 }
 
-#titre-article-1 , #titre-article-2{
-    font-size: 30px;
-    font-family: 'nexa_lightregular';
-}
-
-#titre-article-2{
-    padding-top: 70px;
-}
-
-
-
 .titre-article{
     color: rgb(243,1,24);
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
+.date-article {
+    font-size: 26px;
+}
 
 #lien-pdf{
     color: black;
@@ -1414,10 +1448,12 @@ margin-bottom: -100px;
 
     .presse {
         height: 95px;
+        padding: 10px 0;
     }
 
     .presse-logo {
         width: 100%;
+        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -1553,13 +1589,14 @@ margin-bottom: -100px;
 
     .presse-logo {
         width: 200px;
-        margin-top: 30px;
+        margin-bottom: 30px;
         margin-left: -15px;
         max-width: 95%;
     }
 
     .presse {
         height: 130px;
+        padding: 30px 0;
     }
 
     /* Footer */
@@ -1688,12 +1725,13 @@ margin-bottom: -100px;
 
     .presse-logo {
         width: 200px;
-        margin-top: 30px;
+        padding-bottom: 30px;
         margin-left: 12%
     }
 
     .presse {
         height: 130px;
+        padding: 30px 0;
     }
 
     /* FAQ */
@@ -1705,13 +1743,6 @@ margin-bottom: -100px;
     #header-FAQ {
         height: 250px;
         background-position: 0;
-    }
-
-    /* Blog */
-
-    #menu-social-media {
-        width: 90%;
-        margin-right: 10%;
     }
 
     /* Blog */
