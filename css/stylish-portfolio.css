@@ -1747,6 +1747,15 @@ margin-bottom: -100px;
 
     /* Blog */
 
+    #background-header-blog {
+        height: 250px;
+    }
+
+    #header-blog{
+        height: 250px;
+        background-position: 0;
+    }
+
     #menu-social-media {
         width: 90%;
         margin-right: 10%;
