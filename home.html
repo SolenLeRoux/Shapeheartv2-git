@@ -204,9 +204,8 @@
         <div class="pres-container">
             <div class="photo-produit">
                 <img src="img/product-black.png" id="black" width="100%">
-                <img src="img/product-red.png" id="red" width="100%">
+                <img src="img/product-red-woshadow.png" id="red" width="100%">
                 <img src="img/product-green.png" id="green" width="100%">
-
             </div>
             <div class="color-select">
                 <div class="select-black"><a id="chose-black" href="#" onclick="document.getElementById('black').style.display= 'block'; document.getElementById('red').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-noir.png" class="point"></a></div>
@@ -449,6 +448,36 @@
             }
             Heart.css('height', taille + 'px');
             MainNavRow.css('margin-top', (taille-40) + 'px');
+        });
+
+        // Animation type Apple pour le produit
+
+        var produit = $('.photo-produit');
+        var pageProduit = $('#presentation'),
+                pageProduitHeight = pageProduit.height();
+
+        var translateUntil = pageProduitHeight/10;
+
+        var fadeStartProduit = headerHeight*2,
+                fadeUntilProduit = headerHeight*4;
+
+        $(window).bind('scroll', function(){
+            var offset = $(document).scrollTop(),
+                    rotation = -7,
+                    translation = -translateUntil*(2/3);
+            if(offset <= fadeStartProduit){
+                rotation = -7;
+                translation = -translateUntil*(2/3);
+            }
+            else if( offset<=fadeUntilProduit) {
+                rotation = -7 + 10*offset/fadeUntilProduit;
+                translation = -translateUntil*(2/3) + translateUntil*offset/fadeUntilProduit;
+            }
+            else if (offset > fadeUntilProduit) {
+                rotation = 3;
+                translation = translateUntil*(1/3);
+            }
+            produit.css('transform', 'translate3d(0px,' + translation + 'px,0px)' + ' ' +'rotate(' + rotation + 'deg)');
         });
 
         // #to-top button appears after scrolling

@@ -743,6 +743,7 @@ p {
     height: 20px;
     width: 100%;
     margin-bottom: 40px;
+    z-index: 10;
 }
 
 .select-black , .select-green , .select-red{
@@ -770,6 +771,17 @@ p {
 
 .point:hover{
     width: 20px;
+}
+
+.photo-produit {
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+    -ms-transition: all 1.2s;
+    -o-transition: all 1.2s;
+    transition: all 1.2s;
 }
 
 /****************************
