@@ -203,7 +203,15 @@
     <section id="presentation" class="content-produit">
         <div class="pres-container">
             <div class="photo-produit">
-                <img src="img/product-red.png" width="100%">
+                <img src="img/product-black.png" id="black" width="100%">
+                <img src="img/product-red.png" id="red" width="100%">
+                <img src="img/product-green.png" id="green" width="100%">
+
+            </div>
+            <div class="color-select">
+                <div class="select-black"><a id="chose-black" href="#" onclick="document.getElementById('black').style.display= 'block'; document.getElementById('red').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-noir.png" class="point"></a></div>
+                <div class="select-red"><a id="chose-red" href="#" onclick="document.getElementById('red').style.display= 'block'; document.getElementById('black').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-rouge.png" class="point"></a></div>
+                <div class="select-green"><a id="chose-green" href="#" onclick="document.getElementById('green').style.display= 'block'; document.getElementById('black').style.display= 'none'; document.getElementById('red').style.display= 'none'; return false;"><img src="img/point-vert.png" class="point"></a></div>
             </div>
             <div class="texte-produit-container">
                 <h2 class="section-heading">
@@ -229,7 +237,7 @@
                     <table>
                         <tr>
                             <td class="partenaire-colonne"><img class="logo-partenaire" src="img/logo-essec.png"></td>
-                            <td class="partenaire-colonne"><img class="logo-partenaire" src="img/logo-lisa.png"></td>
+                            <td class="partenaire-colonne"><img class="logo-partenaire" src="img/logo-hardware-club.png"></td>
                             <td class="partenaire-colonne"><img class="logo-partenaire" src="img/logo-intel.png"></td>
                         </tr>
                         <tr>
@@ -251,7 +259,7 @@
                             <span class="francais">Que ça soit au niveau du prototypage, de l’électronique ou de l’industrialisation, concevoir un tel brassard de running a demandé beaucoup de travail et d’itérations avec vous, les coureurs. Nous avons noué beaucoup de partenariats pour vous proposer un outil de monitoring simple, bien pensé et à prix raisonnable. Pour restez en contact, vous pouvez liker notre page facebook ci dessous !</span>
                         </p>
                         </br>
-                        <a href="#/blog/page/0" class="btn-transparent">
+                        <a href="blog.html" class="btn-transparent">
                             <span class="english">Read more</span>
                             <span class="francais">En savoir plus</span>
                         </a>
@@ -372,8 +380,10 @@
         // Pour modifier la hauteur de laquelle ça bouge :
         // jouer avec le if (Npos== x) et le navbar.css
         var navbar = $('.overlay-nav');
+        var barreIntro = $('.intro-divider');
         var Npos = 0;
         var Nopacity = 0;
+        var Nwidth = 0;
         var Nrun = setInterval(animation, 80);
         function animation() {
             if (Npos == 60) {
@@ -382,8 +392,10 @@
             else {
                 Npos = Npos+6;
                 Nopacity = Nopacity + 0.1;
+                Nwidth = Nwidth + 13;
                 navbar.css('top',-60+Npos+'px');
                 navbar.css('opacity',Nopacity);
+                barreIntro.css('width', Nwidth + 'px');
             }
         }
 
