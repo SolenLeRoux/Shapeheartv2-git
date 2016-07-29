@@ -34,6 +34,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'droid_sans';
+    src: url('../fonts/DroidSans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*********************
  Global Style
 *********************/
@@ -994,7 +1001,12 @@ footer {
     width: 60%;
     margin-left: 30%;
     margin-right: 10%;
-    font-family: 'nexa_lightregular';
+}
+
+.article-pleine-page {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 p[id^="debut-article-1"] {
@@ -1024,10 +1036,12 @@ margin-bottom: -100px;
     font-size: 30px;
     padding-top: 40px;
     padding-bottom: 50px;
+    font-family: 'nexa_lightregular';
 }
 
 .date-article {
     font-size: 26px;
+    font-family: 'nexa_lightregular';
 }
 
 #lien-pdf{
@@ -1041,9 +1055,10 @@ margin-bottom: -100px;
 .article{
     margin-right:auto;
     margin-left: auto;
-    font-size: 23px;
-    font-family: 'nexa_lightregular';
+    font-size: 21px;
+    font-family: 'droid_sans', Helvetica, Arial, sans-serif;
     text-align: justify;
+    color: #2E3942;
 }
 
 #article-header{
@@ -1057,8 +1072,10 @@ margin-bottom: -100px;
     padding-bottom: 17px;
 }
 
-.article-btn-suite {
+.article-btn-suite,
+.article-btn-suite:hover {
     color: rgb(243,1,24);
+    font-family: 'nexa_lightregular';
 }
 
 
@@ -1520,6 +1537,27 @@ margin-bottom: -100px;
         margin-left: 2%;
         margin-right: 2%;
     }
+
+    #articles {
+        margin-bottom: 40px;
+    }
+
+    /* Articles */
+
+    #article-header {
+        font-size: 6px;
+    }
+
+    .article-pleine-page {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .share-container {
+        margin-bottom: 75px;
+    }
+
 }
 
 /* Petits écrans : smartphones et tablettes */
@@ -1721,6 +1759,12 @@ margin-bottom: -100px;
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    /* Articles */
+
+    #article-header {
+        font-size: 8px;
+    }
 }
 
 /* Juste spécifiquement pour l'apparation du menu social media */
@@ -1839,6 +1883,12 @@ margin-bottom: -100px;
     #bouton_envoyer-socialmedia {
         width: 30px;
         height: 30px;
+    }
+
+    /* Articles */
+
+    #article-header {
+        font-size: 12px;
     }
 }
 
