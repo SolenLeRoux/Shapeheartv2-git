@@ -34,6 +34,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'droid sans';
+    src: url('fonts/DroidSans.tff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*********************
  Global Style
 *********************/
@@ -994,7 +1001,6 @@ footer {
     width: 60%;
     margin-left: 30%;
     margin-right: 10%;
-    font-family: 'nexa_lightregular';
 }
 
 p[id^="debut-article-1"] {
@@ -1042,7 +1048,7 @@ margin-bottom: -100px;
     margin-right:auto;
     margin-left: auto;
     font-size: 23px;
-    font-family: 'nexa_lightregular';
+    font-family: 'Gotham SSm A', 'Gotham SSm B', Helvetica, Arial, sans-serif;
     text-align: justify;
 }
 
