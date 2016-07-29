@@ -461,7 +461,7 @@
         var pageProduit = $('#presentation'),
                 pageProduitHeight = pageProduit.height();
 
-        var translateUntil = pageProduitHeight/10;
+        var translateUntil = pageProduitHeight/15;
 
         var fadeStartProduit = headerHeight*2,
                 fadeUntilProduit = headerHeight*4;
@@ -469,7 +469,7 @@
         $(window).bind('scroll', function(){
             var offset = $(document).scrollTop();
             rotation = -7 + 10*offset/fadeUntilProduit;
-            translation = -translateUntil*(2/3) + translateUntil*offset/fadeUntilProduit;
+            translation = -translateUntil*(1/3) + translateUntil*offset/fadeUntilProduit;
             produit.css('transform', 'translate3d(0px,' + translation + 'px,0px)' + ' ' +'rotate(' + rotation + 'deg)');
         });
 
