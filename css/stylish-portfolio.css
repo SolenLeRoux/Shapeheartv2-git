@@ -946,6 +946,10 @@ footer {
 
 /* Articles */
 
+#article-2 {
+    margin-top: 80px;
+}
+
 #articles {
     display: inline-block;
     margin-top: 75px;
@@ -1079,7 +1083,7 @@ margin-bottom: -100px;
     height: 50px;
     margin-left: calc(50% - 150px);
     margin-right: calc(50% - 150px);
-    width: 300px;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 860px) {
@@ -1481,7 +1485,7 @@ margin-bottom: -100px;
     }
 
     .article_container {
-        width: 60%;
+        width: 96%;
         margin-left: 2%;
         margin-right: 2%;
     }
