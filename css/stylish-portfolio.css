@@ -1026,7 +1026,7 @@ margin-bottom: -100px;
     padding-bottom: 17px;
 }
 
-#bouton-suite , #bouton-suite-2{
+.article-btn-suite {
     color: rgb(243,1,24);
 }
 
