@@ -91,7 +91,7 @@
                         </h2>
                         <hr class="intro-divider">
                         <a class="btn btn-white btn-lg btn-suscribe">
-                            <p id="pop-in">
+                            <p class="pop-in">
                                 <span class="english">Get yours</span>
                                 <span class="francais">Demandez le vôtre</span>
                             </p>
@@ -202,29 +202,35 @@
     <!-- La section où on présente le produit-->
     <section id="presentation" class="content-produit">
         <div class="pres-container">
-            <div class="photo-produit">
-                <img src="img/product-black.png" id="black" width="100%">
-                <img src="img/product-red.png" id="red" width="100%">
-                <img src="img/product-green.png" id="green" width="100%">
-
-            </div>
-            <div class="color-select">
-                <div class="select-black"><a id="chose-black" href="#" onclick="document.getElementById('black').style.display= 'block'; document.getElementById('red').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-noir.png" class="point"></a></div>
-                <div class="select-red"><a id="chose-red" href="#" onclick="document.getElementById('red').style.display= 'block'; document.getElementById('black').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-rouge.png" class="point"></a></div>
-                <div class="select-green"><a id="chose-green" href="#" onclick="document.getElementById('green').style.display= 'block'; document.getElementById('black').style.display= 'none'; document.getElementById('red').style.display= 'none'; return false;"><img src="img/point-vert.png" class="point"></a></div>
-            </div>
             <div class="texte-produit-container">
-                <h2 class="section-heading">
+                <h2 id="text-running" class="section-heading">
                     <span class="english">READY TO START RUNNING ?</span>
                     <span class="francais">PRÊT À REJOINDRE LE MOUVEMENT ?</span>
                 </h2>
-                <div class="content-texte-produit">
-                    <p class="texte-produit">
-                        <span class="english">I write a text which is not very interesting because I'm not really inspired. Come on our website ! Cardiac frequency is awesome !</span>
-                        <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial !</span>
-                    </p> 
-                </div>               
             </div>
+            <div class="photo-produit">
+                <img src="img/product-black-woshadow.png" id="black" class="produit-img">
+                <img src="img/product-red-woshadow.png" id="red" class="produit-img">
+                <img src="img/product-green-woshadow.png" id="green" class="produit-img">
+            </div>
+            <img src="img/product-shadow.png" id="shadow" class="produit-img">
+            <div class="color-select">
+                <div class="select-black">
+                    <a id="chose-black" href="#" onclick="document.getElementById('black').style.display= 'inline'; document.getElementById('red').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-noir.png" class="point"></a>
+                </div>
+                <div class="select-red">
+                    <a id="chose-red" href="#" onclick="document.getElementById('red').style.display= 'inline'; document.getElementById('black').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-rouge.png" class="point"></a>
+                </div>
+                <div class="select-green">
+                    <a id="chose-green" href="#" onclick="document.getElementById('green').style.display= 'inline'; document.getElementById('black').style.display= 'none'; document.getElementById('red').style.display= 'none'; return false;"><img src="img/point-vert.png" class="point"></a>
+                </div>
+            </div>
+            <a class="btn btn-suscribe btn-red">
+                <p class="pop-in">
+                    <span class="english">Pre-order</span>
+                    <span class="francais">Pre-commander</span>
+                </p>
+            </a>
         </div>
         
     </section>
@@ -451,6 +457,28 @@
             MainNavRow.css('margin-top', (taille-40) + 'px');
         });
 
+        // Animation type Apple pour le produit
+
+        var produit = $('.photo-produit');
+
+        var section2 = $('.content-section-2'),
+                section2Height = section2.height();
+
+        var pageProduit = $('#presentation'),
+                pageProduitHeight = pageProduit.height();
+
+        var translateUntil = pageProduitHeight/15;
+
+        var fadeStartProduit = headerHeight*2,
+                fadeUntilProduit = headerHeight*4;
+
+        $(window).bind('scroll', function(){
+            var offset = $(document).scrollTop();
+            rotation = -7 + 10*offset/fadeUntilProduit;
+            translation = -translateUntil*(1/3) + translateUntil*offset/fadeUntilProduit;
+            produit.css('transform', 'translate3d(0px,' + translation + 'px,0px)' + ' ' +'rotate(' + rotation + 'deg)');
+        });
+
         // #to-top button appears after scrolling
         var fixed = false;
         $(document).scroll(function() {
@@ -486,7 +514,7 @@
                 unloadPopupBox();
             });
 
-            $('#pop-in').click(function() {
+            $('.pop-in').click(function() {
                 loadPopupBox();
             });
 
