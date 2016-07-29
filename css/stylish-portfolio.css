@@ -683,6 +683,7 @@ p {
     font-family: 'nexa_lightregular';
     font-weight: bold;
     overflow: hidden;
+    padding-top: 8%;
 }
 
 .lead-b {
@@ -743,6 +744,7 @@ p {
     height: 20px;
     width: 100%;
     margin-bottom: 40px;
+    position: relative;
     z-index: 10;
 }
 
@@ -782,6 +784,7 @@ p {
     -ms-transition: all 1.2s;
     -o-transition: all 1.2s;
     transition: all 1.2s;
+    margin-top: -8%;
 }
 
 /****************************
