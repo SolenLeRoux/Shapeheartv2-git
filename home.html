@@ -91,7 +91,7 @@
                         </h2>
                         <hr class="intro-divider">
                         <a class="btn btn-white btn-lg btn-suscribe">
-                            <p id="pop-in">
+                            <p class="pop-in">
                                 <span class="english">Get yours</span>
                                 <span class="francais">Demandez le vôtre</span>
                             </p>
@@ -209,15 +209,22 @@
                 </h2>
             </div>
             <div class="photo-produit">
-                <img src="img/product-black.png" id="black" width="100%">
+                <img src="img/product-black-woshadow.png" id="black" width="100%">
                 <img src="img/product-red-woshadow.png" id="red" width="100%">
-                <img src="img/product-green.png" id="green" width="100%">
+                <img src="img/product-green-woshadow.png" id="green" width="100%">
             </div>
+            <img src="img/product-shadow.png" width="100%">
             <div class="color-select">
                 <div class="select-black"><a id="chose-black" href="#" onclick="document.getElementById('black').style.display= 'block'; document.getElementById('red').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-noir.png" class="point"></a></div>
                 <div class="select-red"><a id="chose-red" href="#" onclick="document.getElementById('red').style.display= 'block'; document.getElementById('black').style.display= 'none'; document.getElementById('green').style.display= 'none'; return false;"><img src="img/point-rouge.png" class="point"></a></div>
                 <div class="select-green"><a id="chose-green" href="#" onclick="document.getElementById('green').style.display= 'block'; document.getElementById('black').style.display= 'none'; document.getElementById('red').style.display= 'none'; return false;"><img src="img/point-vert.png" class="point"></a></div>
             </div>
+            <a class="btn btn-suscribe btn-red">
+                <p class="pop-in">
+                    <span class="english">Pre-order</span>
+                    <span class="francais">Pre-commander</span>
+                </p>
+            </a>
         </div>
         
     </section>
@@ -509,7 +516,7 @@
                 unloadPopupBox();
             });
 
-            $('#pop-in').click(function() {
+            $('.pop-in').click(function() {
                 loadPopupBox();
             });
 

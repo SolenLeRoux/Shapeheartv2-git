@@ -440,7 +440,7 @@ p {
     La fenêtre pop-in qui apparaît quand on clique sur "get yours"
 ***********************************************************************/
 
-#pop-in {
+.pop-in {
     margin-bottom: 0;
 }
 
