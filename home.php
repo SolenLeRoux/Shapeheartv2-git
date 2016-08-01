@@ -250,103 +250,15 @@
     <!-- Custom JS -->
     <script src="customJS/navbar-animation.js"></script>
     <script src="customJS/navbar-scroll-fade.js"></script>
+    <script src="customJS/navbar-scroll-height.js"></script>
+    <script src="customJS/to-top-button-scroll.js"></script>
+    <script src="customJS/intro-divider-animation.js"></script>
+    <script src="customJS/produit-animation-apple.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-        // Scrolls to the selected menu item on the page
-        $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
 
-        // Coeur change de taille quand on scroll, et toute la navbar remonte
-
-        var fadeStartHeart=headerHeight/3, // 10px scroll or less will equiv to 100 height
-                fadeUntilHeart=headerHeight/3, // 200px scroll or more will equiv to 1 opacity
-                Heart = $('#heart'),
-                HeartHeight = Heart.height();
-
-        var MainNavRow = $('#main-nav-row');
-
-        $(window).bind('scroll', function(){
-            var offset = $(document).scrollTop(),
-                    taille = HeartHeight;
-            if(offset <= fadeStartHeart){
-                taille = HeartHeight;
-            }
-            else if( offset>=fadeUntilHeart ){
-                taille = 40;
-            }
-            Heart.css('height', taille + 'px');
-            MainNavRow.css('margin-top', (taille-40) + 'px');
-        });
-
-        // Animation type Apple pour le produit
-
-        var produit = $('.photo-produit');
-
-        var section2 = $('.content-section-2'),
-                section2Height = section2.height();
-
-        var pageProduit = $('#presentation'),
-                pageProduitHeight = pageProduit.height();
-
-        var translateUntil = pageProduitHeight/15;
-
-        var fadeStartProduit = headerHeight*2,
-                fadeUntilProduit = headerHeight*4;
-
-        $(window).bind('scroll', function(){
-            var offset = $(document).scrollTop();
-            rotation = -7 + 10*offset/fadeUntilProduit;
-            translation = -translateUntil*(1/3) + translateUntil*offset/fadeUntilProduit;
-            produit.css('transform', 'translate3d(0px,' + translation + 'px,0px)' + ' ' +'rotate(' + rotation + 'deg)');
-        });
-
-        // #to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function() {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function() {
-                        $('#to-top').css({
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function() {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
+        
 
 
         // la fenêtre pop-in apparaît quand on scroll ou qu'on appuie sur "get yours" et disparaît quand on la ferme

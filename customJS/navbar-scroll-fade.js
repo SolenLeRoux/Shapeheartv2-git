@@ -3,12 +3,12 @@
 fadeStart : start of the fading
 fadeUntil : end of the fading
 fading : id of the item, whose background's opacity will change (usually : fading = $('#fading') )
-RondLanguage : id of the language button (usually : RondLanguage = $('.rond-language') )
+rondLanguage : id of the language button (usually : RondLanguage = $('.rond-language') )
  */
 
 var header = $('header'),
     headerHeight = header.height(),
-    RondLanguage = $('.rond-language');
+    rondLanguage = $('.rond-language');
 
 var fadeStart = headerHeight/3,
     fadeUntil=headerHeight,
@@ -31,5 +31,5 @@ $(window).bind('scroll', function(){
         langue = 0;
     }
     fading.css('background','rgba(41,55,69,'+opacity+')')
-    RondLanguage.css('background', 'rgba(252,15,38,' + langue + ')');
+    rondLanguage.css('background', 'rgba(252,15,38,' + langue + ')');
 });

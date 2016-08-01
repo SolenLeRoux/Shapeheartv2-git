@@ -1,24 +1,23 @@
-// #navbar appears with an animation
-// Pour modifier la vitesse :
-// jouer avec la valeur du setInterval et celle du Npos = Npos+x
-// Pour modifier la hauteur de laquelle ça bouge :
-// jouer avec le if (Npos== x) et le navbar.css
-var navbar = $('.overlay-nav');
-var barreIntro = $('.intro-divider');
-var Npos = 0;
-var Nopacity = 0;
-var Nwidth = 0;
-var Nrun = setInterval(animation, 80);
+/* Description de la fonction */
+// Permet à la navbar d'apparaître en tombant quand on charge la page
+
+/* Variables */
+var navbar = $('.overlay-nav'), // id de la navbar qui va tomber
+    Npos = 0, // variable
+    Nopacity = 0; // variable
+
+var Nrun = setInterval(animation, 80); // lancement de la fonction animation toutes les 0,08s
+
+/* Fonction */
 function animation() {
-    if (Npos == 60) {
-        clearInterval(Nrun);
+
+    if (Npos == 60) { // une fois atteint la hauteur souhaitée,
+        clearInterval(Nrun); // arrêt du Nrun, donc de l'appel de animation
     }
-    else {
-        Npos = Npos+6;
-        Nopacity = Nopacity + 0.1;
-        Nwidth = Nwidth + 13;
+    else { // tant que la hauteur souhaitée n'est pas atteinte
+        Npos = Npos+6; // la variable augment de 6px
+        Nopacity = Nopacity + 0.1; // la variable augment de 0,1
         navbar.css('top',-60+Npos+'px');
-        navbar.css('opacity',Nopacity);
-        barreIntro.css('width', Nwidth + 'px');
+        navbar.css('opacity', Nopacity); // ce qui est répercuté sur l'objet
     }
 }
