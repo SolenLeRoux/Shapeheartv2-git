@@ -753,7 +753,7 @@ p {
     width: 100%;
     margin-bottom: 40px;
     position: relative;
-    z-index: 10;
+    z-index: 4;
 }
 
 .select-black , .select-green , .select-red{

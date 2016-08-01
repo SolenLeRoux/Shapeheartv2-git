@@ -2,76 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Shapeheart v2</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Pour un site bilingue -->
-    <link href="css/english.css" rel="stylesheet" title="english">
-    <link href="css/francais.css" rel="alternate stylesheet" title="francais">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <?php include('head.php'); ?>
 </head>
 
 
 <body>
 
     <!-- Navbar transparente sur le Header puis rouge ailleurs -->
-    <div class="nav-container">
-        <nav id="fading" class="overlay-nav">
-            <div id="main-nav-row">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-1">
-                        <a href="home.html">
-                            <img class="nav-logo" src="img/logo-white.png" id="heart">
-                           </a>
-                        </div>
-                        <div class="col-xs-4">
-                        </div>
-                        <div class="col-md-3 col-xs-6 align-right">
-                            <a href="FAQ.html" class="nav-text text-menu slide-underline">
-                                FAQ
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-xs-4 align-right">
-                            <a href="blog.html" class="nav-text text-menu slide-underline">
-                                Blog
-                            </a>
-                        </div>
-                        <div class="col-md-1 col-xs-2 align-right">
-                            <form class="nav-text text-menu">
-                                <input class="nav-text language-text english rond-language" type="submit" onclick="switch_style('francais');return false;" name="language" value="Fr" id="btn-fr">
-                                <input class="nav-text language-text francais rond-language" type="submit" onclick="switch_style('english');return false;" name="language" value="En" id="btn-en">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-
+    <?php include('navbar.php') ?>
 
     <!-- Header -->
     <header id="top">
@@ -94,7 +32,7 @@
 
     <section class="back-blog">
         <p id="back-blog">
-            <a id="back-to-blog" href="blog.html">
+            <a id="back-to-blog" href="blog.php">
             <span class="english">< Back to the blog </span>
             <span class="francais">< Retour au blog </span>
             </a>
@@ -135,55 +73,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4 text-center col-footer">
-                    <a href="https://www.shapeheart.com/" target="_blank">
-                        <img class="footer-logo" src="img/logo.png">
-                        <p class="footer-text shapeheart-font">SH<span class="text-shapeheart-a">A</span>PEHE<span class="text-shapeheart-a">A</span>RT</span></p>
-                    </a>
-                    <a href="FAQ.html">
-                        <p class="footer-text">FAQ</p>
-                    </a>
-                    <a href="#about">
-                        <p class="footer-text">
-                            <span class="english">Contact us</span>
-                            <span class="francais">Nous contacter</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="col-sm-4 text-center col-footer">
-                    <form method="post" action="traitement.php" class="form-footer">
-                        <p id="votre_email_footer">
-                            <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
-                            <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
-                        </p>
-                        <p id="bouton_envoyer_footer">
-                            <a href="#">
-                                <img src="img/logo-submit.png" width="25px">
-                            </a>
-                        </p>
-                    </form>
-                </div>
-                <div class="col-sm-4 text-center col-footer">
-                    <a href="https://www.facebook.com/Shapeheart-915761331864592/" target="_blank">
-                        <img class="footer-logo" src="img/facebook_logo_white.png">
-                    </a>
-                    <a href="https://www.linkedin.com/company/10779438?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10779438%2Cidx%3A1-1-1%2CtarId%3A1464628713433%2Ctas%3Ashapeheart" target="_blank">
-                        <img class="footer-logo" src="img/linkedin_logo_white.png">
-                    </a>
-                    <a href="https://twitter.com/Shapeheart_" target="_blank">
-                        <img class="footer-logo" src="img/twitter_logo_white.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
-
-
-
+    <?php include ("footer.php") ?>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
