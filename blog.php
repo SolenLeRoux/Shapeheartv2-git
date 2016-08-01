@@ -182,18 +182,6 @@
     <!-- Footer -->
     <?php include ("footer.php") ?>
 
-    <!-- Plug-in FB -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/es_LA/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -205,96 +193,6 @@
     <script src="customJS/navbar-scroll-fade.js"></script>
     <script src="customJS/navbar-scroll-height.js"></script>
     <script src="customJS/to-top-button-scroll.js"></script>
+    <script src="customJS/site-bilingue.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-// la fenêtre pop-in apparaît quand on scroll ou qu'on appuie sur "get yours" et disparaît quand on la ferme
-        $(document).ready( function() {
-
-            setTimeout(loadPopupBox, 3000);
-
-            $('.close').click( function() {
-                unloadPopupBox();
-            });
-
-            $('#pop-in').click(function() {
-                loadPopupBox();
-            });
-
-            $('#runwith-btn').click(function() {
-                loadPopupBox();
-            });
-
-            function unloadPopupBox() {    // TO Unload the Popupbox
-                $('#mybox').fadeOut(1000);
-            }
-
-            function loadPopupBox() {    // To Load the Popupbox
-                $('#mybox').fadeIn(1000);
-            }
-        });
-
-
-
-
-        // JS pour faire un site bilingue
-        // pompé sur thesitewizard.com
-        var style_cookie_name = "language" ;
-        var style_cookie_duration = 30 ;
-        var style_domain = "www.shapeheart.com" ;
-
-        // You do not need to customise anything below this line
-        function switch_style ( css_title )
-        {
-            // You may use this script on your site free of charge provided
-            // you do not remove this notice or the URL below. Script from
-            // http://www.thesitewizard.com/javascripts/change-style-sheets.shtml
-            var i, link_tag ;
-            for (i = 0, link_tag = document.getElementsByTagName("link") ;
-                 i < link_tag.length ; i++ ) {
-                if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
-                        link_tag[i].title) {
-                    link_tag[i].disabled = true ;
-                    if (link_tag[i].title == css_title) {
-                        link_tag[i].disabled = false ;
-                    }
-                }
-                set_cookie( style_cookie_name, css_title,
-                        style_cookie_duration, style_domain );
-            }
-        }
-        function set_style_from_cookie()
-        {
-            var css_title = get_cookie( style_cookie_name );
-            if (css_title.length) {
-                switch_style( css_title );
-            }
-        }
-        function set_cookie ( cookie_name, cookie_value,
-                              lifespan_in_days, valid_domain )
-        {
-            // http://www.thesitewizard.com/javascripts/cookies.shtml
-            var domain_string = valid_domain ?
-                    ("; domain=" + valid_domain) : '' ;
-            document.cookie = cookie_name +
-                    "=" + encodeURIComponent( cookie_value ) +
-                    "; max-age=" + 60 * 60 *
-                    24 * lifespan_in_days +
-                    "; path=/" + domain_string ;
-        }
-        function get_cookie ( cookie_name )
-        {
-            // http://www.thesitewizard.com/javascripts/cookies.shtml
-            var cookie_string = document.cookie ;
-            if (cookie_string.length != 0) {
-                var cookie_value = cookie_string.match (
-                        '(^|;)[\s]*' +
-                        cookie_name +
-                        '=([^;]*)' );
-                return decodeURIComponent ( cookie_value[2] ) ;
-            }
-            return '' ;
-        }
-
-    </script>
 </body>

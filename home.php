@@ -43,34 +43,7 @@
     </header>
 
     <!-- La fenêtre pop-in qui apparait quand on clique sur get yours-->
-    <div id="mybox">
-        <div id="mybox_aplat">
-            <div id="mybox_conteneur">
-                <div id="mybox_relative">
-                    <div id="mybox_close">
-                        <a class="close" > <p><img src="img/icon-back.png" alt="" width="25px"></p> </a>
-                    </div>
-                    <img id="logo" src="img/logo.png" alt="">
-                    <p class="texte">EM<span class="texte-a">A</span>IL</p>
-                    <h2 class="texte-promo">
-                        <span class="english">Get 20% off your first order <br />no spam we promiss ;-)</span>
-                        <span class="francais">Profitez de 20% sur votre première commande<br />Promis pas de spam !</span>
-                    </h2>
-                    <div id="form">
-                        <form method="post" action="traitement.php">
-                            <p id="votre_email">
-                                <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
-                                <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
-                            </p>
-                            <a href="#">
-                                <img id="bouton_envoyer" src="img/logo-submit.png" width="50px">
-                            </a>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include("pop-up-window.php"); ?>
 
     <!-- Product : 3 images en 2/3 de page -->
 
@@ -254,101 +227,8 @@
     <script src="customJS/to-top-button-scroll.js"></script>
     <script src="customJS/intro-divider-animation.js"></script>
     <script src="customJS/produit-animation-apple.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-
-        
-
-
-        // la fenêtre pop-in apparaît quand on scroll ou qu'on appuie sur "get yours" et disparaît quand on la ferme
-        $(document).ready( function() {
-
-            setTimeout(loadPopupBox, 3000);
-
-            $('.close').click( function() {
-                unloadPopupBox();
-            });
-
-            $('.pop-in').click(function() {
-                loadPopupBox();
-            });
-
-            $('#runwith-btn').click(function() {
-                loadPopupBox();
-            });
-
-            function unloadPopupBox() {    // TO Unload the Popupbox
-                $('#mybox').fadeOut(1000);
-            }
-
-            function loadPopupBox() {    // To Load the Popupbox
-                $('#mybox').fadeIn(1000);
-            }
-        });
-
-
-
-        // JS pour faire un site bilingue
-        // pompé sur thesitewizard.com
-        var style_cookie_name = "language" ;
-        var style_cookie_duration = 30 ;
-        var style_domain = "www.shapeheart.com" ;
-
-        // You do not need to customise anything below this line
-        function switch_style ( css_title )
-        {
-            // You may use this script on your site free of charge provided
-            // you do not remove this notice or the URL below. Script from
-            // http://www.thesitewizard.com/javascripts/change-style-sheets.shtml
-            var i, link_tag ;
-            for (i = 0, link_tag = document.getElementsByTagName("link") ;
-                 i < link_tag.length ; i++ ) {
-                if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
-                        link_tag[i].title) {
-                    link_tag[i].disabled = true ;
-                    if (link_tag[i].title == css_title) {
-                        link_tag[i].disabled = false ;
-                    }
-                }
-                set_cookie( style_cookie_name, css_title,
-                        style_cookie_duration, style_domain );
-            }
-        }
-        function set_style_from_cookie()
-        {
-            var css_title = get_cookie( style_cookie_name );
-            if (css_title.length) {
-                switch_style( css_title );
-            }
-        }
-        function set_cookie ( cookie_name, cookie_value,
-                              lifespan_in_days, valid_domain )
-        {
-            // http://www.thesitewizard.com/javascripts/cookies.shtml
-            var domain_string = valid_domain ?
-                    ("; domain=" + valid_domain) : '' ;
-            document.cookie = cookie_name +
-                    "=" + encodeURIComponent( cookie_value ) +
-                    "; max-age=" + 60 * 60 *
-                    24 * lifespan_in_days +
-                    "; path=/" + domain_string ;
-        }
-        function get_cookie ( cookie_name )
-        {
-            // http://www.thesitewizard.com/javascripts/cookies.shtml
-            var cookie_string = document.cookie ;
-            if (cookie_string.length != 0) {
-                var cookie_value = cookie_string.match (
-                        '(^|;)[\s]*' +
-                        cookie_name +
-                        '=([^;]*)' );
-                return decodeURIComponent ( cookie_value[2] ) ;
-            }
-            return '' ;
-        }
-
-    </script>
+    <script src="customJS/site-bilingue.js"></script>
+    <script src="customJS/pop-up-window.js"></script>
 
 </body>
 
