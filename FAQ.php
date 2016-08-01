@@ -15,7 +15,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -32,8 +32,8 @@
     <![endif]-->
 
 </head>
-<body>
 
+<body>
     <!-- Navbar transparente sur le Header puis rouge ailleurs -->
     <div class="nav-container">
         <nav id="fading" class="overlay-nav">
@@ -41,20 +41,20 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-1">
-                        <a href="home.html">
-                            <img class="nav-logo" src="img/logo-white.png" id="heart">
-                           </a>
+                            <a href="home.php">
+                                <img class="nav-logo" src="img/logo-white.png" id="heart">
+                            </a>
                         </div>
                         <div class="col-xs-4">
                         </div>
                         <div class="col-md-3 col-xs-6 align-right">
-                            <a href="FAQ.html" class="nav-text text-menu slide-underline">
-                                FAQ
+                            <a href="home.php" class="nav-text text-menu slide-underline">
+                                Home
                             </a>
                         </div>
                         <div class="col-md-2 col-xs-4 align-right">
-                            <a href="home.html" class="nav-text text-menu slide-underline">
-                                Home
+                            <a href="blog.php" class="nav-text text-menu slide-underline">
+                                Blog
                             </a>
                         </div>
                         <div class="col-md-1 col-xs-2 align-right">
@@ -71,13 +71,13 @@
 
     <!-- Header -->
     <header id="top">
-        <div id="header-blog">
-            <div id="background-header-blog">
+        <div id="header-FAQ">
+            <div id="background-header-FAQ">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 text-vertical-center intro-message">
                             <div class=" text-header text-shapeheart">
-                                <h1>BLOG</h1>
+                                <h1>FAQ</h1>
                             </div>
                         </div>
                     </div>
@@ -86,155 +86,58 @@
         </div>
     </header>
 
-    <!-- Articles -->
-
-    <section id="articles">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="article_container">
-
-                        <div id="article-1">
-                            <p class="titre-article">
-                                <span class="english">Why run with a heart rate monitor ?</span>
-                                <span class="francais">Pourquoi courir au cardio ?</span>
-                            </p>
-                            <p class="date-article">
-                                25/06/2016
-                            </p>
-                            <img class="article_picture" src="img/bras_am.jpg">
-                            <p id="debut-article-1" class="article-1 article" >
-                                <span class="english">When heart rate monitoring devices emerged, I said to myself “What’s the use to know whether my heart is bumping at 70% or 90% of my maximum heart rate? In any case, I’ll end up breathless and my legs will beg me to stop.</span>
-                                <span class="francais">Quand les cardios sont arrivés, je me disais « Quel intérêt de savoir si mon cœur est à 70 ou 90 de la fréquence cardiaque maximum (FCM)? Dans tous les cas, je suis essoufflé et mes jambes me supplient d’arrêter</span>
-                                <br/>
-                            </p>
-                            <a class="article-btn-suite article" href="article_1.html"> <!-- onclick="document.getElementById('article-1').style.display= ''; this.style.display= 'none'; return false;">-->
-                                <span class="english">Read More ...</span>
-                                <span class="francais">Afficher la suite ...</span>
-                            </a>
-                            <div class="share-container">
-                                <div class="share">
-                                    <span class="english">Share</span>
-                                    <span class="francais">Partager</span>
-                                </div>
-                                <div class="share_separator"></div>
-                                <div class="share_logos">
-                                    <div class="share_logo_block">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.shapeheart.com/article/1">
-                                            <img class="share_logo" src="img/Facebook.png">
-                                        </a>
-                                        <a href="https://www.linkedin.com/cws/share?url=http://www.shapeheart.com/article/1">
-                                            <img class="share_logo" src="img/Linked_in.png">
-                                        </a>
-                                        <a href="https://twitter.com/share?url=http://www.shapeheart.com/article/1">
-                                            <img class="share_logo" src="img/Twitter.png">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="article-2">
-                            <p id="titre-article-2">
-                                <p class="titre-article">
-                                    <span class="english">Why we shouldnt talk about calories</span>
-                                    <span class="francais">Pourquoi on ne doit plus parler de calories</span>
-                                </p>
-                            </p>
-                            <p class="date-article">
-                                20/06/2016
-                            </p>
-                            <img class="article_picture" src="img/background_video.png">
-                            <p id="debut-article-2" class="article-2 article">
-                                <span class="english">When it comes to sports, we often talk about calories, but do when really know what it is? Physically, it corresponds to an energy measurement. This measurement is truly specific and amounts to the energy necessary to increase by one degree a single gram of water. Thus said, when we burn 1 000 calories, this equals to increase by one degree 1000 grams of water, of 1 liter. But where does this energy come from ? Where is she drawn in our body ?</span>
-                                <span class="francais">Lorsqu’on parle de sport, on parle souvent de calories, mais qu’est ce qu’une calorie ? Physiquement, cela correspond à une mesure d’énergie. Cette mesure est très concrète et équivaut à l’énergie nécessaire pour faire augmenter d’un degré un gramme d’eau. Quand on brûle 1000 calories cela équivaudrait donc à faire augmenter d’un degré 1000 grammes d’eau, soit 1 litre. Mais d’où vient cette énergie ? Où est elle puisée dans notre corps ?</span>
-                                <br/>
-                            </p>
-                            <a class="article-btn-suite article" href="article_2.html"><!-- onclick="document.getElementById('article-2').style.display= ''; this.style.display= 'none'; return false;">-->
-                                <span class="english">Read more ...</span>
-                                <span class="francais">Afficher la suite ...</span>
-                            </a>
-                            <div class="share-container">
-                                <div class="share">
-                                    <span class="english">Share</span>
-                                    <span class="francais">Partager</span>
-                                </div>
-                                <div class="share_separator"></div>
-                                <div class="share_logos">
-                                    <div class="share_logo_block">
-                                        <a href="#">
-                                            <img class="share_logo" src="img/Facebook.png">
-                                        </a>
-                                        <a href="#">
-                                            <img class="share_logo" src="img/Linked_in.png">
-                                        </a>
-                                        <a href="#">
-                                            <img class="share_logo" src="img/Twitter.png">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Menu social media -->
-                <div class="col-md-4">
-                    <div id="menu-social-media">
-                        <div id="menu-suscribe" class="widget">
-                            <h1 class="widget-title">
-                                <span class="english">Newsletter</span>
-                                <span class="francais">Newsletter</span>
-                            </h1>
-                            <p>
-                                <span class="english">Suscribe to our newsletter</span>
-                                <span class="francais">Inscrivez-vous à notre newsletter</span>
-                            </p>
-                            <div id="enter-email">
-                                <form method="post" action="traitement.php">
-                                    <p id="votre_email-socialmedia">
-                                        <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
-                                        <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
-                                    </p>
-                                    <a href="#">
-                                        <img id="bouton_envoyer-socialmedia" src="img/logo-submit.png">
-                                    </a>
-                                </form>
-                            </div>
-                        </div>
-                        <div id="menu-follow" class="widget">
-                            <h1 class="widget-title">
-                                <span class="english">Follow</span>
-                                <span class="francais">Nous suivre</span>
-                            </h1>
-                            <a href="https://www.facebook.com/Shapeheart-915761331864592/" target="_blank">
-                                <i class="fa fa-facebook btn-follow"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/10779438?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10779438%2Cidx%3A1-1-1%2CtarId%3A1464628713433%2Ctas%3Ashapeheart" target="_blank">
-                                <i class="fa fa-linkedin btn-follow"></i>
-                            </a>
-                            <a href="https://twitter.com/Shapeheart_" target="_blank">
-                                <i class="fa fa-twitter btn-follow"></i>
-                            </a>
-                        </div>
-                        <div id="menu-facebook" class="widget">
-                            <h1 class="widget-title">
-                                Facebook
-                            </h1>
-                            <div class="iframe-facebook-container">
-                                <img class="iframe-facebook-ratio" src="data:image/gif;base64,R0lGODlhEAAJAIAAAP///wAAACH5BAEAAAAALAAAAAAQAAkAAAIKhI+py+0Po5yUFQA7"/>
-                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShapeheart-915761331864592%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
-                                </iframe>
-                            </div>
-                        </div>
-                        <div id="menu-twitter" class="widget">
-                            <h1 class="widget-title">
-                                Twitter
-                            </h1>
-                            <a class="twitter-timeline" data-height="800" href="https://twitter.com/Shapeheart_">Tweets by Shapeheart_</a>
-                            <script async src="https:/platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                    </div>
-                </div>
+    <!-- Questions -->
+    <section id="section-FAQ">
+        <div class="container-FAQ">
+            <div class="FAQ-block">
+                <p class="question-FAQ">
+                    <span class="english">Is it reliable ?</span>
+                    <span class="francais">Est ce fiable ?</span>
+                </p>
+                <p class="reponse-FAQ">
+                    <span class="english">Yes.</span>
+                    <span class="francais">La technologie que nous utilisons est cliniquement prouvée sur le bras, elle est même plus précise que sur le poignet car il y a moins d'artefacts de mouvement</span>
+                </p>
+            </div>
+            <div class="FAQ-block">
+                <p class="question-FAQ">
+                    <span class="english">How do I use it during winter ?</span>
+                    <span class="francais">Comment l'utiliser en hiver ?</span>
+                </p>
+                <p class="reponse-FAQ">
+                    <span class="english">Easily.</span>
+                    <span class="francais">L'électronique peut être retirée facilement du brassard et placée dans notre winter kit. Ce dernier vient disparaitre en dessous du brassard.</span>
+                </p>
+            </div>
+            <div class="FAQ-block">
+                <p class="question-FAQ">
+                    <span class="english">Does my phone fit ?</span>
+                    <span class="francais">Quelle taille de téléphone ?</span>
+                </p>
+                <p class="reponse-FAQ">
+                    <span class="english">Yes.</span>
+                    <span class="francais">Nous utilisons une pochette en tissu élastique qui permet de s'adapter à 80% des téléphones du marché, Samsung Galaxy, Iphone 5, 6...</span>
+                </p>
+            </div>
+            <div class="FAQ-block">
+                <p class="question-FAQ">
+                    <span class="english">Is it compatible with my running app ?</span>
+                    <span class="francais">Avec quelle appli est ce compatible ?</span>
+                </p>
+                <p class="reponse-FAQ">
+                    <span class="english">Yes.</span>
+                    <span class="francais">Notre capteur est relié en bluetooth à votre téléphone et est compatible avec 90% des apps de running : Straa, Endomondo, Runtastic, Runkeeper...</span>
+                </p>
+            </div>
+            <div class="FAQ-block">
+                <p class="question-FAQ">
+                    <span class="english">Do the magnet damage the phone ?</span>
+                    <span class="francais">Les aimants abiment ils le téléphone ?</span>
+                </p>
+                <p class="reponse-FAQ">
+                    <span class="english">No.</span>
+                    <span class="francais">On a tendance à penser que les aimants sont dangereux pour l'électronique, c'était le cas pour les vieux disques dur, le type de stockage dans les téléphones actuels est électrostatique et ne subit aucune altération des aimants.</span>
+                </p>
             </div>
         </div>
     </section>
@@ -248,7 +151,7 @@
                         <img class="footer-logo" src="img/logo.png">
                         <p class="footer-text shapeheart-font">SH<span class="text-shapeheart-a">A</span>PEHE<span class="text-shapeheart-a">A</span>RT</span></p>
                     </a>
-                    <a href="FAQ.html">
+                    <a href="FAQ.php">
                         <p class="footer-text">FAQ</p>
                     </a>
                     <a href="#about">
@@ -286,18 +189,6 @@
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
-
-    <!-- Plug-in FB -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/es_LA/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -355,7 +246,7 @@
         }
 
         // #navbar's opacity changes after scrolling
-        var header = $('#header-blog'),
+        var header = $('#header-FAQ'),
                 headerHeight = header.height();
 
         var RondLanguage = $('.rond-language');

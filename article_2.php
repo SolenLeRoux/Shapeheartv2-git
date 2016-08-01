@@ -43,19 +43,19 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-1">
-                        <a href="home.html">
+                        <a href="home.php">
                             <img class="nav-logo" src="img/logo-white.png" id="heart">
                            </a>
                         </div>
                         <div class="col-xs-4">
                         </div>
                         <div class="col-md-3 col-xs-6 align-right">
-                            <a href="FAQ.html" class="nav-text text-menu slide-underline">
+                            <a href="FAQ.php" class="nav-text text-menu slide-underline">
                                 FAQ
                             </a>
                         </div>
                         <div class="col-md-2 col-xs-4 align-right">
-                            <a href="blog.html" class="nav-text text-menu slide-underline">
+                            <a href="blog.php" class="nav-text text-menu slide-underline">
                                 Blog
                             </a>
                         </div>
@@ -82,8 +82,8 @@
                         <div class="col-lg-12 text-vertical-center intro-message">
                             <div id="article-header">
                                 <h1>
-                                <span class="english">Why run with a heart rate monitor ?</span>
-                                <span class="francais">Pourquoi courir au cardio ?</span></h1>
+                                <span class="english">Why we shouldnt talk about calories</span>
+                                <span class="francais">Pourquoi on ne doit plus parler de calories</span></h1>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
 
     <section class="back-blog">
         <p id="back-blog">
-            <a id="back-to-blog" href="blog.html">
+            <a id="back-to-blog" href="blog.php">
             <span class="english">< Back to the blog </span>
             <span class="francais">< Retour au blog </span>
             </a>
@@ -105,11 +105,11 @@
         <div class="article-pleine-page">
             <div id="articles">
                 <p class="date-article">
-                    25/06/2016
+                    20/05/2016
                 </p>
-                <br/>
-                <span class="english">When heart rate monitoring devices emerged, I said to myself “What’s the use to know whether my heart is bumping at 70% or 90% of my maximum heart rate? In any case, I’ll end up breathless and my legs will beg me to stop.<br /><br />In the end, I’ll be exhausted, dopamine will give me satisfaction, and I could eat for two shamelessly. Heart rate in the running community has long been ignored. Whether to break personal records or to lose weight, heart rate is the best observable data.<br /> <br />The heart, which is to the body what the tachometer is to the engine, accelerates its pace and increases the amount of oxygen transmitted to our muscle cells. Then, you have to know in which effort zone you find yourself. The famous Astrand formula (220 – age = MHR) is irrelevant, made up from empirical studies. Through his heart rate monitoring, the runner can control and supervise his pace (70% of MHR for example): slow paces are fundamental for any progress in the long run.<br /><img class="article_picture" src="img/bg.jpg" width="100%">If you drank too much last night or if you begun a marathon training, it is always valuable to understand how your organism reacts to imposed efforts. It is therefore possible to check at any moment your current physical condition. No more effort based on “feelings", you now have access to a personalized training plan, more rational and more effective, largely due to the ability to accurately monitor the intensity of physical activities. How many races have we finished on our knees, overtaken on all sides, cursing ourselves for the 3rd mile acceleration? Between 50 and 75% of your MHR, your body will burn a maximum of fats, whereas between 75 and 90% of your MHR, your body will consume mainly sugar.<br /> <br />Therefore, in order to burn fat and weight, prefer longer runs (45 minutes to an hour) without exceeding 75% MHR. Above this threshold, you’ll get tired quickly and expose yourself to injuries, without any results on your weight. Thereby, it is crucial to know your heart rate, otherwise no change will be seen on your body or in your running performance. First advice: don’t be your monitor’s slave! Before everything else, running is for pleasure and fun! Please note that the heart rate is unique to each person. Do not compare yours to those of others! </span>
-                <span class="francais">Quand les cardios sont arrivés, je me disais « Quel intérêt de savoir si mon cœur est à 70 ou 90 de la fréquence cardiaque maximum (FCM)? Dans tous les cas, je suis essoufflé et mes jambes me supplient d’arrêter.<br />Je serai épuisé à la fin de mon effort, la dopamine me rendra satisfait, et je pourrai manger comme quatre sans vergogne.Voilà une des méconnaissances classiques des runners aujourd’hui. Que ce soit pour progresser ou perdre du poids, le cardiofréquencemètre est la meilleure donnée observable concernant l’effort physique.<br /><br />Le cœur, qui est au corps ce que le compte-tour est au moteur, accélère sa cadence et augmente la quantité d’oxygène transmise à nos cellules musculaires. Il s’agit alors de savoir dans quelle zone d’effort nous nous trouvons. La célèbre formule d’Astrand (220 pulsations moins l’âge=FCM) est une boutade issue d’études empiriques qui met plus en danger les coureurs qu’autre chose.Le cardio permet au coureur de contrôler et de surveiller son allure (70 de la FCM par exemple), car il faut savoir que les allures lentes sont fondamentales à toute forme de progrès dans le temps.<br /><img class="article_picture" src="img/bg.jpg" width="100%">Que vous ayez bu le verre de trop hier soir, ou que vous vous préparez à votre premier marathon, il est toujours intéressant de comprendre comment votre organisme réagit aux efforts imposés. Il vous est possible de vérifier à chaque instant votre forme du moment. Fini l’effort basé sur les « sensations », vous avez désormais accès à une planification d’entraînement plus personnalisée, plus rationnelle et plus efficace et ce, en grande partie grâce à la possibilité de surveiller précisément l’intensité de l’activité physique. Combien de courses avons-nous fini dans le rouge, dépassés de tout côté, a se maudire intérieurement d’avoir accélérer au 3ème kilomètre ? Entre 50 et 75 de votre FCM, votre corps va brûler un maximum de graisses, alors qu'entre 75 et 90 de votre FCM, votre corps consommera surtout des sucres.<br /><br />Ainsi, pour perdre de la graisse et donc du poids, privilégiez de longs efforts (sorties de 45min-1h) sans dépasser les 75 FCM. Au-dessus de ce seuil, vous vous fatiguerez vite et vous exposez à un risque de blessure, sans aucun retour sur la balance. Ainsi, il est crucial de savoir comment utiliser son cardio, sans quoi les résultats corporels ou sportifs ne suivront pas.Premier conseil : ne soyez pas esclave de votre cardiofréquencemètre. La course à pied est avant tout une recherche de PLAISIR ! Attention, la fréquence cardiaque est propre à chaque personne. Ne la comparer pas à celles des autres ! Pour une analyse scientifique approfondie :<a id="lien-pdf" href="http://entrainement-sportif.fr/cardiofrequence.pdf">http://entrainement-sportif.fr/cardiofrequence.pdf</a> </span>
+                <br>
+                <span class="english">When it comes to sports, we often talk about calories, but do when really know what it is? Physically, it corresponds to an energy measurement. This measurement is truly specific and amounts to the energy necessary to increase by one degree a single gram of water. Thus said, when we burn 1 000 calories, this equals to increase by one degree 1000 grams of water, of 1 liter. <br /><br />But where does this energy come from? Where is she drawn in our body?During a physical effort, the human organism draws its energy from two sources: • Carbohydrates; glucose, or sugar, present mainly in the blood and muscle glycogen • Lipids; triglycerides present primarily in adipose tissueWhen we talk about calories, we do not distinguish calories from lipids and those from carbohydrates. Yet, the type of effort that is made will drastically change the way our body draws energy. <br /><img class="article_picture" src="img/bg.jpg" width="100%">According to heart rate, and thus according to the effort requiring of him, the body will draw the energy needed to operate either in carbohydrates or lipids. Carbohydrates are easier to mobilize during violent effort; our body will therefore mobilize them. During moderate effort, the body tends to pick up in the lipids. </span>
+                <span class="francais">Lorsqu’on parle de sport, on parle souvent de calories, mais qu’est ce qu’une calorie ? Physiquement, cela correspond à une mesure d’énergie. Cette mesure est très concrète et équivaut à l’énergie nécessaire pour faire augmenter d’un degré un gramme d’eau. Quand on brûle 1000 calories cela équivaudrait donc à faire augmenter d’un degré 1000 grammes d’eau, soit 1 litre. Mais d’où vient cette énergie ? Où est elle puisée dans notre corps ? Où est elle puisée dans notre corps ? <br /><br />Lors d’un effort, l’organisme puise son énergie de deux sources : 1) les glucides ; le glucose, donc le sucre, présent dans le sang et dans le glycogène musculaire principalement, et 2) les lipides ; triglycérides présent dans les tissus adipeux principalement. Lorsqu’on parle de calorie, on ne distingue donc pas entre les calories provenant des lipides et celles provenant des glucides. Or le type d’effort que l’on fait va drastiquement changer la façon dont notre organisme va puiser l’énergie. Selon la fréquence cardiaque, et donc selon l’effort qui lui est demandé, l’organisme ira puiser l’énergie nécessaire à son fonctionnement dans les glucides ou dans les lipides. Les glucides étant plus faciles à mobiliser, lors d’effort violents, c’est eux que l’organisme ira mobiliser. <br /><img class="article_picture" src="img/bg.jpg" width="100%">Lors d’efforts modéré, l’organisme aura tendance à aller chercher dans les lipides. Des scientifiques ont observé que la courbe de consommation de lipides chute pour des efforts violents : l’organisme ne puise donc pas dans les graisses, mais ira puiser son énergie directement dans le glucide présent dans le sang et dans le glycogène musculaire jusqu’à épuisement (hypoglycémie). Un exemple simple que je rencontre souvent illustre parfaitement cette situation. J’ai plusieurs fois eu cette discussion à la salle où je pratique la boxe anglaise : perd on du poids lorsqu’on fait une séance ? La boxe est en effet un des sports qui permet de brûler le plus grand nombre de calories par heure. Néanmoins, ce n’est pas le bon sport pour perdre de la graisse. Lors des séances, l’organisme va littéralement vider tout le glucide présent dans le sang. <br /><br />Si la personne a mangé avant, elle a suffisamment de ressource pour tenir la séance. Sinon c’est l’hypoglycémie ou l’épuisement. Dans les deux cas, le taux de sucre dans le sang (la glycémie) est très faible et provoque la sensation de faim. On va donc manger pour combler ce manque. Résultat de la séance de boxe : on a vidé le sucre de notre sang, puis on l’a à nouveau rempli, sans jamais avoir puisé dans les graisses. La bonne façon de puiser dans les lipides est de faire un effort modéré (aux alentours de 50 à 65% de sa fréquence cardiaque maximum) pendant une durée supérieure à trente minutes.</span>
             </div>
             <div class="share-container">
                 <div class="share">
@@ -143,7 +143,7 @@
                         <img class="footer-logo" src="img/logo.png">
                         <p class="footer-text shapeheart-font">SH<span class="text-shapeheart-a">A</span>PEHE<span class="text-shapeheart-a">A</span>RT</span></p>
                     </a>
-                    <a href="FAQ.html">
+                    <a href="FAQ.php">
                         <p class="footer-text">FAQ</p>
                     </a>
                     <a href="#about">

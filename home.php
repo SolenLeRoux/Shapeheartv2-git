@@ -42,19 +42,19 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-1">
-                        <a href="home.html">
+                        <a href="home.php">
                             <img class="nav-logo" src="img/logo-white.png" id="heart">
                         </a>
                         </div>
                         <div class="col-xs-4">
                         </div>
                         <div class="col-md-3 col-xs-6 align-right">
-                            <a href="FAQ.html" class="nav-text text-menu slide-underline">
+                            <a href="FAQ.php" class="nav-text text-menu slide-underline">
                                 FAQ
                             </a>
                         </div>
                         <div class="col-md-2 col-xs-4 align-right">
-                            <a href="blog.html" class="nav-text text-menu slide-underline">
+                            <a href="blog.php" class="nav-text text-menu slide-underline">
                                 Blog
                             </a>
                         </div>
@@ -265,7 +265,7 @@
                             <span class="francais">Que ça soit au niveau du prototypage, de l’électronique ou de l’industrialisation, concevoir un tel brassard de running a demandé beaucoup de travail et d’itérations avec vous, les coureurs. Nous avons noué beaucoup de partenariats pour vous proposer un outil de monitoring simple, bien pensé et à prix raisonnable. Pour restez en contact, vous pouvez liker notre page facebook ci dessous !</span>
                         </p>
                         </br>
-                        <a href="blog.html" class="btn-transparent">
+                        <a href="blog.php" class="btn-transparent">
                             <span class="english">Read more</span>
                             <span class="francais">En savoir plus</span>
                         </a>
