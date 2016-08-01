@@ -3,7 +3,8 @@
 <?php $currentpage = $_SERVER['REQUEST_URI']; // trouve la page actuelle
     $currentpage = substr($currentpage, 18); // supprime les 18 premiers caractères (/shapeheartv2-git/)
     $homepages = array('blog.php', 'FAQ.php'); // liste des pages sur lesquelles 'home' doit apparaître
-    $FAQpages = array('article_1.php', 'article_2.php', 'blog.php', 'home.php'); // idem pour 'FAQ'
+    $FAQpages1 = array('article_1.php', 'article_2.php', 'home.php'); // idem pour 'FAQ', en position 1
+    $FAQpages2 = array('blog.php');
     $blogpages = array('article_1.php', 'article_2.php', 'FAQ.php', 'home.php'); // idem pour 'blog'
 ?>
 
@@ -28,12 +29,19 @@
                         </a>
                     </div>
                     <?php } ?>
-                    <?php if (in_array($currentpage, $FAQpages)) { ?>
+                    <?php if (in_array($currentpage, $FAQpages1)) { ?>
                     <div class="col-md-3 col-xs-6 align-right">
                         <a href="FAQ.php" class="nav-text text-menu slide-underline">
                             FAQ
                         </a>
                     </div>
+                    <?php } ?>
+                    <?php if (in_array($currentpage, $FAQpages2)) { ?>
+                        <div class="col-md-2 col-xs-4 align-right">
+                            <a href="blog.php" class="nav-text text-menu slide-underline">
+                                FAQ
+                            </a>
+                        </div>
                     <?php } ?>
                     <?php if (in_array($currentpage, $blogpages)) { ?>
                     <div class="col-md-2 col-xs-4 align-right">

@@ -200,6 +200,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Custom JS -->
+    <script src="customJS/navbar-animation.js"></script>
+    <script src="customJS/navbar-scroll-fade.js"></script>
+
     <!-- Custom Theme JavaScript -->
     <script>
         // Closes the sidebar menu
@@ -226,57 +230,6 @@
                     }
                 }
             });
-        });
-
-        // #navbar appears with an animation
-        // Pour modifier la vitesse :
-        // jouer avec la valeur du setInterval et celle du Npos = Npos+x
-        // Pour modifier la hauteur de laquelle ça bouge :
-        // jouer avec le if (Npos== x) et le navbar.css
-        var navbar = $('.overlay-nav');
-        var Npos = 0;
-        var Nopacity = 0;
-        var Nrun = setInterval(animation, 80);
-        function animation() {
-            if (Npos == 60) {
-                clearInterval(Nrun);
-            }
-            else {
-                Npos = Npos+6;
-                Nopacity = Nopacity + 0.1;
-                navbar.css('top',-60+Npos+'px');
-                navbar.css('opacity',Nopacity);
-            }
-        }
-
-        // #navbar's opacity changes after scrolling
-        var header = $('#header-blog'),
-                headerHeight = header.height();
-
-        var RondLanguage = $('.rond-language');
-
-        var fadeStart=headerHeight/3 // 10px scroll or less will equiv to 0 opacity
-                ,fadeUntil=headerHeight // 200px scroll or more will equiv to 1 opacity
-                ,fading = $('#fading');
-
-        $(window).bind('scroll', function(){
-            var offset = $(document).scrollTop(),
-                    opacity = 1,
-                    langue = 1;
-            if( offset<=fadeStart ){
-                opacity = 0,
-                        langue = 1;
-            }
-            else if( offset<=fadeUntil ){
-                opacity = offset/fadeUntil;
-                langue = 0;
-            }
-            else if (offset > fadeUntil) {
-                opacity = 1;
-                langue = 0;
-            }
-            fading.css('background','rgba(41,55,69,'+opacity+')')
-            RondLanguage.css('background', 'rgba(252,15,38,' + langue + ')');
         });
 
         // Coeur change de taille quand on scroll, et toute la navbar remonte
