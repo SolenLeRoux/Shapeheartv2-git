@@ -1,4 +1,4 @@
-<?php session_start() ?>
+<?php setcookie('language', 'english', time() + 365*24*3600, null, null, false, true); ?>
 
 <!DOCTYPE html>
 <html lang="en">
