@@ -52,9 +52,8 @@
         <div id="background-image-A">
             <div class="container">
                 <div class="row">
-                    <div class="text-section-2" id="text-image-A">
-                        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 col-xs-12">
-                            <div class="clearfix"></div>
+                    <div class="col-sm-push-6 col-sm-6 col-xs-12">
+                        <div class="bloc-text-section2 text-section-2 container-section-2" id="text-image-A">
                             <h2 class="section-heading">
                                 <span class="english">HERE YOU CAN SEE A PICTURE OF A BEAUTIFUL GIRL</span>
                                 <span class="francais">ICI ON VOIT UNE PHOTO D'UNE JOLIE FILLE</span>
@@ -72,19 +71,20 @@
 
     <!-- Image B -->
     <section id="image-B" class="content-section-2">
-        <div class="container">
-            <div class="row">
-                <div class="text-section-2" id="text-image-B">
-                    <div class="col-lg-5 col-sm-6 col-xs-12">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">
-                            <span class="english">AND HERE A GUY WITH A SMARTPHONE</span>
-                            <span class="francais">ET LÀ ON MET UN MEC AVEC UN SMARTPHONE</span>
-                        </h2>
-                        <p class="lead-b">
-                            <span class="english">A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. Visit their website to become a member.</span>
-                            <span class="francais">Je n'ai pas d'intérêt à traduire ce texte en français.</span>
-                        </p>
+        <div id="background-image-B">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="bloc-text-section2 text-section-2 container-section-2" id="text-image-B">
+                            <h2 class="section-heading">
+                                <span class="english">AND HERE A GUY WITH A SMARTPHONE</span>
+                                <span class="francais">ET LÀ ON MET UN MEC AVEC UN SMARTPHONE</span>
+                            </h2>
+                            <p class="lead-b">
+                                <span class="english">A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. Visit their website to become a member.</span>
+                                <span class="francais">Je n'ai pas d'intérêt à traduire ce texte en français.</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,19 +93,20 @@
 
     <!-- Image C -->
     <section id="image-C" class="content-section-2">
-        <div class="container">
-            <div class="row">
-                <div class="text-section-2" id="text-image-C">
+        <div id="background-image-C">
+            <div class="container">
+                <div class="row">
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 col-xs-12">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">
-                            <span class="english">HERE YOU CAN SEE A PICTURE OF A BEAUTIFUL GIRL</span>
-                            <span class="francais">ICI ON VOIT UNE PHOTO D'UNE JOLIE FILLE</span>
-                        </h2>
-                        <p class="lead-b">
-                            <span class="english">I write a text which is not very interesting because I'm not really inspired. Come on our website ! Cardiac frequency is awesome !</span>
-                            <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial !</span>
-                        </p>
+                        <div class="bloc-text-section2 text-section-2 container-section-2" id="text-image-C">
+                            <h2 class="section-heading">
+                                <span class="english">HERE YOU CAN SEE A PICTURE OF A BEAUTIFUL GIRL</span>
+                                <span class="francais">ICI ON VOIT UNE PHOTO D'UNE JOLIE FILLE</span>
+                            </h2>
+                            <p class="lead-b">
+                                <span class="english">I write a text which is not very interesting because I'm not really inspired. Come on our website ! Cardiac frequency is awesome !</span>
+                                <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial !</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
