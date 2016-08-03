@@ -482,7 +482,6 @@ p {
     top: 10px;
 }
 
-
 #icon-back{
     width: 45px;
 }
@@ -540,73 +539,11 @@ p {
     font-family: 'nexa_lightregular';
 
 }
-/* écrans un peu plus petits */
-
-@media(max-width:768px) and (min-width: 480px){
-
-}
 
 /* Smartphones */
 
 @media(max-width:479px){
-    #mybox_conteneur{
-        width: 250px;
-        height: 250px;
-    }
 
-    #mybox_relative {
-    padding: 0px;
-    width: 100%;
-    height: auto;
-    position: relative;
-    }
-
-    #mybox_close {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    }
-
-
-    .texte{
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-
-    .texte-promo{
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
-    #logo{
-        width: 50px;
-        padding-top: 25px;
-    }
-
-
-    #form {
-        margin-left: 45px;
-    }
-
-    #votre_email input[type=email]{
-        height: 25px;
-        width: 150px;
-        font-size: 10px;
-    }
-
-
-
-    #bouton_envoyer {
-        text-align: center;
-        font-size: 10px;
-        width: 25px;
-        height: 25px;
-    }
-
-    #fleche-submit{
-        width: 20px;
-        margin-top: 2px;
-    }
 }
 
 
@@ -1571,6 +1508,62 @@ margin-bottom: -100px;
         margin-bottom: 75px;
     }
 
+    /* Pop-Up */
+
+    #mybox_conteneur{
+        width: 250px;
+        height: 250px;
+    }
+
+    #mybox_relative {
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #mybox_close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    .texte{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 50px;
+        padding-top: 25px;
+    }
+
+    #form {
+        margin-left: 45px;
+    }
+
+    #votre_email input[type=email]{
+        height: 25px;
+        width: 150px;
+        font-size: 10px;
+    }
+
+    #bouton_envoyer {
+        text-align: center;
+        font-size: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    #fleche-submit{
+        width: 20px;
+        margin-top: 2px;
+    }
 }
 
 /* Petits écrans : smartphones et tablettes */
