@@ -540,15 +540,6 @@ p {
 
 }
 
-/* Smartphones */
-
-@media(max-width:479px){
-
-}
-
-
-
-
 
 /********************************************************
    About : Page 2, trois photos avec texte en fond
@@ -682,19 +673,19 @@ p {
     text-align: center;
 }
 
-.texte-produit{
+.texte-produit {
     font-family: 'nexa_lightregular';
     font-size:20px;
     text-align: center;
 }
 
-.content-texte-produit{
+.content-texte-produit {
     width: 60%;
     margin-right: 20%;
     margin-left: 20%;
 }
 
-.color-select{
+.color-select {
     height: 20px;
     width: 100%;
     margin-bottom: 40px;
@@ -702,30 +693,32 @@ p {
     z-index: 4;
 }
 
-.select-black , .select-green , .select-red{
+.select-black ,
+.select-green ,
+.select-red {
     width: 10%;
     height: 10px;
     float: left;
 }
 
-.select-black{
+.select-black {
     margin-left: 35%;
 }
 
-
-.select-green{
+.select-green {
     margin-right: 35%;
 }
 
-#green , #black{
+#green,
+#black {
     display: none;
 }
 
-.point{
+.point {
     width: 15px;
 }
 
-.point:hover{
+.point:hover {
     width: 20px;
 }
 
@@ -795,6 +788,7 @@ p {
     padding-left: 10%;
 }
 
+
 /**************************
   Presse
 ***************************/
@@ -827,6 +821,7 @@ p {
     transition-property: filter,-webkit-filter;
     transition-duration: 1s;
 }
+
 
 /************************
        Footer
@@ -904,6 +899,7 @@ footer {
     width: 210px;
     height: 30px;
 }
+
 
 /**********************************************************************************************************************
   BLOG
@@ -1024,11 +1020,9 @@ margin-bottom: -100px;
     font-family: 'nexa_lightregular';
 }
 
-
  .back-article{
     color: rgb(243,1,24);
  }
-
 
 #bouton-suite:hover , #bouton-suite-2:hover , .back-article:hover {
     text-shadow: 1px 1px 2px grey;
