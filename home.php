@@ -55,8 +55,8 @@
                     <div class="col-sm-push-6 col-sm-6 col-xs-12">
                         <div class="bloc-text-section2 text-section-2 container-section-2" id="text-image-A">
                             <h2 class="section-heading">
-                                <span class="english">Heart rate tracking through running apps</span>
-                                <span class="francais">Suivi de la fréquence cardiaque sur l’app de running</span>
+                                <span class="english">Heart rate tracking</span>
+                                <span class="francais">Suivi de la fréquence cardiaque</span>
                             </h2>
                             <p class="lead-b">
                                 <span class="english">Our sensor positioned on the arm enables a precise and rigorous
@@ -84,16 +84,18 @@
                             </h2>
                             <p class="lead-b">
                                 <span class="english">Our sensor is compatible with almost all the running apps (Nike+,
-                                    Runtastic, Runkeeper, Strava, Endomondo…). Nevertheless, we recommend hereafter a
-                                    list of applications to take full advantage of our improved user experience thanks
-                                    to heart rate monitoring, wether you’re training for a marathon or you wish to
-                                    optimize your weight-loss.</span>
+                                    Runtastic, Runkeeper, Strava, Endomondo…). Take full advantage of our improved user
+                                    experience thanks to heart rate monitoring, wether you’re training for a marathon or
+                                    wish to optimize your weight-loss.</span>
                                 <span class="francais">Notre capteur est compatible avec presque toutes les applications
-                                    de running (Nike+, Runtastic, Runkeeper, Strava, Endomondo,). Néanmoins, nous vous
-                                    recommandons une liste d’applications pour profiter pleinement de l’expérience
-                                    utilisateur améliorée grâce au cardio, que vous préparez un marathon ou que vous
-                                    souhaitez optimiser votre perte de poids.</span>
+                                    de running (Nike+, Runtastic, Runkeeper, Strava, Endomondo,). Profitez pleinement de
+                                    l’expérience utilisateur améliorée grâce au cardio, que vous prépariez un marathon ou
+                                    souhaitiez optimiser votre perte de poids.</span>
                             </p>
+                            <a href="blog.php" class="btn-transparent">
+                                <span class="english">More infos<span class="grand-ecran"> on our blog</span></span>
+                                <span class="francais">Plus d'informations<span class="grand-ecran"> sur notre blog</span></span>
+                            </a>
                         </div>
                     </div>
                 </div>

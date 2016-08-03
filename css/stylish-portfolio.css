@@ -135,18 +135,15 @@ p {
 }
 
 .btn-transparent {
-    /*left: 780px;
-    top: 280px;*/
-    height: 55px;
-    position: absolute;
     line-height: 55px;
-    padding: 0 15px;
+    padding: 12px 15px;
     border: 2px solid #fff;
     color: #fff;
     font-size: 20px;
     text-align: center;
     outline: 0;
     white-space: nowrap;
+    font-family: 'nexa_lightregular';
 }
 
 .btn-transparent:hover,
@@ -701,6 +698,7 @@ p {
     font-size: 40px;
     font-family: 'nexa_lightregular';
     font-weight: bold;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -0.5px -0.5px 0.5px;
 }
 
 .lead-b {
@@ -710,6 +708,7 @@ p {
     font-weight: 300;
     line-height: 1.4;
     text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -1385,6 +1384,10 @@ margin-bottom: -100px;
 
 /* Très petits écrans : téléphones mobiles */
 @media all and (max-width: 480px) {
+
+    .grand-ecran {
+        display: none;
+    }
 
     /* Navbar */
 
