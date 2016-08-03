@@ -55,13 +55,19 @@
                     <div class="col-sm-push-6 col-sm-6 col-xs-12">
                         <div class="bloc-text-section2 text-section-2 container-section-2" id="text-image-A">
                             <h2 class="section-heading">
-                                <span class="english">HERE YOU CAN SEE A PICTURE OF A BEAUTIFUL GIRL</span>
-                                <span class="francais">ICI ON VOIT UNE PHOTO D'UNE JOLIE FILLE</span>
+                                <span class="english">Heart rate tracking</span>
+                                <span class="francais">Suivi de la fréquence cardiaque</span>
                             </h2>
                             <p class="lead-b">
-                                <span class="english">I write a text which is not very interesting because I'm not really inspired. Come on our website ! Cardiac frequency is awesome !</span>
-                                <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardiaque c'est génial !</span>
+                                <span class="english">Our sensor positioned on the arm enables a precise and rigorous
+                                    measure of your heart rate, which is then sent via Bluetooth to your running app.</span>
+                                <span class="francais">La position au niveau du bras assure une mesure précise de la
+                                    fréquence cardiaque, qui est ensuite envoyée par bluetooth à votre app de running.</span>
                             </p>
+                            <a href="blog.php" class="btn-transparent">
+                                <span class="english">Why is it more reliable ?</span>
+                                <span class="francais">Pourquoi est-ce plus précis ?</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -77,13 +83,23 @@
                     <div class="col-sm-6 col-xs-12">
                         <div class="bloc-text-section2 text-section-2 container-section-2" id="text-image-B">
                             <h2 class="section-heading">
-                                <span class="english">AND HERE A GUY WITH A SMARTPHONE</span>
-                                <span class="francais">ET LÀ ON MET UN MEC AVEC UN SMARTPHONE</span>
+                                <span class="english">Compatible with running apps</span>
+                                <span class="francais">Compatible avec les applications de running</span>
                             </h2>
                             <p class="lead-b">
-                                <span class="english">A special thanks to Death to the Stock Photo for providing the photographs that you see in this template. Visit their website to become a member.</span>
-                                <span class="francais">Je n'ai pas d'intérêt à traduire ce texte en français.</span>
+                                <span class="english">Our sensor is compatible with almost all the running apps (Nike+,
+                                    Runtastic, Runkeeper, Strava, Endomondo…). Take full advantage of our improved user
+                                    experience thanks to heart rate monitoring, wether you’re training for a marathon or
+                                    wish to optimize your weight-loss.</span>
+                                <span class="francais">Notre capteur est compatible avec presque toutes les applications
+                                    de running (Nike+, Runtastic, Runkeeper, Strava, Endomondo,). Profitez pleinement de
+                                    l’expérience utilisateur améliorée grâce au cardio, que vous prépariez un marathon ou
+                                    souhaitiez optimiser votre perte de poids.</span>
                             </p>
+                            <a href="blog.php" class="btn-transparent">
+                                <span class="english">More infos<span class="grand-ecran"> on our blog</span></span>
+                                <span class="francais">Plus d'informations<span class="grand-ecran"> sur notre blog</span></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -99,12 +115,16 @@
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6 col-xs-12">
                         <div class="bloc-text-section2 text-section-2 container-section-2" id="text-image-C">
                             <h2 class="section-heading">
-                                <span class="english">HERE YOU CAN SEE A PICTURE OF A BEAUTIFUL GIRL</span>
-                                <span class="francais">ICI ON VOIT UNE PHOTO D'UNE JOLIE FILLE</span>
+                                <span class="english">A swift access to your smartphone</span>
+                                <span class="francais">Votre smartphone accessible facilement</span>
                             </h2>
                             <p class="lead-b">
-                                <span class="english">I write a text which is not very interesting because I'm not really inspired. Come on our website ! Cardiac frequency is awesome !</span>
-                                <span class="francais">La j'écris un texte qui n'a pas grand intérêt parce que je ne suis pas très inspiré. Venez visiter notre site! La fréquence cardique c'est génial !</span>
+                                <span class="english">Want to have access to your smartphone without bedding yourself or
+                                    stopping your effort? We have designed a innovative system enabling runners to have
+                                    a quick and intuitive access to their smartphone during their effort.</span>
+                                <span class="francais">Envie d’avoir accès à votre téléphone ? Nous avons designé un
+                                    système permettant  aux coureurs d’avoir un accès rapide et intuitif à leur
+                                    smartphone pendant l’effort.</span>
                             </p>
                         </div>
                     </div>
