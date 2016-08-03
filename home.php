@@ -64,6 +64,10 @@
                                 <span class="francais">La position au niveau du bras assure une mesure précise de la
                                     fréquence cardiaque, qui est ensuite envoyée par bluetooth à votre app de running.</span>
                             </p>
+                            <a href="blog.php" class="btn-transparent">
+                                <span class="english">Why is it more reliable ?</span>
+                                <span class="francais">Pourquoi est-ce plus précis ?</span>
+                            </a>
                         </div>
                     </div>
                 </div>
