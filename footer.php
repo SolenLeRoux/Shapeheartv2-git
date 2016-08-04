@@ -6,10 +6,10 @@
                     <img class="footer-logo" src="img/logo.png">
                     <p class="footer-text shapeheart-font">SH<span class="text-shapeheart-a">A</span>PEHE<span class="text-shapeheart-a">A</span>RT</span></p>
                 </a>
-                <a href="#FAQ.html">
+                <a href="FAQ.php">
                     <p class="footer-text">FAQ</p>
                 </a>
-                <a href="#about">
+                <a href="mailto:contact@shapeheart.com" target="">
                     <p class="footer-text">
                         <span class="english">Contact us</span>
                         <span class="francais">Nous contacter</span>
