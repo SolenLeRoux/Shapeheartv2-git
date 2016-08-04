@@ -10,6 +10,9 @@ catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 } ?>
 
+<!-- Recupération des articles qui nous intéressent -->
+<?php $listearticles = $bdd->query('SELECT * FROM article ORDER BY id DESC LIMIT 5'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,9 +48,6 @@ catch (Exception $e) {
             <div class="row">
                 <div class="col-md-8">
                     <div class="article_container">
-
-                        <?php $listearticles = $bdd->query('SELECT * FROM article ORDER BY id DESC LIMIT 5'); ?>
-
                         <?php while ($article = $listearticles->fetch()) { ?>
                             <div id="article-<?php echo($article["id"]); ?>">
                                 <p class="titre-article">
