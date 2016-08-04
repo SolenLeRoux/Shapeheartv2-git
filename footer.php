@@ -22,11 +22,7 @@
                         <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
                         <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
                     </p>
-                    <p id="bouton_envoyer_footer">
-                        <a href="#">
-                            <img src="img/logo-submit.png" width="25px">
-                        </a>
-                    </p>
+                    <input type="submit" id="bouton_envoyer_footer" value="" />
                 </form>
             </div>
             <div class="col-sm-4 text-center col-footer">

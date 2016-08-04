@@ -882,9 +882,11 @@ footer {
     display: block;
     width: 30px;
     height: 30px;
-    background-color: #F8001E;
     border:none;
     float: right;
+    background-image: url("../img/logo-submit.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
 }
 
 #fleche-submit_footer{
@@ -1199,6 +1201,9 @@ margin-bottom: -100px;
     float: left;
     height: 35px;
     width: 35px;
+    background-image: url("../img/logo-submit.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
 }
 
 #back-to-blog{
