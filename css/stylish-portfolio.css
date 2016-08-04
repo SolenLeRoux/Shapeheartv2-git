@@ -507,13 +507,16 @@ p {
     padding-left: 10px;
 }
 
-#bouton_envoyer{
+#bouton_envoyer {
     text-align: center;
     display: block;
     border:none;
     float: left;
     height: 50px;
     width: 50px;
+    background-image: url("../img/logo-submit.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
 }
 
 .texte{
