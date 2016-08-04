@@ -135,9 +135,7 @@
                                         <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
                                         <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
                                     </p>
-                                    <a href="#">
-                                        <img id="bouton_envoyer-socialmedia" src="img/logo-submit.png">
-                                    </a>
+                                    <input type="submit" value="" id="bouton_envoyer-socialmedia" \>
                                 </form>
                             </div>
                         </div>
