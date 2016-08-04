@@ -135,18 +135,15 @@ p {
 }
 
 .btn-transparent {
-    /*left: 780px;
-    top: 280px;*/
-    height: 55px;
-    position: absolute;
     line-height: 55px;
-    padding: 0 15px;
+    padding: 12px 15px;
     border: 2px solid #fff;
     color: #fff;
     font-size: 20px;
     text-align: center;
     outline: 0;
     white-space: nowrap;
+    font-family: 'nexa_lightregular';
 }
 
 .btn-transparent:hover,
@@ -485,7 +482,6 @@ p {
     top: 10px;
 }
 
-
 #icon-back{
     width: 45px;
 }
@@ -511,13 +507,16 @@ p {
     padding-left: 10px;
 }
 
-#bouton_envoyer{
+#bouton_envoyer {
     text-align: center;
     display: block;
     border:none;
     float: left;
     height: 50px;
     width: 50px;
+    background-image: url("../img/logo-submit.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
 }
 
 .texte{
@@ -543,77 +542,6 @@ p {
     font-family: 'nexa_lightregular';
 
 }
-/* écrans un peu plus petits */
-
-@media(max-width:768px) and (min-width: 480px){
-
-}
-
-/* Smartphones */
-
-@media(max-width:479px){
-    #mybox_conteneur{
-        width: 250px;
-        height: 250px;
-    }
-
-    #mybox_relative {
-    padding: 0px;
-    width: 100%;
-    height: auto;
-    position: relative;
-    }
-
-    #mybox_close {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    }
-
-
-    .texte{
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-
-    .texte-promo{
-        font-size: 10px;
-        margin-bottom: 20px;
-    }
-
-    #logo{
-        width: 50px;
-        padding-top: 25px;
-    }
-
-
-    #form {
-        margin-left: 45px;
-    }
-
-    #votre_email input[type=email]{
-        height: 25px;
-        width: 150px;
-        font-size: 10px;
-    }
-
-
-
-    #bouton_envoyer {
-        text-align: center;
-        font-size: 10px;
-        width: 25px;
-        height: 25px;
-    }
-
-    #fleche-submit{
-        width: 20px;
-        margin-top: 2px;
-    }
-}
-
-
-
 
 
 /********************************************************
@@ -633,27 +561,32 @@ p {
     color: #FFF;
     font-size: 20px;
     text-align: center;
-    max-width: 90%;
+    max-width: 95%;
 }
 
-/*.bloc-text-section2 {
-    border: 1px solid white;
-    padding : 20px;
-    background-color: rgba(84, 82, 106, 0.4);
-}*/
-
 .container-section-2 {
-    margin-top: 30vh;
-    transform: translateY(-30%);
+    margin-top: 10vh;
+    transform: translateY(-10%);
 }
 
 #background-image-A,
 #background-image-B,
 #background-image-C {
-    background-color: rgba(84, 82, 106, 0.2);
     background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+#background-image-A {
+    background-color: rgba(84, 82, 106, 0.3);
+}
+
+#background-image-B {
+    background-color: rgba(84, 82, 106, 0.3);
+}
+
+#background-image-C {
+    background-color: rgba(84, 82, 106, 0.2);
 }
 
 #image-A {
@@ -696,17 +629,17 @@ p {
     font-size: 40px;
     font-family: 'nexa_lightregular';
     font-weight: bold;
-    overflow: hidden;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -0.5px -0.5px 0.5px;
 }
 
 .lead-b {
     color: #fff;
     font-family: 'nexa_lightregular';
-    margin-bottom: 20px;
     font-size: 25px;
     font-weight: 300;
     line-height: 1.4;
     text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -743,19 +676,19 @@ p {
     text-align: center;
 }
 
-.texte-produit{
+.texte-produit {
     font-family: 'nexa_lightregular';
     font-size:20px;
     text-align: center;
 }
 
-.content-texte-produit{
+.content-texte-produit {
     width: 60%;
     margin-right: 20%;
     margin-left: 20%;
 }
 
-.color-select{
+.color-select {
     height: 20px;
     width: 100%;
     margin-bottom: 40px;
@@ -763,30 +696,32 @@ p {
     z-index: 4;
 }
 
-.select-black , .select-green , .select-red{
+.select-black ,
+.select-green ,
+.select-red {
     width: 10%;
     height: 10px;
     float: left;
 }
 
-.select-black{
+.select-black {
     margin-left: 35%;
 }
 
-
-.select-green{
+.select-green {
     margin-right: 35%;
 }
 
-#green , #black{
+#green,
+#black {
     display: none;
 }
 
-.point{
+.point {
     width: 15px;
 }
 
-.point:hover{
+.point:hover {
     width: 20px;
 }
 
@@ -856,6 +791,7 @@ p {
     padding-left: 10%;
 }
 
+
 /**************************
   Presse
 ***************************/
@@ -888,6 +824,7 @@ p {
     transition-property: filter,-webkit-filter;
     transition-duration: 1s;
 }
+
 
 /************************
        Footer
@@ -948,9 +885,11 @@ footer {
     display: block;
     width: 30px;
     height: 30px;
-    background-color: #F8001E;
     border:none;
     float: right;
+    background-image: url("../img/logo-submit.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
 }
 
 #fleche-submit_footer{
@@ -965,6 +904,7 @@ footer {
     width: 210px;
     height: 30px;
 }
+
 
 /**********************************************************************************************************************
   BLOG
@@ -1085,11 +1025,9 @@ margin-bottom: -100px;
     font-family: 'nexa_lightregular';
 }
 
-
  .back-article{
     color: rgb(243,1,24);
  }
-
 
 #bouton-suite:hover , #bouton-suite-2:hover , .back-article:hover {
     text-shadow: 1px 1px 2px grey;
@@ -1266,6 +1204,9 @@ margin-bottom: -100px;
     float: left;
     height: 35px;
     width: 35px;
+    background-image: url("../img/logo-submit.png");
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
 }
 
 #back-to-blog{
@@ -1382,6 +1323,10 @@ margin-bottom: -100px;
 
 /* Très petits écrans : téléphones mobiles */
 @media all and (max-width: 480px) {
+
+    .grand-ecran {
+        display: none;
+    }
 
     /* Navbar */
 
@@ -1565,6 +1510,62 @@ margin-bottom: -100px;
         margin-bottom: 75px;
     }
 
+    /* Pop-Up */
+
+    #mybox_conteneur{
+        width: 250px;
+        height: 250px;
+    }
+
+    #mybox_relative {
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #mybox_close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    .texte{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .texte-promo{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 50px;
+        padding-top: 25px;
+    }
+
+    #form {
+        margin-left: 45px;
+    }
+
+    #votre_email input[type=email]{
+        height: 25px;
+        width: 150px;
+        font-size: 10px;
+    }
+
+    #bouton_envoyer {
+        text-align: center;
+        font-size: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    #fleche-submit{
+        width: 20px;
+        margin-top: 2px;
+    }
 }
 
 /* Petits écrans : smartphones et tablettes */
@@ -1926,5 +1927,10 @@ margin-bottom: -100px;
     /* Blog */
     #header-blog {
         background-position: 0 -450px;
+    }
+
+    /* Section 2 */
+    #text-image-A {
+        margin-top: 25vh;
     }
 }
