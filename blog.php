@@ -130,7 +130,7 @@
                                 <span class="francais">Inscrivez-vous à notre newsletter</span>
                             </p>
                             <div id="enter-email">
-                                <form method="post" action="traitement.php">
+                                <form method="post" action="signup.php">
                                     <p id="votre_email-socialmedia">
                                         <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
                                         <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>

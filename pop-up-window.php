@@ -16,7 +16,7 @@
                     <span class="francais">Profitez de 20% sur votre première commande<br />Promis pas de spam !</span>
                 </h2>
                 <div id="form">
-                    <form method="post" action="traitement.php">
+                    <form method="post" action="signup.php">
                         <p id="votre_email">
                             <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
                             <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>

@@ -17,7 +17,7 @@
                 </a>
             </div>
             <div class="col-sm-4 text-center col-footer">
-                <form method="post" action="traitement.php" class="form-footer">
+                <form method="post" action="signup.php" class="form-footer">
                     <p id="votre_email_footer">
                         <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
                         <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
