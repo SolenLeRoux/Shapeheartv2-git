@@ -6,10 +6,10 @@
                     <img class="footer-logo" src="img/logo.png">
                     <p class="footer-text shapeheart-font">SH<span class="text-shapeheart-a">A</span>PEHE<span class="text-shapeheart-a">A</span>RT</span></p>
                 </a>
-                <a href="#FAQ.html">
+                <a href="FAQ.php">
                     <p class="footer-text">FAQ</p>
                 </a>
-                <a href="#about">
+                <a href="mailto:contact@shapeheart.com" target="">
                     <p class="footer-text">
                         <span class="english">Contact us</span>
                         <span class="francais">Nous contacter</span>
@@ -17,16 +17,12 @@
                 </a>
             </div>
             <div class="col-sm-4 text-center col-footer">
-                <form method="post" action="traitement.php" class="form-footer">
+                <form method="post" action="signup.php" class="form-footer">
                     <p id="votre_email_footer">
                         <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
                         <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
                     </p>
-                    <p id="bouton_envoyer_footer">
-                        <a href="#">
-                            <img src="img/logo-submit.png" width="25px">
-                        </a>
-                    </p>
+                    <input type="submit" id="bouton_envoyer_footer" value="" />
                 </form>
             </div>
             <div class="col-sm-4 text-center col-footer">

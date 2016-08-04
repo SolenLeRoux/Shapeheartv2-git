@@ -130,14 +130,12 @@
                                 <span class="francais">Inscrivez-vous à notre newsletter</span>
                             </p>
                             <div id="enter-email">
-                                <form method="post" action="traitement.php">
+                                <form method="post" action="signup.php">
                                     <p id="votre_email-socialmedia">
                                         <span class="english"><input type="email" name="email" id="email" placeholder="Your email" /></span>
                                         <span class="francais"><input type="email" name="email" id="email" placeholder="Votre mail" /></span>
                                     </p>
-                                    <a href="#">
-                                        <img id="bouton_envoyer-socialmedia" src="img/logo-submit.png">
-                                    </a>
+                                    <input type="submit" value="" id="bouton_envoyer-socialmedia" \>
                                 </form>
                             </div>
                         </div>
