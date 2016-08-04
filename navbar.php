@@ -3,9 +3,12 @@
 <?php $currentpage = $_SERVER['REQUEST_URI']; // trouve la page actuelle
     $currentpage = substr($currentpage, 18); // supprime les 18 premiers caractères (/shapeheartv2-git/)
     $homepages = array('blog.php', 'FAQ.php'); // liste des pages sur lesquelles 'home' doit apparaître
-    $FAQpages1 = array('article_1.php', 'article_2.php', 'home.php'); // idem pour 'FAQ', en position 1
+    $FAQpages1 = array('article.php', 'home.php'); // idem pour 'FAQ', en position 1
     $FAQpages2 = array('blog.php');
-    $blogpages = array('article_1.php', 'article_2.php', 'FAQ.php', 'home.php'); // idem pour 'blog'
+    $blogpages = array('article.php', 'FAQ.php', 'home.php'); // idem pour 'blog'
+    if (substr($currentpage,0,11) == "article.php") { // réduit tous les article.php?article=id en article.php
+        $currentpage = "article.php";
+    };
 ?>
 
 <!-- Navbar elle-même -->

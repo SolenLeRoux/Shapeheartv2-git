@@ -931,10 +931,6 @@ footer {
 
 /* Articles */
 
-#article-2 {
-    margin-top: 80px;
-}
-
 #articles {
     display: inline-block;
     margin-top: 75px;
@@ -954,28 +950,6 @@ footer {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-}
-
-p[id^="debut-article-1"] {
-padding-top: 100px;
-position: relative;
-top: -100px;
-margin-bottom: -100px;
-}
-
-p[id^="titre-article-1"] {
-padding-top: 100px;
-position: relative;
-top: -100px;
-margin-bottom: -100px;
-}
-
-
-p[id^="debut-article-2"] {
-padding-top: 100px;
-position: relative;
-top: -100px;
-margin-bottom: -100px;
 }
 
 .titre-article{
