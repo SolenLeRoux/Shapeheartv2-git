@@ -38,5 +38,4 @@ featuresmCtrl.sendEmail = function(email) {
         }
     );
 };
-};
 controller.$inject = controllerDeps;
