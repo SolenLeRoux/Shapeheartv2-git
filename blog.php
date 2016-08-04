@@ -1,4 +1,14 @@
+<!-- Cookies -->
 <?php setcookie('language', 'english', time() + 365*24*3600, null, null, false, true); ?>
+
+<!-- Connection à la bdd -->
+<?php
+try {
+    $bdd = new PDO('mysql:host=localhost;dbname=shapeheart;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,21 +46,24 @@
                 <div class="col-md-8">
                     <div class="article_container">
 
-                        <div id="article-1">
-                            <p class="titre-article">
-                                <span class="english">Why run with a heart rate monitor ?</span>
-                                <span class="francais">Pourquoi courir au cardio ?</span>
+                        <?php $listearticles = $bdd->query('SELECT * FROM article ORDER BY id DESC LIMIT 5'); ?>
+
+                        <?php while ($article = $listearticles->fetch()) { ?>
+                            <div id="article-<?php echo($article["id"]); ?>">
+                                <p class="titre-article">
+                                    <span class="english"><?php echo($article["titreen"]); ?></span>
+                                    <span class="francais"><?php echo($article["titrefr"]); ?></span>
+                                </p>
+                                <p class="date-article">
+                                    <?php echo($article["date_article"]); ?>
+                                </p>
+                            </div>
+                            <img class="article_picture" src="<?php echo($article["photo"]); ?>">
+                            <p class="article-apercu article">
+                                <span class="english"><?php echo($article["apercuen"]) ?></span>
+                                <span class="francais"><?php echo($article["apercufr"]) ?></span>
                             </p>
-                            <p class="date-article">
-                                25/06/2016
-                            </p>
-                            <img class="article_picture" src="img/bras_am.jpg">
-                            <p id="debut-article-1" class="article-1 article" >
-                                <span class="english">When heart rate monitoring devices emerged, I said to myself “What’s the use to know whether my heart is bumping at 70% or 90% of my maximum heart rate? In any case, I’ll end up breathless and my legs will beg me to stop.</span>
-                                <span class="francais">Quand les cardios sont arrivés, je me disais « Quel intérêt de savoir si mon cœur est à 70 ou 90 de la fréquence cardiaque maximum (FCM)? Dans tous les cas, je suis essoufflé et mes jambes me supplient d’arrêter</span>
-                                <br/>
-                            </p>
-                            <a class="article-btn-suite article" href="article_1.php"> <!-- onclick="document.getElementById('article-1').style.display= ''; this.style.display= 'none'; return false;">-->
+                            <a class="article-btn-suite article" href="article.php?article=<?php echo($article["id"]); ?>"> <!-- onclick="document.getElementById('article-1').style.display= ''; this.style.display= 'none'; return false;">-->
                                 <span class="english">Read More ...</span>
                                 <span class="francais">Afficher la suite ...</span>
                             </a>
@@ -62,61 +75,19 @@
                                 <div class="share_separator"></div>
                                 <div class="share_logos">
                                     <div class="share_logo_block">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.shapeheart.com/article/1">
+                                        <a href="<?php echo($article["facebook"]); ?>">
                                             <img class="share_logo" src="img/Facebook.png">
                                         </a>
-                                        <a href="https://www.linkedin.com/cws/share?url=http://www.shapeheart.com/article/1">
+                                        <a href="<?php echo($article["linkedin"]); ?>">
                                             <img class="share_logo" src="img/Linked_in.png">
                                         </a>
-                                        <a href="https://twitter.com/share?url=http://www.shapeheart.com/article/1">
+                                        <a href="<?php echo($article["twitter"]); ?>">
                                             <img class="share_logo" src="img/Twitter.png">
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div id="article-2">
-                            <p id="titre-article-2">
-                                <p class="titre-article">
-                                    <span class="english">Why we shouldnt talk about calories</span>
-                                    <span class="francais">Pourquoi on ne doit plus parler de calories</span>
-                                </p>
-                            </p>
-                            <p class="date-article">
-                                20/06/2016
-                            </p>
-                            <img class="article_picture" src="img/background_video.png">
-                            <p id="debut-article-2" class="article-2 article">
-                                <span class="english">When it comes to sports, we often talk about calories, but do when really know what it is? Physically, it corresponds to an energy measurement. This measurement is truly specific and amounts to the energy necessary to increase by one degree a single gram of water. Thus said, when we burn 1 000 calories, this equals to increase by one degree 1000 grams of water, of 1 liter. But where does this energy come from ? Where is she drawn in our body ?</span>
-                                <span class="francais">Lorsqu’on parle de sport, on parle souvent de calories, mais qu’est ce qu’une calorie ? Physiquement, cela correspond à une mesure d’énergie. Cette mesure est très concrète et équivaut à l’énergie nécessaire pour faire augmenter d’un degré un gramme d’eau. Quand on brûle 1000 calories cela équivaudrait donc à faire augmenter d’un degré 1000 grammes d’eau, soit 1 litre. Mais d’où vient cette énergie ? Où est elle puisée dans notre corps ?</span>
-                                <br/>
-                            </p>
-                            <a class="article-btn-suite article" href="article_2.php"><!-- onclick="document.getElementById('article-2').style.display= ''; this.style.display= 'none'; return false;">-->
-                                <span class="english">Read more ...</span>
-                                <span class="francais">Afficher la suite ...</span>
-                            </a>
-                            <div class="share-container">
-                                <div class="share">
-                                    <span class="english">Share</span>
-                                    <span class="francais">Partager</span>
-                                </div>
-                                <div class="share_separator"></div>
-                                <div class="share_logos">
-                                    <div class="share_logo_block">
-                                        <a href="#">
-                                            <img class="share_logo" src="img/Facebook.png">
-                                        </a>
-                                        <a href="#">
-                                            <img class="share_logo" src="img/Linked_in.png">
-                                        </a>
-                                        <a href="#">
-                                            <img class="share_logo" src="img/Twitter.png">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php }; ?>
                     </div>
                 </div>
                 <!-- Menu social media -->
