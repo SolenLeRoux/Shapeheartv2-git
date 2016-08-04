@@ -9,9 +9,27 @@ catch (Exception $e) {
 
 <!-- Recupération de l'article concerné -->
 <?php
+$idmax = $bdd->query('SELECT MAX(id) AS idmax FROM article');
+$idmax = $idmax->fetch();
+$idmax = $idmax["idmax"];
 $listearticles = $bdd->prepare('SELECT * FROM article WHERE id = ?');
-$listearticles->execute(array($_GET['article']));
-$article = $listearticles->fetch();
+$idurl = $_GET['article'];
+if (is_numeric($idurl) AND is_numeric($idmax)) {
+    $idurl = intval($idurl);
+    $idmax = intval($idmax);
+    if (($idurl <= $idmax) AND ($idurl > 0)) {
+        $listearticles->execute(array($idurl));
+        $article = $listearticles->fetch();
+    }
+    else {
+        echo "404 not found";
+        exit();
+    }
+}
+else {
+    echo "404 not found";
+    exit();
+};
 ?>
 
 <!DOCTYPE html>
