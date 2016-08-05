@@ -1,5 +1,7 @@
 $(document).ready( function() {
 
+    setTimeout(loadPopupBox, 3000);
+
     $('.close').click( function() {
         unloadPopupBox();
     });
