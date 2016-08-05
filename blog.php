@@ -10,8 +10,36 @@ catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 } ?>
 
+<!-- Récupération du numéro de page -->
+<?php
+$idmax = $bdd->query('SELECT MAX(id) AS idmax FROM article');
+$idmax = $idmax->fetch();
+$idmax = $idmax["idmax"];
+if (ISSET($_GET['page'])) {
+    $page = $_GET['page'];
+}
+else {
+    $page = 0;
+}
+if (is_numeric($page) AND is_numeric($idmax)) {
+    $page = intval($page);
+    $idmax = intval($idmax);
+    if (!(($page <= $idmax) AND ($page > 0))) {
+        $page = 0;
+    }
+}
+else {
+    $page = 0;
+};
+$limit = $page + 5;
+?>
+
 <!-- Recupération des articles qui nous intéressent -->
-<?php $listearticles = $bdd->query('SELECT * FROM article ORDER BY id DESC LIMIT 5'); ?>
+<?php $listearticles = $bdd->prepare('SELECT * FROM article ORDER BY id DESC LIMIT :limit OFFSET :offset');
+$listearticles->bindParam(":limit", $limit, PDO::PARAM_INT);
+$listearticles->bindParam(":offset", $page, PDO::PARAM_INT);
+$listearticles->execute();
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
