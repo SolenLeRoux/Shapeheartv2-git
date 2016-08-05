@@ -169,7 +169,6 @@
                 </p>
             </a>
         </div>
-        
     </section>
 
     <!-- Section Partenaires -->
@@ -251,10 +250,11 @@
     <script src="customJS/to-top-button-scroll.js"></script>
     <script src="customJS/intro-divider-animation.js"></script>
     <script src="customJS/produit-animation-apple.js"></script>
+    <script src="customJS/pop-up-window.js"></script>
 
     <?php
     if (!ISSET($_COOKIE["popup"])) { ?>
-        <script src="customJS/pop-up-window.js"></script>
+        <script src="customJS/pop-up-window-spontaneous.js"></script>
     <?php } ?>
 
 </body>

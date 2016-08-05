@@ -18,7 +18,7 @@ setcookie("language", $language, time() + 365*24*3600, null, null, false, true);
 
 
 <!-- Cookie pour que le popup ne réapparaisse pas avant un certain temps (ici, une heure, soit 3600s) -->
-<?php setcookie("popup", "no", time() + 3600, null, null, false, true); ?>
+<?php setcookie("popup", "no", time() + 10, null, null, false, true); ?>
 
 
 <!-- Actualise la page -->

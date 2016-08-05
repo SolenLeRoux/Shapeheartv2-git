@@ -19,7 +19,12 @@
 
 <!-- Pour un site bilingue -->
 <?php
-$language = htmlspecialchars($_COOKIE["language"]);
+if (ISSET($_COOKIE["language"])) {
+    $language = htmlspecialchars($_COOKIE["language"]);
+}
+else {
+    $language = "english";
+}
 if ($language == "francais") { ?>
 <link href="css/francais.css" rel="stylesheet" title="francais">
 <link href="css/english.css" rel="alternate stylesheet" title="english">

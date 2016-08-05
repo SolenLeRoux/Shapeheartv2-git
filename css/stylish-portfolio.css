@@ -446,11 +446,11 @@ p {
     margin-bottom: 0;
 }
 
-#mybox{
+#pop-up {
     display: none;
 }
 
-#mybox,
+#pop-up,
 #mybox_aplat {
     position: fixed;
     background: rgba(0,0,0,0.7);
