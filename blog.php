@@ -16,7 +16,7 @@ $idmax = $bdd->query('SELECT MAX(id) AS idmax FROM article');
 $idmax = $idmax->fetch();
 $idmax = $idmax["idmax"];
 if (ISSET($_GET['page'])) {
-    $page = $_GET['page'];
+    $page = htmlspecialchars($_GET['page']);
 }
 else {
     $page = 0;

@@ -13,7 +13,7 @@ $idmax = $bdd->query('SELECT MAX(id) AS idmax FROM article');
 $idmax = $idmax->fetch();
 $idmax = $idmax["idmax"];
 $listearticles = $bdd->prepare('SELECT * FROM article WHERE id = ?');
-$idurl = $_GET['article'];
+$idurl = htmlspecialchars($_GET['article']);
 if (is_numeric($idurl) AND is_numeric($idmax)) {
     $idurl = intval($idurl);
     $idmax = intval($idmax);
