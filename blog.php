@@ -31,7 +31,7 @@ if (is_numeric($page) AND is_numeric($idmax)) {
 else {
     $page = 0;
 };
-$limit = $page + 5;
+$limit = $page + 2;
 ?>
 
 <!-- Recupération des articles qui nous intéressent -->
@@ -176,6 +176,21 @@ $listearticles->execute();
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="previous-next">
+        <?php if ($page > 1) { ?>
+            <a href="blog.php?page=<?php echo($page - 2); ?>" id="previous" class="lien-article">
+                <span class="english">< Previous</span>
+                <span class="francais">< Précédent</span>
+            </a>
+        <?php }
+        if ($limit < $idmax) { ?>
+            <a href="blog.php?page=<?php echo($limit); ?>" id="next" class="lien-article">
+                <span class="english">Next ></span>
+                <span class="francais">Suivant ></span>
+            </a>
+        <?php }; ?>
     </section>
 
     <!-- Footer -->
