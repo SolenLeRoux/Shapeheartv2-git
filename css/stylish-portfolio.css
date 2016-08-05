@@ -1183,7 +1183,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-#back-to-blog{
+.lien-article {
     color:grey;
     font-family: 'nexa_lightregular';
     font-size: 20px;
@@ -1194,7 +1194,7 @@ footer {
     padding-left: 50px;
 }
 
-#back-to-blog:hover {
+.lien-article:hover {
     color: black;
 }
 
@@ -1228,6 +1228,23 @@ footer {
         margin-top: 30px;
         width: 100%;
     }
+}
+
+#previous-next {
+    position: relative;
+}
+
+#previous {
+    position: absolute;
+    bottom: 2vh;
+    left: 10%;
+}
+
+#next {
+    position: absolute;
+    bottom: 2vh;
+    right: 10%;
+
 }
 
 /**********************************************************************************************************************
@@ -1481,7 +1498,7 @@ footer {
     }
 
     .share-container {
-        margin-bottom: 75px;
+        margin-bottom: 100px;
     }
 
     /* Pop-Up */

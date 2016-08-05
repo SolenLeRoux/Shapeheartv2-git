@@ -10,6 +10,38 @@ catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 } ?>
 
+<!-- Récupération du numéro de page -->
+<?php
+$idmax = $bdd->query('SELECT MAX(id) AS idmax FROM article');
+$idmax = $idmax->fetch();
+$idmax = $idmax["idmax"];
+if (ISSET($_GET['page'])) {
+    $page = htmlspecialchars($_GET['page']);
+}
+else {
+    $page = 0;
+}
+if (is_numeric($page) AND is_numeric($idmax)) {
+    $page = intval($page);
+    $idmax = intval($idmax);
+    if (!(($page <= $idmax) AND ($page > 0))) {
+        $page = 0;
+    }
+}
+else {
+    $page = 0;
+};
+$articleparpage = 5;
+$limit = $page + $articleparpage;
+?>
+
+<!-- Recupération des articles qui nous intéressent -->
+<?php $listearticles = $bdd->prepare('SELECT * FROM article ORDER BY id DESC LIMIT :limit OFFSET :offset');
+$listearticles->bindParam(":limit", $limit, PDO::PARAM_INT);
+$listearticles->bindParam(":offset", $page, PDO::PARAM_INT);
+$listearticles->execute();
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,9 +77,6 @@ catch (Exception $e) {
             <div class="row">
                 <div class="col-md-8">
                     <div class="article_container">
-
-                        <?php $listearticles = $bdd->query('SELECT * FROM article ORDER BY id DESC LIMIT 5'); ?>
-
                         <?php while ($article = $listearticles->fetch()) { ?>
                             <div id="article-<?php echo($article["id"]); ?>">
                                 <p class="titre-article">
@@ -148,6 +177,21 @@ catch (Exception $e) {
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="previous-next">
+        <?php if ($page > 1) { ?>
+            <a href="blog.php?page=<?php echo($page - $articleparpage); ?>" id="previous" class="lien-article">
+                <span class="english">< Previous</span>
+                <span class="francais">< Précédent</span>
+            </a>
+        <?php }
+        if ($limit < $idmax) { ?>
+            <a href="blog.php?page=<?php echo($limit); ?>" id="next" class="lien-article">
+                <span class="english">Next ></span>
+                <span class="francais">Suivant ></span>
+            </a>
+        <?php }; ?>
     </section>
 
     <!-- Footer -->
