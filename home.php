@@ -251,7 +251,11 @@
     <script src="customJS/to-top-button-scroll.js"></script>
     <script src="customJS/intro-divider-animation.js"></script>
     <script src="customJS/produit-animation-apple.js"></script>
-    <script src="customJS/pop-up-window.js"></script>
+
+    <?php
+    if (!ISSET($_COOKIE["popup"])) { ?>
+        <script src="customJS/pop-up-window.js"></script>
+    <?php } ?>
 
 </body>
 
