@@ -1,7 +1,7 @@
 // JS pour faire un site bilingue
 // pompé sur thesitewizard.com
 var style_cookie_name = "language" ;
-var style_cookie_duration = 30 ;
+var style_cookie_duration = 3000 ;
 var style_domain = "www.shapeheart.com" ;
 
 // You do not need to customise anything below this line
