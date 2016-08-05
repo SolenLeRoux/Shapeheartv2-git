@@ -251,7 +251,6 @@
     <script src="customJS/to-top-button-scroll.js"></script>
     <script src="customJS/intro-divider-animation.js"></script>
     <script src="customJS/produit-animation-apple.js"></script>
-    <script src="customJS/site-bilingue.js"></script>
     <script src="customJS/pop-up-window.js"></script>
 
 </body>
