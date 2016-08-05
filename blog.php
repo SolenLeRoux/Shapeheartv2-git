@@ -31,7 +31,8 @@ if (is_numeric($page) AND is_numeric($idmax)) {
 else {
     $page = 0;
 };
-$limit = $page + 2;
+$articleparpage = 5;
+$limit = $page + $articleparpage;
 ?>
 
 <!-- Recupération des articles qui nous intéressent -->
@@ -180,7 +181,7 @@ $listearticles->execute();
 
     <section id="previous-next">
         <?php if ($page > 1) { ?>
-            <a href="blog.php?page=<?php echo($page - 2); ?>" id="previous" class="lien-article">
+            <a href="blog.php?page=<?php echo($page - $articleparpage); ?>" id="previous" class="lien-article">
                 <span class="english">< Previous</span>
                 <span class="francais">< Précédent</span>
             </a>
