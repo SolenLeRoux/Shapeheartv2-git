@@ -1,3 +1,6 @@
+<!-- Cookies -->
+<?php include('cookies.php') ; ?>
+
 <!-- Connection à la bdd -->
 <?php
 try {

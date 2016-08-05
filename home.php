@@ -1,4 +1,5 @@
-<?php setcookie('language', 'english', time() + 365*24*3600, null, null, false, true); ?>
+<!-- Cookies -->
+<?php include('cookies.php') ; ?>
 
 <!DOCTYPE html>
 <html lang="en">
