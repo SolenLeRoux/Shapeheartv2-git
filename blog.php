@@ -1,5 +1,5 @@
 <!-- Cookies -->
-<?php setcookie('language', 'english', time() + 365*24*3600, null, null, false, true); ?>
+<?php include('cookies.php') ; ?>
 
 <!-- Connection à la bdd -->
 <?php
@@ -208,6 +208,5 @@ $listearticles->execute();
     <script src="customJS/navbar-scroll-fade.js"></script>
     <script src="customJS/navbar-scroll-height.js"></script>
     <script src="customJS/to-top-button-scroll.js"></script>
-    <script src="customJS/site-bilingue.js"></script>
 
 </body>

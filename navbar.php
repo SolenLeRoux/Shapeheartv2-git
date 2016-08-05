@@ -41,7 +41,7 @@
                     <?php } ?>
                     <?php if (in_array($currentpage, $FAQpages2)) { ?>
                         <div class="col-md-2 col-xs-4 align-right">
-                            <a href="blog.php" class="nav-text text-menu slide-underline">
+                            <a href="FAQ.php" class="nav-text text-menu slide-underline">
                                 FAQ
                             </a>
                         </div>
@@ -54,9 +54,13 @@
                     </div>
                     <?php } ?>
                     <div class="col-md-1 col-xs-2 align-right">
-                        <form class="nav-text text-menu">
-                            <input class="nav-text language-text english rond-language" type="submit" onclick="switch_style('francais');return false;" name="language" value="Fr" id="btn-fr">
-                            <input class="nav-text language-text francais rond-language" type="submit" onclick="switch_style('english');return false;" name="language" value="En" id="btn-en">
+                        <form action="cookies.php" method="post" name="language" class="nav-text text-menu">
+                            <input type="text" name="language" value="francais" style="display: none">
+                            <input class="nav-text language-text english rond-language" type="submit" name="francais" value="Fr" id="btn-fr">
+                        </form>
+                        <form action="cookies.php" method="post" name="language" class="nav-text text-menu">
+                            <input type="text" name="language" value="english" style="display: none">
+                            <input class="nav-text language-text francais rond-language" type="submit" name="english" value="En" id="btn-en">
                         </form>
                     </div>
                 </div>

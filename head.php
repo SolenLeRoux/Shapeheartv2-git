@@ -18,8 +18,16 @@
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 <!-- Pour un site bilingue -->
+<?php
+$language = htmlspecialchars($_COOKIE["language"]);
+if ($language == "francais") { ?>
+<link href="css/francais.css" rel="stylesheet" title="francais">
+<link href="css/english.css" rel="alternate stylesheet" title="english">
+<?php }
+else { ?>
 <link href="css/english.css" rel="stylesheet" title="english">
 <link href="css/francais.css" rel="alternate stylesheet" title="francais">
+<?php } ?>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
