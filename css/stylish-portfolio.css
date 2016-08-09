@@ -476,6 +476,13 @@ p {
     position: relative;
 }
 
+#mybox_relative-contact {
+    padding: 0px;
+    width: 500px;
+    height: auto;
+    position: relative;
+}
+
 #mybox_close {
     position: absolute;
     right: 10px;
@@ -496,6 +503,7 @@ p {
 
 #form {
     margin-left: 70px;
+    margin-right: 70px;
 }
 
 #votre_email input[type=email]{
@@ -540,7 +548,43 @@ p {
     text-align: center;
     font-size: 20px;
     font-family: 'nexa_lightregular';
+}
 
+/*******************************************************
+  Pop-Up contact us
+*******************************************************/
+
+#contact-us {
+    display: none;
+}
+
+.text-popup {
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #fff;
+    font-size: 14px;
+    font-family: nexa_lightregular;
+}
+
+.input-box {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.big-input-box {
+    height: 70px;
+    resize: none;
+}
+
+.btn-contact {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 74px;
+    margin-left : 40%;
+    margin-right: 40%;
 }
 
 
@@ -852,6 +896,10 @@ footer {
     color: #fff;
     font-size: 14px;
     font-family: nexa_lightregular;
+}
+
+.footer-text:hover {
+    color: #fff;
 }
 
 .shapeheart-font {
@@ -1505,14 +1553,17 @@ footer {
 
     #mybox_conteneur{
         width: 250px;
-        height: 250px;
     }
 
     #mybox_relative {
         padding: 0px;
         width: 100%;
-        height: auto;
+        height: 250px;
         position: relative;
+    }
+
+    #mybox_relative-contact {
+        width: 100%;
     }
 
     #mybox_close {
@@ -1538,6 +1589,7 @@ footer {
 
     #form {
         margin-left: 45px;
+        margin-right: 45px;
     }
 
     #votre_email input[type=email]{
@@ -1586,15 +1638,18 @@ footer {
 
     #mybox_conteneur{
         width: 350px;
-        height: 350px;
         margin: auto;
     }
 
     #mybox_relative {
         padding: 0px;
         width: 100%;
-        height: auto;
+        height: 350px;
         position: relative;
+    }
+
+    #mybox_relative-contact {
+        width: 100%;
     }
 
     #mybox_close {
@@ -1625,6 +1680,7 @@ footer {
 
     #form {
         margin-left: 60px;
+        margin-right: 60px;
     }
 
     #votre_email input[type=email]{

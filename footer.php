@@ -1,3 +1,5 @@
+<?php include("contactus.php"); ?>
+
 <footer>
     <div class="container-fluid">
         <div class="row">
@@ -9,8 +11,8 @@
                 <a href="FAQ.php">
                     <p class="footer-text">FAQ</p>
                 </a>
-                <a href="mailto:contact@shapeheart.com" target="">
-                    <p class="footer-text">
+                <a class="btn footer-text">
+                    <p class="contactus">
                         <span class="english">Contact us</span>
                         <span class="francais">Nous contacter</span>
                     </p>
