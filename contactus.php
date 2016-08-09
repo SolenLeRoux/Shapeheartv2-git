@@ -10,7 +10,7 @@
                 <img id="logo" src="img/logo.png" alt="">
                 <p class="texte">CONT<span class="texte-a">A</span>CT US</p>
                 <div id="form">
-                    <form>
+                    <form method="post" action="sendmail.php">
                         <p class="text-popup">
                             <span class="english">Your mail :</span>
                             <span class="francais">Votre mail :</span>
