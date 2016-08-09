@@ -9,6 +9,15 @@
     if (substr($currentpage,0,11) == "article.php") { // réduit tous les article.php?article=id en article.php
         $currentpage = "article.php";
     };
+    if (substr($currentpage,0,8) == "home.php") {
+        $currentpage = "home.php";
+    };
+    if (substr($currentpage,0,7) == "FAQ.php") {
+        $currentpage = "FAQ.php";
+    };
+    if (substr($currentpage,0,8) == "blog.php") {
+        $currentpage = "blog.php";
+    };
 ?>
 
 <!-- Navbar elle-même -->

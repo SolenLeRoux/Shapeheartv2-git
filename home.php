@@ -251,6 +251,7 @@
     <script src="customJS/intro-divider-animation.js"></script>
     <script src="customJS/produit-animation-apple.js"></script>
     <script src="customJS/pop-up-window.js"></script>
+    <script src="customJS/pop-up-contactus.js"></script>
 
     <?php
     if (!ISSET($_COOKIE["popup"])) { ?>
