@@ -1,4 +1,4 @@
-<div id="pop-up">
+<div id="contact-us">
     <div id="mybox_aplat">
         <div id="mybox_conteneur">
             <div id="mybox_relative">

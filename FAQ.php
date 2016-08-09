@@ -1,3 +1,6 @@
+<!-- Cookies -->
+<?php include('cookies.php') ; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,52 +34,52 @@
         <div class="container-FAQ">
             <div class="FAQ-block">
                 <p class="question-FAQ">
-                    <span class="english">Is it reliable ?</span>
-                    <span class="francais">Est ce fiable ?</span>
+                    <span class="english">How is the data collected from the sensor ?</span>
+                    <span class="francais">Comment les données sont-elles récupérées depuis le capteur ?</span>
                 </p>
                 <p class="reponse-FAQ">
-                    <span class="english">Yes.</span>
-                    <span class="francais">La technologie que nous utilisons est cliniquement prouvée sur le bras, elle est même plus précise que sur le poignet car il y a moins d'artefacts de mouvement</span>
+                    <span class="english">The data is transferred directly to the smartphone’s running app with Bluetooth connexion.</span>
+                    <span class="francais">Les données sont transmises directement vers l’application running du smartphone via Bluetooth.</span>
                 </p>
             </div>
             <div class="FAQ-block">
                 <p class="question-FAQ">
-                    <span class="english">How do I use it during winter ?</span>
-                    <span class="francais">Comment l'utiliser en hiver ?</span>
+                    <span class="english">Which running app are compatible with our connected armband ?</span>
+                    <span class="francais">Quelles sont les applications de running compatibles avec notre technologie ?</span>
                 </p>
                 <p class="reponse-FAQ">
-                    <span class="english">Easily.</span>
-                    <span class="francais">L'électronique peut être retirée facilement du brassard et placée dans notre winter kit. Ce dernier vient disparaitre en dessous du brassard.</span>
+                    <span class="english">Runstastic, Endomondo, Strava, Running Heroes, Digifit, Runkeeper, MapMyFitness, Virtual Traning, 3,2,1 Run, Irunner, Nike+, Virtual Runner, Polar Beat…</span>
+                    <span class="francais">Runtastic, Endomondo, Strava, Running Heroes, Digifit, Runkeeper, MapMyFitness, Virtual Training, 3,2,1 Run, Irunner, Nike+, Virtual Runner, Polar Beat…</span>
                 </p>
             </div>
             <div class="FAQ-block">
                 <p class="question-FAQ">
-                    <span class="english">Does my phone fit ?</span>
-                    <span class="francais">Quelle taille de téléphone ?</span>
+                    <span class="english">Can we use our armband with long sleeves or sweatshirts (in winter time) ?</span>
+                    <span class="francais">Peut-on utiliser le brassard Shapeheart avec manches longues et k-way (en hiver) ?</span>
                 </p>
                 <p class="reponse-FAQ">
-                    <span class="english">Yes.</span>
-                    <span class="francais">Nous utilisons une pochette en tissu élastique qui permet de s'adapter à 80% des téléphones du marché, Samsung Galaxy, Iphone 5, 6...</span>
+                    <span class="english">The sensor is removable, it can therefore be placed in our « winter kit »: an elastic and confortable strap which is wrapped around the arm and positioned the armband. You can thereby run in winter while remaining equipped.</span>
+                    <span class="francais">Le capteur étant amovible, il peut être placé dans le « winter kit », c’est-à-dire une attache élastique et confortable qui se positionne sous le brassard. Vous pouvez ainsi courir au chaud tout en restant équipé.</span>
                 </p>
             </div>
             <div class="FAQ-block">
                 <p class="question-FAQ">
-                    <span class="english">Is it compatible with my running app ?</span>
-                    <span class="francais">Avec quelle appli est ce compatible ?</span>
+                    <span class="english">Which smartphones are compatible with our connected armband ?</span>
+                    <span class="francais">Quels smartphones sont compatibles avec le brassard ?</span>
                 </p>
                 <p class="reponse-FAQ">
-                    <span class="english">Yes.</span>
-                    <span class="francais">Notre capteur est relié en bluetooth à votre téléphone et est compatible avec 90% des apps de running : Straa, Endomondo, Runtastic, Runkeeper...</span>
+                    <span class="english">An overwhelming majority: the elasticity of the material allows the Shapeheart armband to be compatible with almost all smartphones on the market today.</span>
+                    <span class="francais">Une très grande majorité: l’élasticité de la matière permet au brassard Shapeheart d’être compatible avec presque tous les smartphones sur le marché actuellement.</span>
                 </p>
             </div>
             <div class="FAQ-block">
                 <p class="question-FAQ">
-                    <span class="english">Do the magnet damage the phone ?</span>
-                    <span class="francais">Les aimants abiment ils le téléphone ?</span>
+                    <span class="english">Is the heart rate data reliable ?</span>
+                    <span class="francais">Les données de fréquence cardiaque sont-elles fiables ?</span>
                 </p>
                 <p class="reponse-FAQ">
-                    <span class="english">No.</span>
-                    <span class="francais">On a tendance à penser que les aimants sont dangereux pour l'électronique, c'était le cas pour les vieux disques dur, le type de stockage dans les téléphones actuels est électrostatique et ne subit aucune altération des aimants.</span>
+                    <span class="english">Our sensor is at the forefront of technology in this field. We surely provide a more reliable data than our competitors.</span>
+                    <span class="francais">Notre capteur est à la pointe de la technologie dans ce domaine. Nous assurons une plus grande fiabilité des données par rapport à nos concurrents.</span>
                 </p>
             </div>
         </div>
@@ -96,6 +99,5 @@
     <script src="customJS/navbar-scroll-fade.js"></script>
     <script src="customJS/navbar-scroll-height.js"></script>
     <script src="customJS/to-top-button-scroll.js"></script>
-    <script src="customJS/site-bilingue.js"></script>
 
 </body>

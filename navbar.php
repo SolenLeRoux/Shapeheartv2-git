@@ -3,9 +3,12 @@
 <?php $currentpage = $_SERVER['REQUEST_URI']; // trouve la page actuelle
     $currentpage = substr($currentpage, 18); // supprime les 18 premiers caractères (/shapeheartv2-git/)
     $homepages = array('blog.php', 'FAQ.php'); // liste des pages sur lesquelles 'home' doit apparaître
-    $FAQpages1 = array('article_1.php', 'article_2.php', 'home.php'); // idem pour 'FAQ', en position 1
+    $FAQpages1 = array('article.php', 'home.php'); // idem pour 'FAQ', en position 1
     $FAQpages2 = array('blog.php');
-    $blogpages = array('article_1.php', 'article_2.php', 'FAQ.php', 'home.php'); // idem pour 'blog'
+    $blogpages = array('article.php', 'FAQ.php', 'home.php'); // idem pour 'blog'
+    if (substr($currentpage,0,11) == "article.php") { // réduit tous les article.php?article=id en article.php
+        $currentpage = "article.php";
+    };
 ?>
 
 <!-- Navbar elle-même -->
@@ -38,7 +41,7 @@
                     <?php } ?>
                     <?php if (in_array($currentpage, $FAQpages2)) { ?>
                         <div class="col-md-2 col-xs-4 align-right">
-                            <a href="blog.php" class="nav-text text-menu slide-underline">
+                            <a href="FAQ.php" class="nav-text text-menu slide-underline">
                                 FAQ
                             </a>
                         </div>
@@ -51,9 +54,13 @@
                     </div>
                     <?php } ?>
                     <div class="col-md-1 col-xs-2 align-right">
-                        <form class="nav-text text-menu">
-                            <input class="nav-text language-text english rond-language" type="submit" onclick="switch_style('francais');return false;" name="language" value="Fr" id="btn-fr">
-                            <input class="nav-text language-text francais rond-language" type="submit" onclick="switch_style('english');return false;" name="language" value="En" id="btn-en">
+                        <form action="cookies.php" method="post" name="language" class="nav-text text-menu">
+                            <input type="text" name="language" value="francais" style="display: none">
+                            <input class="nav-text language-text english rond-language" type="submit" name="francais" value="Fr" id="btn-fr">
+                        </form>
+                        <form action="cookies.php" method="post" name="language" class="nav-text text-menu">
+                            <input type="text" name="language" value="english" style="display: none">
+                            <input class="nav-text language-text francais rond-language" type="submit" name="english" value="En" id="btn-en">
                         </form>
                     </div>
                 </div>
