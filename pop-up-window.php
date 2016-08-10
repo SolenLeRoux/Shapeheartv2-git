@@ -21,7 +21,8 @@
                             <div id="mc_embed_signup_scroll">
                                 <div class="mc-field-group">
                                     <p id="votre_email">
-                                        <input type="email" value="" placeholder="Your email" name="EMAIL" class="required email" id="mce-EMAIL">
+                                        <span class="english"><input type="email" value="" placeholder="Your email" name="EMAIL" class="required email" id="mce-EMAIL"></span>
+                                        <span class="francais"><input type="email" value="" placeholder="Votre email" name="EMAIL" class="required email" id="mce-EMAIL"></span>
                                     </p>
                                 </div>
                                 <div id="mce-responses" class="clear">

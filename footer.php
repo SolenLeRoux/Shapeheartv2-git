@@ -23,7 +23,8 @@
                     <div id="mc_embed_signup_scroll">
                         <div class="mc-field-group email-footer">
                             <p id="votre_email_footer">
-                                <input type="email" value="" placeholder="Your email" name="EMAIL" class="required email" id="mce-EMAIL">
+                                <span class="english"><input type="email" value="" placeholder="Your email" name="EMAIL" class="required email" id="mce-EMAIL"></span>
+                                <span class="francais"><input type="email" value="" placeholder="Votre email" name="EMAIL" class="required email" id="mce-EMAIL"></span>
                             </p>
                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true">
