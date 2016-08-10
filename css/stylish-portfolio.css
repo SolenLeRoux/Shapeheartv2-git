@@ -917,6 +917,12 @@ footer {
   right: 5px;
 }
 
+.email-footer {
+    width: 210px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #votre_email_footer input[type=email]{
     height: 30px;
     width: 180px;
