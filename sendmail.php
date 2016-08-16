@@ -18,24 +18,20 @@ else {
 $boundary = "-----=".md5(rand());
 
 // En-tête
-$header = 'Reply-to: \"RETOUR\" '.$from.$br;
+$header = 'From:'.$from.$br;
+$header.= 'Reply-to:'.$from.$br;
 $header.= "MIME-Version: 1.0".$br;
-$header.= 'Content-Type: multipart/alternative;'.$br.' boundary=\"$boundary\"'.$br;
-
-// Message
-$message = "...";
-$message .= "Content-Type: text/html; charset=\"ISO-8859-1\"".$br;
-$message .= "Content-Transfer-Encoding: 8bit".$br;
-$message .= "...";
+$header.= 'Content-Type: multipart/alternative;'.$br.' boundary='.$br;
 
 // Corps du message
 $mail = $br."--".$boundary.$br; // ouverture du boundary
 $mail.= "Content-Type: text/plain; charset=\"ISO-8859-1\"".$br; // message en texte et non HTML
 $mail.= "Content-Transfer-Encoding: 8bit".$br; // encodé en 8 bits, donc avec les accents
 $mail.= $br.$message.$br; // message lui-même
-$message.= $br."--".$boundary."--".$br; // fermeture du boundary
+$mail.= $br."--".$boundary."--".$br; // fermeture du boundary
 
 // Envoi du mail
-mail($to,$subject,$mail,$header);
+$bool = mail($to,$subject,$message,$header);
 
 ?>
+<meta http-equiv="refresh" content="0;<?php echo 'home.php?bool='.$bool; ?>'" />

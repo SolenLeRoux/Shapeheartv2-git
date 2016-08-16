@@ -4,7 +4,7 @@
 <!-- Connection à la bdd -->
 <?php
 try {
-    $bdd = new PDO('mysql:host=localhost;dbname=shapeheart;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO('mysql:host=db643346146.db.1and1.com;dbname=db643346146;charset=utf8', 'dbo643346146', 'Sh4peHe4rt', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
@@ -145,5 +145,6 @@ else {
     <script src="customJS/navbar-scroll-fade.js"></script>
     <script src="customJS/navbar-scroll-height.js"></script>
     <script src="customJS/to-top-button-scroll.js"></script>
+    <script src="customJS/pop-up-contactus.js"></script>
 
 </body>

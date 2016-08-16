@@ -13,7 +13,7 @@
                 <p class="texte">EM<span class="texte-a">A</span>IL</p>
                 <h2 class="texte-promo">
                     <span class="english">Get 20% off your first order <br />No spam !</span>
-                    <span class="francais">Profitez de 20% sur votre première commande<br />Promis pas de spam !</span>
+                    <span class="francais">Profitez de 20% sur votre première commande<br />Pas de spam !</span>
                 </h2>
                 <div id="form">
                     <div id="mc_embed_signup">

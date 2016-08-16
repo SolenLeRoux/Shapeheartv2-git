@@ -1,4 +1,3 @@
-<!-- Cookies -->
 <?php include('cookies.php') ; ?>
 
 <!DOCTYPE html>
@@ -257,6 +256,18 @@
     if (!ISSET($_COOKIE["popup"])) { ?>
         <script src="customJS/pop-up-window-spontaneous.js"></script>
     <?php } ?>
+
+    <?php
+    if (isset($_GET["bool"])) {
+        $bool = htmlspecialchars($_GET["bool"]);
+        if ($bool == 1) { ?>
+            <script src="customJS/pop-up-contactus-true.js"></script>
+        <?php }
+        if ($bool == 0) { ?>
+            <script src="customJS/pop-up-contactus-false.js"></script>
+        <?php }
+    };
+    ?>
 
 </body>
 
