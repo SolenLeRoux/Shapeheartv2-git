@@ -554,7 +554,9 @@ p {
   Pop-Up contact us
 *******************************************************/
 
-#contact-us {
+#contact-us,
+#contact-us-true,
+#contact-us-false {
     display: none;
 }
 
@@ -564,6 +566,15 @@ p {
     margin-top: 0;
     color: #fff;
     font-size: 14px;
+    font-family: nexa_lightregular;
+}
+
+.text-popup-conf {
+    margin-left: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 20px;
     font-family: nexa_lightregular;
 }
 

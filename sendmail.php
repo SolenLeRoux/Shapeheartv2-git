@@ -31,7 +31,7 @@ $mail.= $br.$message.$br; // message lui-même
 $mail.= $br."--".$boundary."--".$br; // fermeture du boundary
 
 // Envoi du mail
-mail($to,$subject,$message,$header);
+$bool = mail($to,$subject,$message,$header);
 
 ?>
-<meta http-equiv="refresh" content="0;URL='<?php echo $_SERVER[HTTP_REFERER]; ?>'" />
+<meta http-equiv="refresh" content="0;<?php echo 'home.php?bool='.$bool; ?>'" />
