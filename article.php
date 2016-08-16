@@ -4,7 +4,7 @@
 <!-- Connection à la bdd -->
 <?php
 try {
-    $bdd = new PDO('mysql:host=localhost;dbname=shapeheart;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO('mysql:host=db643346146.db.1and1.com;dbname=db643346146;charset=utf8', 'dbo643346146', 'Sh4peHe4rt', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());

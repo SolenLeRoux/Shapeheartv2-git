@@ -24,6 +24,7 @@ setcookie("language", $language, time() + 365*24*3600, null, null, false, true);
 <!-- Actualise la page -->
 <?php $currentpage = $_SERVER['REQUEST_URI']; // trouve la page actuelle
 $currentpage = basename($currentpage); // ne garde que le fin de l'adresse
-if (substr($currentpage, 11) == "cookies.php") {
+if (substr($currentpage, 0, 11) == "cookies.php") {
     header ("Location: $_SERVER[HTTP_REFERER]" );
+    echo "true";
 } ?>
