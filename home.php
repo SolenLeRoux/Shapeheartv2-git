@@ -1,4 +1,3 @@
-<!-- Cookies -->
 <?php include('cookies.php') ; ?>
 
 <!DOCTYPE html>

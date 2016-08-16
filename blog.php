@@ -221,5 +221,6 @@ $listearticles->execute();
     <script src="customJS/navbar-scroll-fade.js"></script>
     <script src="customJS/navbar-scroll-height.js"></script>
     <script src="customJS/to-top-button-scroll.js"></script>
+    <script src="customJS/pop-up-contactus.js"></script>
 
 </body>
