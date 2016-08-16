@@ -49,7 +49,7 @@
                 <img id="logo" src="img/logo.png" alt="">
                 <p class="text-popup-conf">
                     <span class="english">Thank you ! Your mail was succesfully sent</span>
-                    <span class="francais">Merci ! Votre mail a été envoyée avec succès</span>
+                    <span class="francais">Merci ! Votre mail a été envoyé avec succès</span>
                 </p>
                 </div>
             </div>

@@ -1,27 +1,37 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/)
+Ajouter un article au blog :
 
-[Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.
+1/ Se rendre sur www.1and1.fr
+2/ Cliquer sur "espace client", se connecter (demander les identifiants à Antoine)
+3/ Dans la section Hebergement, cliquer sur "Base de données MySQL"
+4/ Trouver la ligne dont la description est "Articles" (la seule actuellement)
+5/ Cliquer sur phpMyAdmin à droite
+6/ Dans le nouvel onglet, cliquer sur db643346146 dans le menu à gauche
+7/ Dans la sous-liste, cliquer sur "article", ça fera apparaître la liste des articles existants (possibilité de les modifier)
+8/ Dans le menu du haut, cliquer sur "Insérer"
+9/ Remplir les éléments comme suit :
 
-## Getting Started
+id : laisser vide
+titrefr : titre de l'article en français
+titreen : titre de l'article en anglais
+date_article : date de parution
+apercufr : ce qui apparaitra avant qu'on clique sur "afficher la suite", en francais
+apercuen : idem en anglais
+texte1fr : texte avant l'image, en francais
+texte1en : idem en anglais
+photo : image de l'article, de la forme /img/nom-de-limage.jpg
+texte2fr : texte après l'image, en francais
+texte2en : idem en anglais
+facebook : lien pour partager l'article sur FB
+linkedin : idem sur linkedin
+twitter : idem sur twitter
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/stylish-portfolio/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio.git`
-* Fork the repo
+10/ Cliquer sur Executer et enjoy !
 
-## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/stylish-portfolio/).
+Pour ajouter une image :
 
-## Creator
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/gh-pages/LICENSE) license.
+1/ Répeter les étapes 1 & 2 si nécessaire, sinon retourner simplement dans l'espace client
+2/ Dans la section Hebergement, cliquer sur 1&1 WebTransfer
+3/ Dans les dossiers, se placer sur /prodv2/img
+4/ Cliquer sur l'icône charger (ordinateur avec flèche montante)
+5/ Choisissez votre fichier et validez. Enjoy !
