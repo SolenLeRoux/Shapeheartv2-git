@@ -1,7 +1,7 @@
 <!-- Customisation de la navbar pour chaque page -->
 
 <?php $currentpage = $_SERVER['REQUEST_URI']; // trouve la page actuelle
-    $currentpage = substr($currentpage, 18); // supprime les 18 premiers caractères (/shapeheartv2-git/)
+    $currentpage = basename($currentpage); // ne garde que le fin de l'adresse
     $homepages = array('blog.php', 'FAQ.php'); // liste des pages sur lesquelles 'home' doit apparaître
     $FAQpages1 = array('article.php', 'home.php'); // idem pour 'FAQ', en position 1
     $FAQpages2 = array('blog.php');
