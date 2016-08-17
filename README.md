@@ -21,9 +21,6 @@ texte1en : idem en anglais
 photo : image de l'article, de la forme /img/nom-de-limage.jpg
 texte2fr : texte après l'image, en francais
 texte2en : idem en anglais
-facebook : lien pour partager l'article sur FB
-linkedin : idem sur linkedin
-twitter : idem sur twitter
 
 10/ Cliquer sur Executer et enjoy !
 

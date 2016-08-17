@@ -100,13 +100,13 @@ else {
                 <div class="share_separator"></div>
                 <div class="share_logos">
                     <div class="share_logo_block">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.shapeheart.com/article/1">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.shapeheart.com/article.php?article=<?php echo($idurl); ?>">
                             <img class="share_logo" src="img/Facebook.png">
                         </a>
-                        <a href="https://www.linkedin.com/cws/share?url=http://www.shapeheart.com/article/1">
+                        <a href="https://www.linkedin.com/cws/share?url=http://www.shapeheart.com/article.php?article=<?php echo($idurl); ?>">
                             <img class="share_logo" src="img/Linked_in.png">
                         </a>
-                        <a href="https://twitter.com/share?url=http://www.shapeheart.com/article/1">
+                        <a href="https://twitter.com/share?url=http://www.shapeheart.com/article.php?article=<?php echo($idurl); ?>">
                             <img class="share_logo" src="img/Twitter.png">
                         </a>
                     </div>

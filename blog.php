@@ -104,13 +104,13 @@ $listearticles->execute();
                                 <div class="share_separator"></div>
                                 <div class="share_logos">
                                     <div class="share_logo_block">
-                                        <a href="<?php echo($article["facebook"]); ?>">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.shapeheart.com/article.php?article=<?php echo($article["id"]); ?>">
                                             <img class="share_logo" src="img/Facebook.png">
                                         </a>
-                                        <a href="<?php echo($article["linkedin"]); ?>">
+                                        <a href="https://www.linkedin.com/cws/share?url=http://www.shapeheart.com/article.php?article=<?php echo($article["id"]); ?>">
                                             <img class="share_logo" src="img/Linked_in.png">
                                         </a>
-                                        <a href="<?php echo($article["twitter"]); ?>">
+                                        <a href="https://twitter.com/share?url=http://www.shapeheart.com/article.php?article=<?php echo($article["id"]); ?>">
                                             <img class="share_logo" src="img/Twitter.png">
                                         </a>
                                     </div>
