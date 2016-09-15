@@ -99,7 +99,7 @@
                                     souhaitiez optimiser votre perte de poids.</span>
                             </p>
                             <a href="blog.php" class="btn-transparent">
-                                <span class="english">More infos<span class="grand-ecran"> on our blog</span></span>
+                                <span class="english">More info<span class="grand-ecran"> on our blog</span></span>
                                 <span class="francais">Plus d'informations<span class="grand-ecran"> sur notre blog</span></span>
                             </a>
                         </div>
