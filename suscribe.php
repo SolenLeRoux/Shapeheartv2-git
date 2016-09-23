@@ -49,3 +49,11 @@ else
         </div>
     </form>
 </div>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+    require(["mojo/signup-forms/Loader"], function(L) {
+        L.start({
+            "baseUrl":"mc.us12.list-manage.com",
+            "uuid":"bae5feda13b91325afa9cf6e1",
+            "lid":"16a24afed6"}) 
+    })</script>
